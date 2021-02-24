@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Hello, world!</title>
+    <title>Dynopii | Redefining the way to communicate.</title>
   </head>
 
   <body>
@@ -157,7 +157,7 @@
     </section>
 
     <!-- Product Demo Video -->
-    <section id="hero-product-demo">
+    <!-- <section id="hero-product-demo">
       <div class="text-center">
         <div class="image-container">
           <a class="btn-action" href="https://www.youtube.com/watch?v=C2PBAPiLS58" target="_blank"><i class="zmdi zmdi-videocam me-2"></i> <span>Watch video</span></a>
@@ -165,10 +165,10 @@
           <img src="./assets/images/hero-product-demo.png" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Customers -->
-    <section id="customers-grid" class="py-4 my-3">
+    <section id="customers-grid" class="py-4 my-3 mt-5">
       <div class="container text-center">
         <p class="text-light-2">
           Our solution backed by the best in the world
@@ -563,12 +563,13 @@
                 dfeatures and product updates
               </p>
 
-              <form action="" method="POST">
+              <form action="https://formspree.io/f/xdopdwyy" method="POST">
                 <div class="subscribe-input">
                   <input
                     type="email"
                     placeholder="Enter your email address..."
                     required
+                    name="email"
                   />
                   <button type="submit" class="btn btn-sm btn-primary">
                     Subscribe
@@ -626,31 +627,31 @@
           </div>
 
           <div class="modal-body">
-              <form>
+            <form action="https://formspree.io/f/xeqpbjoy" method="POST">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 mb-4">
-                      <input type="text" class="form-control" id="recipient-name" placeholder="Full Name">
+                      <input type="text" name="name" class="form-control" id="recipient-name" placeholder="Full Name">
                     </div>
 
                     <div class="col-sm-12 col-md-6 mb-4">
-                      <select name="reason" class="form-control">
+                      <select name="subject" class="form-control">
                         <option disabled selected default>Select a reason</option>
-                        <option value="Contact sales">Contact with sales team</option>
-                        <option value="Schedule a demo">Schedule a product demo</option>
+                        <option  value="Contact sales">Contact with sales team</option>
+                        <option  value="Schedule a demo">Schedule a product demo</option>
                       </select>
                     </div>
 
                     <div class="col-sm-12 col-md-6 mb-4">
-                      <input type="email" class="form-control" id="recipient-name" placeholder="Email Address">
+                      <input name="email" type="email" class="form-control" id="recipient-name" placeholder="Email Address">
                     </div>
                                         
                     <div class="col-sm-12 col-md-6 mb-4">
-                      <input type="email" class="form-control" id="recipient-name" placeholder="Phone Number">
+                      <input type="text" name="phone" class="form-control" id="recipient-name" placeholder="Phone Number">
                     </div>
 
                     <div class="col-12 mb-4">
                       <label for="message-text" class="col-form-label">Any Message?</label>
-                      <textarea class="form-control" id="message-text"></textarea>
+                      <textarea class="form-control" name="message" id="message-text"></textarea>
                     </div>
                                         
                     <div class="col-12">

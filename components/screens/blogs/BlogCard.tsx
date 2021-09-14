@@ -6,7 +6,7 @@ interface Props {
 
 export const BlogCard: React.FC<Props> = () => {
   return (
-    <div className='' style={{ maxWidth: '350px' }}>
+    <div className='md:mt-20' style={{ maxWidth: '350px' }}>
       <div className='overflow-hidden rounded-default'>
         <img src='/images/blog-demo.png' width={350} height={175} alt='Blog' />
       </div>

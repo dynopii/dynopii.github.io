@@ -19,3 +19,16 @@ body {
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
+
+.grid-blog-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.blog-section-bg {
+	background-image: url('/svgs/blogPageWave.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+}

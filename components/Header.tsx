@@ -66,7 +66,7 @@ export const Header = () => {
 					<a href="" className="ml-8">
 						Products
 					</a>
-					<a href="" className="ml-8">
+					<a href="/blogs" className="ml-8">
 						Blogs
 					</a>
 					<a href="" className="ml-8">

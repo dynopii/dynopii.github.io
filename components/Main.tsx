@@ -58,9 +58,7 @@ export const Main = () => {
 					</div>
 					<span className="animate">
 						<h1 className="hero_title text-white sm:text-5xl md:text-6xl">
-							The issue tracking
-							<br />
-							tool you'll enjoy using
+							Redefining the way you communicate
 						</h1>
 					</span>
 					<span className="animate">

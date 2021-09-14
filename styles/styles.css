@@ -4,9 +4,8 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
-	background-color: #060606;
+	/* background-color: #060606; */
 	-webkit-tap-highlight-color: transparent;
-	font-family: 'Inter', sans-serif;
 }
 
 .content_container {

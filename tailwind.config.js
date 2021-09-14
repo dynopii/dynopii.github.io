@@ -50,9 +50,13 @@ module.exports = {
 		extend: {
 			margin: {
 				10: '10px',
+				15: '15px',
 				20: '20px',
+				25: '25px',
 				30: '30px',
+				35: '35px',
 				40: '40px',
+				45: '45px',
 				50: '50px',
 				60: '60px',
 				70: '70px',
@@ -61,9 +65,13 @@ module.exports = {
 			},
 			padding: {
 				10: '10px',
+				15: '15px',
 				20: '20px',
+				25: '25px',
 				30: '30px',
+				35: '35px',
 				40: '40px',
+				45: '45px',
 				50: '50px',
 				60: '60px',
 				70: '70px',
@@ -74,7 +82,7 @@ module.exports = {
 				// [font-size, line-height]
 				subtitle: ['0.857rem', { letterSpacing: '0.1px' }], // 14px
 				button: ['0.857rem', { letterSpacing: '0.75px' }], // 14px
-				'body-sm': ['0.857rem', { letterSpacing: '0.5%' }], // 14px 20px
+				'body-sm': ['0.857rem', { letterSpacing: '0.3px' }], // 14px 20px
 				'body-lg': ['1rem', { letterSpacing: '0.6px' }], // 16px 24px
 				h6: ['1.25rem', { letterSpacing: '0.15px' }], // 20px 28px
 				h5: ['1.5rem', ''], // 24px
@@ -83,6 +91,16 @@ module.exports = {
 				h2: ['3.75rem', ''], // 60px
 				h1: ['6rem', { letterSpacing: '-1.5px' }], // 96px
 			},
+		},
+		letterSpacing: {
+			tightest: '-.075em',
+			tighter: '-.05em',
+			tight: '-.025em',
+			normal: '0',
+			wide: '.025em',
+			wider: '.05em',
+			widest: '.1em',
+			widest: '.25em',
 		},
 		borderRadius: {
 			...defaultTheme.borderRadius,

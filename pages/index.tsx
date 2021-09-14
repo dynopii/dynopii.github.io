@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Header } from '../components/Header';
 import { Main } from '../components/Main';
 import { Footer } from '../components/layout/Footer';
+import { Testimonials } from '../components/screens/landing/Testimonials';
 const Home: NextPage = () => {
 	return (
 		<div className="main_layout">
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
 			</Head>
 			<Header />
 			<Main />
+			<Testimonials />
 			<Footer />
 		</div>
 	);

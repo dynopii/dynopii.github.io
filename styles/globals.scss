@@ -13,3 +13,9 @@ body {
 	-webkit-tap-highlight-color: transparent;
 	font-family: 'Poppins', sans-serif;
 }
+
+.grid-testimonials-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}

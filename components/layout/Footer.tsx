@@ -8,7 +8,7 @@ interface Props {
 
 export const Footer: React.FC<Props> = () => {
   return (
-    <footer className='py-40 md:px-30 bg-gray-333 m-30 rounded-default'>
+    <footer className='py-40 lg:px-30 bg-gray-333 m-30 rounded-default'>
       <div className='mx-auto' style={{ maxWidth: '1200px' }}>
 
         <div className='flex items-center md:flex-col md:items-start justify-between mb-50 md:mb-20'>

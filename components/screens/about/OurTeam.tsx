@@ -19,6 +19,8 @@ export const OurTeam: React.FC<Props> = () => {
           ))}
         </div>
 
+
+
       </div>
     </section>
   );

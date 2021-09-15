@@ -26,8 +26,25 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
+.grid-teams-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	grid-gap: 60px;
+	align-items: center;
+	justify-items: center;
+}
+
 .blog-section-bg {
 	background-image: url('/svgs/blogPageWave.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	// @media screen and (max-width: 600px) {
+	// 	background-size: contain;
+	// }
+}
+.about-us-section-bg {
+	background-image: url('/svgs/aboutPageWave.svg');
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: 100%;

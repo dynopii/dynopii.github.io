@@ -49,6 +49,7 @@ module.exports = {
 		},
 		extend: {
 			margin: {
+				5: '5px',
 				10: '10px',
 				15: '15px',
 				20: '20px',
@@ -64,6 +65,7 @@ module.exports = {
 				90: '90px',
 			},
 			padding: {
+				5: '5px',
 				10: '10px',
 				15: '15px',
 				20: '20px',

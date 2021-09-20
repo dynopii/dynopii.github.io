@@ -42,6 +42,14 @@ body {
 	justify-items: center;
 }
 
+.grid-feature-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+	align-items: center;
+	justify-items: center;
+}
+
 .blog-section-bg {
 	background-image: url('/svgs/blogPageWave.svg');
 	background-repeat: no-repeat;
@@ -62,6 +70,25 @@ body {
 }
 .media-section-bg {
 	background-image: url('/svgs/mediaPageWave.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	// @media screen and (max-width: 600px) {
+	// 	background-size: contain;
+	// }
+}
+.products-section-bg {
+	background-image: url('/svgs/productsPageWave.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	// @media screen and (max-width: 600px) {
+	// 	background-size: contain;
+	// }
+}
+
+.dhwani-cover-bg {
+	background-image: url('/svgs/dhwaniCover.svg');
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: 100%;

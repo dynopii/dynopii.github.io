@@ -97,9 +97,27 @@ body {
 	// }
 }
 
+.contact-section-bg {
+	background-image: url('/svgs/contactPageWave.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	// @media screen and (max-width: 600px) {
+	// 	background-size: contain;
+	// }
+}
+
 .ai-dialer-preview-gradient {
 	background: conic-gradient(from -66.64deg at 50% 50%, #4361EE -22.99deg, #B5179E 91.94deg, #9943D3 200.2deg, #7B61FF 271.36deg, #5E61F6 305.09deg, #4361EE 337.01deg, #B5179E 451.94deg);
 	height: 528px;
 	max-width: 1200px;
 	width: 100%;
+}
+
+.contact-cover-bg {
+	background: conic-gradient(from 180deg at 50% 50%, #5E61F6 0deg, #1DA1F2 0.04deg, #3B15AB 33.07deg, #9943D3 297.44deg, #5E61F6 360deg);
+
+	// @media screen and (max-width: 600px) {
+	// 	background-size: contain;
+	// }
 }

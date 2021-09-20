@@ -21,7 +21,7 @@ const Products: React.FC<Props> = () => {
           <h1 className="text-h3 font-semibold text-white mx-auto" style={{ paddingTop: '180px', marginBottom: '180px' }}>Products</h1>
           <Dhwani />
           <div className='flex items-center mt-40 justify-center mb-70'>
-            <Button />
+            <Button title='View More' />
           </div>
           <div className='ai-dialer-preview-gradient flex items-center flex-col justify-center rounded-default mb-15'>
             <h4 className='text-gray-f2f font-semibold text-h4'>AI Dialer</h4>

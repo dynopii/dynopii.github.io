@@ -93,6 +93,9 @@ module.exports = {
 				h2: ['3.75rem', ''], // 60px
 				h1: ['6rem', { letterSpacing: '-1.5px' }], // 96px
 			},
+			boxShadow: {
+				'btn-hover': '0px 4px 20px 0px #7B61FF',
+			},
 		},
 		letterSpacing: {
 			tightest: '-.075em',

@@ -3,6 +3,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/layout/Footer';
 import Head from 'next/head';
 import { BlogCard } from '../components/screens/blogs/BlogCard';
+import { Button } from '../components/layout/Button';
 interface Props {
 
 }
@@ -22,9 +23,7 @@ const Blogs: React.FC<Props> = () => {
               <BlogCard key={i} />
             ))}
           </div>
-          <div className='flex items-center mt-40 justify-center mb-70'>
-            <button className='uppercase text-gray-f2f font-medium px-60 py-20 bg-brand rounded-default text-button'>Read more</button>
-          </div>
+          <Button />
         </div>
       </section>
       <Footer />

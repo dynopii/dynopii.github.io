@@ -81,9 +81,4 @@ const links = [
 		label: 'Media',
 		href: 'media'
 	},
-	{
-		id: '5',
-		label: 'hiring',
-		href: "We're Hiring"
-	},
 ];

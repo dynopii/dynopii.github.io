@@ -23,7 +23,9 @@ const Blogs: React.FC<Props> = () => {
               <BlogCard key={i} />
             ))}
           </div>
-          <Button />
+          <div className='flex items-center mt-40 justify-center mb-70'>
+            <Button />
+          </div>
         </div>
       </section>
       <Footer />

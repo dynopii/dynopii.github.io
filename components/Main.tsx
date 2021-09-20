@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Image from 'next/image';
-import logo from '../images/release-logo.png';
+import DhwaniSVG from '../public/svgs/dhwanilogo.svg';
 
 export const Main = () => {
 	return (
@@ -42,16 +42,16 @@ export const Main = () => {
                       sm:flex-col sm:py-3 sm:px-4
                     "
 								>
-									<Image src={logo} alt="logo" width={24} height={24} />
+									<Image src={DhwaniSVG} alt="logo" width={40} height={40} />
 									<div className="flex ml-6 sm:m-0 flex-grow">
 										<span color="labelTitle" className="banner_title sm:mt-3 sm:ml-0">
-											Linear Release 2021.06
+											Latest Product Release &mdash; Dhwani
 										</span>
 									</div>
 									<span color="labelFaint" className="ml-6 title_separator sm:hidden">
 										|
 									</span>
-									<span className="ml-6 sm:ml-0 sm:mt-3">See what’s new →</span>
+									<span className="ml-6 sm:ml-0 sm:mt-3">Read more →</span>
 								</div>
 							</a>
 						</div>

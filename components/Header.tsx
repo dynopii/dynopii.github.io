@@ -31,14 +31,14 @@ export const Header = () => {
 					))}
 				</div>
 				<div className="mobile spacer hidden md:flex md:flex-grow"></div>
-				<div className="signin_row flex items-center">
+				{/* <div className="signin_row flex items-center">
 					<a href="/siginin" className="signin text-primary mr-4">
 						Log in
 					</a>
 					<button type="submit" className="signin_btn">
 						Sign up
 					</button>
-				</div>
+				</div> */}
 				<button onClick={toggleMenu} className="mobile menuToggle hidden md:flex cursor-pointer">
 					<MenuToggle />
 				</button>

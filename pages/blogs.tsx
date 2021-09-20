@@ -24,7 +24,7 @@ const Blogs: React.FC<Props> = () => {
             ))}
           </div>
           <div className='flex items-center mt-40 justify-center mb-70'>
-            <Button />
+            <Button title='Read more' />
           </div>
         </div>
       </section>

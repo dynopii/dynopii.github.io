@@ -62,9 +62,8 @@ export const Main = () => {
 						</h1>
 					</span>
 					<span className="animate">
-						<p className="hero_sub_text sm:text-2xl">
-							Linear helps streamline software projects, sprints, tasks, and bug tracking. It's built for
-							high-performance teams.
+						<p className="text-body-lg text-gray-e0e font-light mt-10 mb-10">
+							Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.
 						</p>
 					</span>
 					<div className="spacer"></div>

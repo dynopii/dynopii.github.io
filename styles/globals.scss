@@ -131,3 +131,10 @@ body {
 	// 	background-size: contain;
 	// }	
 }
+
+.newsletter-bg {
+	background-image: url('/svgs/newsletterBg.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+}

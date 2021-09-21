@@ -2,7 +2,8 @@ import React from 'react';
 import { features } from '../../../shared/staticData';
 import { DhwaniLogo } from '../../SVGs';
 import { FeatureCard } from './FeatureCard';
-
+import Image from 'next/image'
+import DhwaniSVG from '../../../public/svgs/dhwanilogo.svg';
 interface Props {
 
 }
@@ -11,7 +12,7 @@ export const Dhwani: React.FC<Props> = () => {
   return (
     <div className='bg-gray-333 rounded-default'>
       <div className='dhwani-cover-bg h-96 p-30 flex items-center justify-center'>
-        <DhwaniLogo />
+      <Image src={DhwaniSVG} alt="logo" width={115} height={115} />
         <h4 className='text-h4 text-gray-f2f font-normal ml-15'>Dhwani</h4>
       </div>
       <div className='p-30'>

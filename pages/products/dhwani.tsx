@@ -13,6 +13,7 @@ import { TiSocialSkype } from 'react-icons/ti';
 import { FaSlack } from 'react-icons/fa';
 import { FaDiscord } from 'react-icons/fa';
 import { ZoomSVG } from '../../components/SVGs';
+import { Pricing } from '../../components/screens/products-dhwani/Pricing';
 interface Props {
 
 }
@@ -82,6 +83,7 @@ const Dhwani: React.FC<Props> = () => {
           </div>
 
           {/* Pricing */}
+          <Pricing />
         </div>
 
       </section>

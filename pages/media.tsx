@@ -22,7 +22,7 @@ const Media: React.FC<Props> = () => {
           <h3 className="text-white font-semibold text-h3 mb-30">Media Appearance</h3>
           <h6 className='text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12'>Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation.</h6>
           <h6 className='text-h6 font-normal text-gray-f2f mb-60 w-7/12 lg:w-9-12'>Our vision is to make it simple for consumers to do business with you by redefining.</h6>
-          <Link href='/'>
+          <Link href='#all-appreances'>
             <a>
               <div className='flex items-center'>
                 <p className='text-body-lg text-brand font-medium mr-10'>Check out all our appearances</p>
@@ -33,7 +33,7 @@ const Media: React.FC<Props> = () => {
         </div>
 
         {/* Large Blog Section */}
-        <div className='mx-auto p-30 mb-50' style={{ maxWidth: '1200px', paddingTop: '200px' }}>
+        <div className='mx-auto p-30 mb-10' style={{ maxWidth: '1200px', paddingTop: '200px' }}>
           <h3 className='font-light text-gray-e0e text-h3 mb-50'>Featured</h3>
           <div className='p-20 lg:p-30 bg-gray-333 flex items-center rounded-default lg:flex-col'>
             <div className='overflow-hidden w-7/12 lg:w-auto'>
@@ -48,7 +48,7 @@ const Media: React.FC<Props> = () => {
         </div>
 
         {/* Small Blogs Section */}
-        <div className='mx-auto p-30 mb-70' style={{ maxWidth: '1200px' }}>
+        <div id='all-appreances' className='mx-auto p-30 pt-60 mb-70' style={{ maxWidth: '1200px' }}>
           <h3 className='font-light text-gray-e0e text-h3 mb-50'>All Appearances</h3>
           <div className='grid-small-blogs-container'>
             {smallBlogs.map(({ date, id, image, title, href }) => (

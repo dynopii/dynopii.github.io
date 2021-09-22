@@ -1,11 +1,13 @@
 import React from 'react';
-
+import Link from 'next/link'
 interface Props {
 
 }
 
 export const BlogCard: React.FC<Props> = () => {
   return (
+    <Link href='/blogs'>
+    <a>
     <div className='md:mt-20' style={{ maxWidth: '350px' }}>
       <div className='overflow-hidden rounded-default'>
         <img src='/images/blog-demo.png' width={350} height={175} alt='Blog' />
@@ -18,5 +20,7 @@ export const BlogCard: React.FC<Props> = () => {
         <p className='text-body-lg font-normal text-gray-e0e ml-10'>343 Comments</p>
       </div>
     </div>
+    </a>
+    </Link>
   );
 };

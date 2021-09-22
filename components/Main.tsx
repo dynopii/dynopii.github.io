@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import DhwaniSVG from '../public/svgs/dhwanilogo.svg';
 import { Button } from './layout/Button';
+import Link from 'next/link'
 
 export const Main = () => {
 	return (
@@ -32,7 +33,8 @@ export const Main = () => {
 				>
 					<div className="splash_banner_animate">
 						<div className="splash_banner mb-12">
-							<a href="/releases/2021-06" className="banner_container">
+							<Link href='/products/dhwani'>
+							<a className="banner_container">
 								<div className="gradient_background"></div>
 								<div
 									className="
@@ -55,6 +57,7 @@ export const Main = () => {
 									<span className="ml-6 sm:ml-0 sm:mt-3 text-brand font-medium">Read more →</span>
 								</div>
 							</a>
+							</Link>
 						</div>
 					</div>
 					<span className="animate">
@@ -73,8 +76,8 @@ export const Main = () => {
 						{/* <button type="submit" className="signup_btn">
 							Sign up for free →
 						</button> */}
-						<Button title='Schedule demo' />
-						<div className='ml-20'><Button title='Contact Sales' uiType='outlined' /></div>
+						<a href='mailto:hello@dynopii.com'><Button title='Schedule demo' /></a>
+						<a href='mailto:hello@dynopii.com'><div className='ml-20'><Button title='Contact Sales' uiType='outlined' /></div></a>
 					</div>
 					<div className="spacer"></div>
 					<div className="image_container animate">

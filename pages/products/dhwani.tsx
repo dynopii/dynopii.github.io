@@ -14,6 +14,8 @@ import { FaSlack } from 'react-icons/fa';
 import { FaDiscord } from 'react-icons/fa';
 import { ZoomSVG } from '../../components/SVGs';
 import { Pricing } from '../../components/screens/products-dhwani/Pricing';
+import ReactPlayer from 'react-player'
+
 interface Props {
 
 }
@@ -50,14 +52,16 @@ const Dhwani: React.FC<Props> = () => {
 
         {/* Demo Section */}
         <div className='min-h-screen flex items-center justify-center relative' style={{ background: `linear-gradient(180deg, #222222 0%, #000000 29.5%, #000000 75.33%, #222222 100%)` }}>
-          <div className='w-5/12'>
+          {/* <div className='w-5/12'>
             <img src='/images/dhwani-demo.png' className='w-full h-full object-cover' alt='Dhwani Demo' />
           </div>
           <div className='absolute inset-0 flex items-center justify-center'>
             <a href='https://www.youtube.com/watch?v=P-chJcva8ME' target='_blank' rel='noreferrer'>
               <PlayButton />
             </a>
-          </div>
+          </div> */}
+          <ReactPlayer controls light='/images/dhwani-demo.png' url='/videos/dhwani-demo.mp4' playIcon={<PlayButton />} />
+
         </div>
 
         <div className='mx-auto md:px-30' style={{ maxWidth: '1200px' }}>

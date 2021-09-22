@@ -19,7 +19,7 @@ export const Pricing: React.FC<Props> = () => {
                 ))}
             </div>
             <div className='flex items-center justify-center mt-40 mb-70'>
-                <Button title={'contact sales'} />
+            <a href='mailto:hello@dynopii.com'><Button title={'contact sales'} /></a>
             </div>
         </div>
     )

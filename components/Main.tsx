@@ -64,7 +64,7 @@ export const Main = () => {
 						</h1>
 					</span>
 					<span className="animate">
-						<p className="text-h5 text-gray-e0e font-light mt-10 mb-10">
+						<p className="text-h6 text-gray-e0e font-light mt-10 mb-10">
 							Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.
 						</p>
 					</span>
@@ -79,7 +79,7 @@ export const Main = () => {
 					<div className="spacer"></div>
 					<div className="image_container animate">
 						<div className="glow"></div>
-						
+
 						<img src={'/screenshot.jpeg'} className="app_screenshot_one" alt="app-screenshot" />
 					</div>
 				</div>

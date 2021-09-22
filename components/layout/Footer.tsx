@@ -13,7 +13,7 @@ export const Footer: React.FC<Props> = () => {
 
         <div className='flex items-center md:flex-col md:items-start justify-between mb-50 md:mb-20'>
           <h6 className='font-normal text-h6 text-gray-f2f'>Copyright © 2021 Dynopii, Inc.All rights reserved.</h6>
-          <h6 className='font-normal text-h6 text-gray-f2f md:mt-1'>hello@dynopii.com</h6>
+          <a href='mailto:hello@dynopii.com'><h6 className='font-normal text-h6 text-gray-f2f md:mt-1'>hello@dynopii.com</h6></a>
         </div>
 
         <div className='flex items-center justify-between md:flex-col md:items-start'>
@@ -24,9 +24,9 @@ export const Footer: React.FC<Props> = () => {
             <Link href='/contact'><a><p className='text-gray-bdb text-body-lg'>Contact Us</p></a></Link>
           </div>
           <div className='flex items-center md:mt-20'>
-            <FaLinkedinIn className='mr-40' size={22} color='#ffffff' />
-            <AiOutlineInstagram className='mr-40' size={25} color='#ffffff' />
-            <AiOutlineTwitter size={25} color='#ffffff' />
+            <a className='mr-40' href='https://in.linkedin.com/company/dynopii' target='_blank' rel="noreferrer"><FaLinkedinIn size={22} color='#ffffff' /></a>
+            <a className='mr-40' href='https://www.instagram.com/dynopii' target='_blank' rel="noreferrer"><AiOutlineInstagram size={25} color='#ffffff' /></a>
+            <a href='https://twitter.com/dynopii' target='_blank' rel="noreferrer"><AiOutlineTwitter size={25} color='#ffffff' /></a>
           </div>
         </div>
       </div>

@@ -8,8 +8,8 @@ interface Props {
 
 export const PartnerCard: React.FC<Props> = ({ name, designation, photo }) => {
   return (
-    <div>
-      <div className='overflow-hidden rounded-default w-32 h-32'>
+    <div className='w-42 mr-40'>
+      <div className='overflow-hidden rounded-default w-40 h-40'>
         <img src={photo} className='object-cover w-full h-full' alt='Team' />
       </div>
       <h5 className="text-gray-f2f text-h5 font-semibold mt-25">

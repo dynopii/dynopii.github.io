@@ -12,16 +12,20 @@ export const OurTeam: React.FC<Props> = () => {
         <h3 className='text-h3 font-semibold text-gray-e0e mb-40 text-center'>Our Team</h3>
         <h6 className='text-h6 font-light text-gray-e0e text-center w-7/12 mx-auto'>Our team has led and delivered large-scale software and design projects in multiple startups and high-growth environments like Intel, and nice startups.</h6>
 
-        <div className='flex items-center justify-center flex-wrap mb-70'>
-          {/* <div className="grid-teams-container" mb-70'> */}
+        <div className='flex items-center justify-center flex-wrap mb-20 max-w-2xl mx-auto'>
+          {/* <div className="grid-teams-container mb-70"> */}
           {Array.from(Array(5).keys()).map((loader, i) => (
             <TeamCard key={i} />
           ))}
         </div>
 
-
+        {/* <div className='flex items-center justify-between flex-wrap mb-70 max-w-md mx-auto'>
+        {Array.from(Array(2).keys()).map((loader, i) => (
+          <TeamCard key={i} />
+        ))}
+      </div> */}
 
       </div>
-    </section>
+    </section >
   );
 };

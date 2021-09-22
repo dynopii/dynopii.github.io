@@ -8,9 +8,9 @@ interface Props {
 export const StrategicPartners: React.FC<Props> = () => {
   return (
     <section>
-      <div className='mx-auto' style={{ maxWidth: '1200px' }}>
+      <div className='mx-auto max-w-4xl'>
         <h3 className='text-h3 font-semibold text-gray-e0e mb-40 text-center pt-70 mb-70'>Strategic Partners</h3>
-        <div className='flex items-center justify-between md:flex-col mb-70'>
+        <div className='flex items-center justify-center md:flex-col mb-70'>
           {partners.map((partner) => (
             <PartnerCard key={partner.id} {...partner} />
           ))}

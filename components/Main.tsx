@@ -52,7 +52,7 @@ export const Main = () => {
 									<span color="labelFaint" className="ml-6 title_separator sm:hidden">
 										|
 									</span>
-									<span className="ml-6 sm:ml-0 sm:mt-3">Read more →</span>
+									<span className="ml-6 sm:ml-0 sm:mt-3 text-brand font-medium">Read more →</span>
 								</div>
 							</a>
 						</div>

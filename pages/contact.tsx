@@ -24,19 +24,17 @@ const Contact: React.FC<Props> = () => {
       <Header />
       <section className='contact-section-bg min-h-screen'>
         <div className='mx-auto md:px-30' style={{ maxWidth: '1200px' }}>
-          <h1 className="text-h3 font-semibold text-white mx-auto" style={{ paddingTop: '180px', marginBottom: '180px' }}>Contact Us</h1>
+          <h1 className="text-h3 font-semibold text-white mx-auto" style={{ paddingTop: '140px', marginBottom: '180px' }}>Contact Us</h1>
 
           <div className='mb-40 flex w-full overflow-hidden rounded-default bg-gray-333 md:flex-col'>
             <div className='contact-cover-bg w-4/12 md:w-full rounded-default py-40 px-30 flex flex-col'>
               <h5 className='text-white font-semibold text-h5 mb-25'>Contact<br /> Information</h5>
               <p className='text-gray-f2f font-normal text-subtitle mb-30'>Fill up the form and our Team will get back to you within 24 hours.</p>
-
               {
                 contactLinks.map((contactLink) => (
                   <ContactItem key={contactLink.id} {...contactLink} />
                 ))
               }
-
               <div className='flex items-center mt-auto'>
                 <a className='mr-40' href='https://in.linkedin.com/company/dynopii' target='_blank' rel="noreferrer"><FaLinkedinIn size={22} color='#ffffff' /></a>
                 <a className='mr-40' href='https://www.instagram.com/dynopii' target='_blank' rel="noreferrer"><AiOutlineInstagram size={25} color='#ffffff' /></a>

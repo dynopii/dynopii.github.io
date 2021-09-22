@@ -11,11 +11,11 @@ interface Props {
 
 // Validation Schema for Contact form
 const ValidationSchema = Yup.object().shape({
-  firstName: Yup.string().required('Please enter first name.'),
-  lastName: Yup.string().required('Please enter last name.'),
-  email: Yup.string().required('Please enter email.'),
-  phoneNumber: Yup.string().required('Please enter phone number.'),
-  message: Yup.string().required('Please enter message.'),
+  firstName: Yup.string().required('First name is required.'),
+  lastName: Yup.string().required('Last name is required.'),
+  email: Yup.string().required('Email is required.').email('Please enter a valid email'),
+  phoneNumber: Yup.string().required('Phone number is required.').min(10, 'Phone number must be of minimum 10 digits.'),
+  message: Yup.string().required('Message is required.'),
 });
 
 
@@ -29,9 +29,7 @@ export const ContactForm: React.FC<Props> = () => {
         phoneNumber: '',
         message: ''
       }}
-      validateOnChange={false}
       validateOnBlur={false}
-      validateOnMount={false}
       validationSchema={ValidationSchema}
       onSubmit={(values, { setSubmitting, resetForm }) => {
         setSubmitting(false);
@@ -48,10 +46,10 @@ export const ContactForm: React.FC<Props> = () => {
             <InputField error={errors.lastName} containerClasses={`md:mt-20`} label={'Last Name'} id='lastName' value={values.lastName} onChange={handleChange} />
           </div>
           <div className='flex justify-between md:flex-col items-center w-full mt-40 md:mt-20'>
-            <InputField error={errors.email} containerClasses={`mr-40 md:mr-0`} label={'Email'} id='email' value={values.email} onChange={handleChange} />
-            <InputField error={errors.phoneNumber} containerClasses={`md:mt-20`} label={'Phone Number'} id='phoneNumber' value={values.phoneNumber} onChange={handleChange} />
+            <InputField error={errors.email} inputType='email' containerClasses={`mr-40 md:mr-0`} label={'Email'} id='email' value={values.email} onChange={handleChange} />
+            <InputField error={errors.phoneNumber} inputType='number' containerClasses={`md:mt-20`} label={'Phone Number'} id='phoneNumber' value={values.phoneNumber} onChange={handleChange} />
           </div>
-          <InputField error={errors.message} containerClasses={'mt-40 md:mt-20'} label={'Message'} id='message' value={values.message} onChange={handleChange} />
+          <InputField textArea error={errors.message} containerClasses={'mt-40 md:mt-20'} label={'Message'} id='message' value={values.message} onChange={handleChange} />
           <div className='mt-40 flex justify-end'>
             <Button disabled={isSubmitting} title='submit' type='submit' />
           </div>

@@ -40,9 +40,9 @@ export const Newsletter: React.FC<Props> = () => {
       >
         {({ values, errors, handleChange, handleBlur, handleSubmit, setFieldValue, isSubmitting }) => (
           <form onSubmit={handleSubmit}>
-            <div className='mt-40 flex items-center bg-white p-2 rounded-default'>
-              <input id='email' placeholder='Enter your email address' value={values.email} onChange={handleChange} className='py-10 w-80 mr-2 px-10 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent rounded-default' />
-              <button className='bg-brand px-50 py-10 rounded-default text-white'>Subscribe</button>
+            <div className='mt-40 sm:flex-col sm:items-stretch flex items-center bg-white p-2 rounded-default'>
+              <input id='email' placeholder='Enter your email address' value={values.email} onChange={handleChange} className='py-10 w-80 mr-2 sm:mr-0 px-10 focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent rounded-default' />
+              <button className='sm:mt-10 bg-brand px-50 py-10 rounded-default text-white'>Subscribe</button>
             </div>
           </form>
         )}

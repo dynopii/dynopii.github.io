@@ -28,7 +28,7 @@ const Dhwani: React.FC<Props> = () => {
       </Head>
       <Header />
       <section className='dhwani-page-bg min-h-screen'>
-        <div className='mx-auto md:px-30' style={{ maxWidth: '1200px' }}>
+        <div className='mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
           <h1 className="text-h3 font-semibold text-white mx-auto" style={{ paddingTop: '180px', marginBottom: '180px' }}>Dhwani</h1>
 
           {/* Dhwani Introduction Section */}
@@ -73,7 +73,7 @@ const Dhwani: React.FC<Props> = () => {
               <SiMicrosoftteams fill={'#ffffff'} size={80} />
               <TiSocialSkype fill={'#ffffff'} size={80} />
             </div>
-            <div className='flex items-center justify-between flex-wrap max-w-3xl mx-auto mt-30'>
+            <div className='flex items-center justify-between flex-wrap max-w-xl mx-auto mt-50'>
               <ZoomSVG />
               <FaSlack fill={'#ffffff'} size={80} />
               <FaDiscord fill={'#ffffff'} size={80} />
@@ -81,7 +81,7 @@ const Dhwani: React.FC<Props> = () => {
           </div>
 
           {/* Focus on Your Sales Section */}
-          <div className='min-h-screen flex items-center justify-center flex-col'>
+          <div className='min-h-screen flex items-center justify-center flex-col xl:px-30'>
             <h1 className='text-h1 font-semibold text-gray-f2f mb-70'>Focus on your sales, not accent!</h1>
             <h3 className='text-h3 font-normal text-gray-e0e'>Let our trained models ease your work. Introducing AI based solutions. See the impossible become reality.</h3>
           </div>

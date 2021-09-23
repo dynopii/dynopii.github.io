@@ -18,7 +18,7 @@ const Media: React.FC<Props> = () => {
       </Head>
       <Header />
       <section className='media-section-bg min-h-screen'>
-        <div className='mx-auto md:px-30' style={{ maxWidth: '1200px', paddingTop: '140px' }}>
+        <div className='mx-auto xl:px-30' style={{ maxWidth: '1200px', paddingTop: '140px' }}>
           <h3 className="text-white font-semibold text-h3 mb-30">Media Appearance</h3>
           <h6 className='text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12'>Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation.</h6>
           <h6 className='text-h6 font-normal text-gray-f2f mb-60 w-7/12 lg:w-9-12'>Our vision is to make it simple for consumers to do business with you by redefining.</h6>

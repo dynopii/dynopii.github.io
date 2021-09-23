@@ -9,7 +9,7 @@ interface Props {
 
 export const Pricing: React.FC<Props> = () => {
     return (
-        <div>
+        <div className='xl:px-30'>
             <h3 className="text-h3 md:text-h5 font-semibold text-gray-e0e text-center mt-40 mb-60">
                 Pricing
             </h3>

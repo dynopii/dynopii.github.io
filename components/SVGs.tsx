@@ -4,6 +4,7 @@ interface Props {
   height?: number;
   width?: number;
   fill?: string;
+  className?: string;
 }
 
 export const DynopiiLogo: React.FC<Props> = ({ height, width, fill }) => {
@@ -108,9 +109,9 @@ export const PlayButton: React.FC<Props> = ({ fill, height, width }) => {
     </svg>
   );
 };
-export const ZoomSVG: React.FC<Props> = ({ fill, height, width }) => {
+export const ZoomSVG: React.FC<Props> = ({ fill, height, width, className }) => {
   return (
-    <svg width={width || 80} height={height || 80} viewBox="0 0 80 80" fill={fill || 'none'} xmlns="http://www.w3.org/2000/svg">
+    <svg className={className||''} width={width || 80} height={height || 80} viewBox="0 0 80 80" fill={fill || 'none'} xmlns="http://www.w3.org/2000/svg">
       <path d="M40 3C60.4348 3 77 19.5652 77 40C77 60.4348 60.4348 77 40 77C19.5652 77 3 60.4348 3 40C3 19.5652 19.5652 3 40 3Z" stroke="white" strokeWidth="6" />
       <path d="M16.4639 28.6976V45.6507C16.4789 49.4843 19.6101 52.5698 23.4287 52.5541H48.1405C48.843 52.5541 49.4082 51.9889 49.4082 51.3015V34.3485C49.3931 30.5148 46.2619 27.4294 42.4439 27.445H17.7321C17.0297 27.445 16.4645 28.0102 16.4645 28.6976H16.4639ZM50.981 35.3109L61.1835 27.8579C62.0695 27.1248 62.7563 27.3078 62.7563 28.6368V51.3629C62.7563 52.875 61.9161 52.692 61.1835 52.1418L50.981 44.7039V35.3109Z" fill="white" />
     </svg>

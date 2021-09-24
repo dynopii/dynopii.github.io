@@ -10,8 +10,8 @@ interface Props {
 
 export const Pricing: React.FC<Props> = () => {
     return (
-        <div className=''>
-            <h3 className="text-h3 md:text-h5 font-semibold text-gray-e0e text-center mt-40 mb-60">
+        <div className='mt-50'>
+            <h3 className="text-h3 sm:text-h4 font-semibold text-gray-e0e text-center mt-40 mb-60">
                 Pricing
             </h3>
             <div className='flex justify-center items-center lg:flex-col'> 

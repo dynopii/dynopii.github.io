@@ -24,7 +24,7 @@ const Contact: React.FC<Props> = () => {
       <Header />
       <section className='contact-section-bg min-h-screen'>
         <div className='mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
-          <h1 className="text-h3 font-semibold text-white mx-auto" style={{ paddingTop: '140px', marginBottom: '180px' }}>Contact Us</h1>
+          <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:mb-0 lg:py-90 md:py-80">Contact Us</h1>
 
           <div className='mb-40 flex w-full overflow-hidden rounded-default bg-gray-333 md:flex-col'>
             <div className='contact-cover-bg w-4/12 md:w-full rounded-default py-40 px-30 flex flex-col'>

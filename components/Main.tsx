@@ -10,26 +10,10 @@ export const Main = () => {
 	return (
 		<div className="layout_content flex flex-col flex-auto">
 			<div
-				className="
-            splash
-            pt-40
-            sm:pt-24
-            flex
-            justify-center
-            w-full
-            relative
-            overflow-hidden
-          "
+				className="splash pt-40 sm:pt-20 flex justify-center w-full relative overflow-hidden"
 			>
 				<div
-					className="
-              splash_content_container
-              content_container
-              text-center
-              flex flex-col
-              justify-center
-              items-center
-            "
+					className="splash_content_container content_container text-center flex flex-col justify-center items-center"
 				>
 					<div className="splash_banner_animate">
 						<div className="splash_banner mb-12">
@@ -37,24 +21,18 @@ export const Main = () => {
 							<a className="banner_container">
 								<div className="gradient_background"></div>
 								<div
-									className="
-                      banner_container_content
-                      flex flex-row
-                      items-center
-                      justify-center
-                      sm:flex-col sm:py-3 sm:px-4
-                    "
+									className="banner_container_content bg-gray-222 rounded-default px-10 py-10 z-1 border-4 border-transparent flex flex-row items-center justify-center sm:flex-col sm:py-3 sm:px-4"
 								>
 									<Image src={DhwaniSVG} alt="logo" width={40} height={40} />
 									<div className="flex ml-6 sm:m-0 flex-grow">
-										<span color="labelTitle" className="banner_title sm:mt-3 sm:ml-0">
+										<span className="text-white text-body-lg sm:mt-3 sm:ml-0">
 											Latest Product Release &mdash; Dhwani
 										</span>
 									</div>
-									<span color="labelFaint" className="ml-6 title_separator sm:hidden">
+									<span className="ml-6 title_separator sm:hidden">
 										|
 									</span>
-									<span className="ml-6 sm:ml-0 sm:mt-3 text-brand font-medium">Read more →</span>
+									<span className="ml-6 sm:ml-0 sm:mt-3 text-body-lg text-brand font-medium">Read more →</span>
 								</div>
 							</a>
 							</Link>
@@ -68,23 +46,19 @@ export const Main = () => {
 					</span>
 					<span className="animate">
 						<p className="text-h6 text-gray-e0e font-light mt-10 mb-10">
-							Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.
+							Create effortless &amp; personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.
 						</p>
 					</span>
 					<div className="spacer"></div>
-					<div className="animate flex items-center justify-center">
+					<div className="animate flex items-center justify-center md:flex-col">
 						{/* <button type="submit" className="signup_btn">
 							Sign up for free →
 						</button> */}
 						<a href='mailto:hello@dynopii.com'><Button title='Schedule demo' /></a>
-						<a href='mailto:hello@dynopii.com'><div className='ml-20'><Button title='Contact Sales' uiType='outlined' /></div></a>
+						<a href='mailto:hello@dynopii.com'><div className='ml-20 md:ml-0 md:mt-20'><Button title='Contact Sales' uiType='outlined' /></div></a>
 					</div>
 					<div className="spacer"></div>
-					<div className="image_container animate">
-						<div className="glow"></div>
-
-						<img src={'/screenshot.jpeg'} className="app_screenshot_one" alt="app-screenshot" />
-					</div>
+					
 				</div>
 			</div>
 		</div>

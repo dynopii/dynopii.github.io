@@ -18,7 +18,7 @@ const Products: React.FC<Props> = () => {
       <Header />
       <section className='products-section-bg min-h-screen'>
         <div className='mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
-          <h1 className="text-h3 font-semibold text-white mx-auto" style={{ paddingTop: '140px', marginBottom: '180px' }}>Products</h1>
+          <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">Products</h1>
           <Dhwani />
           <div className='flex items-center mt-40 justify-center mb-70'>
             <Link href='/products/dhwani'><a><Button title='View More' /></a></Link>

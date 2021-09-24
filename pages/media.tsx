@@ -20,8 +20,8 @@ const Media: React.FC<Props> = () => {
       <section className='media-section-bg min-h-screen'>
         <div className='mx-auto xl:px-30 pt-140' style={{ maxWidth: '1200px' }}>
           <h3 className="text-white font-semibold text-h3 mb-30">Media Appearance</h3>
-          <h6 className='text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12'>Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation.</h6>
-          <h6 className='text-h6 font-normal text-gray-f2f mb-60 w-7/12 lg:w-9-12'>Our vision is to make it simple for consumers to do business with you by redefining.</h6>
+          <h6 className='text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12 sm:w-10/12'>Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation.</h6>
+          <h6 className='text-h6 font-normal text-gray-f2f mb-60 w-7/12 lg:w-9-12 sm:w-10/12'>Our vision is to make it simple for consumers to do business with you by redefining.</h6>
           <Link href='#all-appreances'>
             <a>
               <div className='flex items-center'>
@@ -33,6 +33,7 @@ const Media: React.FC<Props> = () => {
         </div>
 
         {/* Large Blog Section */}
+        <a href='https://www.digitimes.com.tw/iot/article.asp?cat=158&cat1=20&cat2=40&id=0000612267_7MC3DU6L53H2KA8KYXFW0&cf=AF1' target='_blank' rel="noreferrer">
         <div className='mx-auto p-30 mb-10' style={{ maxWidth: '1200px', paddingTop: '200px' }}>
           <h3 className='font-light text-gray-e0e text-h3 mb-50'>Featured</h3>
           <div className='p-20 lg:p-30 bg-gray-333 flex items-center rounded-default lg:flex-col'>
@@ -46,6 +47,7 @@ const Media: React.FC<Props> = () => {
             </div>
           </div>
         </div>
+        </a>
 
         {/* Small Blogs Section */}
         <div id='all-appreances' className='mx-auto p-30 pt-60 mb-70' style={{ maxWidth: '1200px' }}>
@@ -54,7 +56,7 @@ const Media: React.FC<Props> = () => {
             {smallBlogs.map(({ date, id, image, title, href }) => (
               <a className='h-full' key={id} href={href} target='_blank' rel='noreferrer'>
                 <div className='p-20 lg:p-30 bg-gray-333 rounded-default h-full'>
-                  <div className='overflow-hidden rounded-default w-80 h-40'>
+                  <div className='overflow-hidden rounded-default w-full h-40 md:h-auto'> {/*w-80 h-40*/}
                     <img className='w-full h-full object-cover' src={image} alt={`Blog - ${title}`} />
                   </div>
                   <h6 className="text-h6 font-normal text-white mt-30 mb-10">{title}</h6>
@@ -100,7 +102,7 @@ const smallBlogs = [
   },
   {
     id: '4',
-    title: 'WorldAKKAM',
+    title: 'Indian AI startup Dynopii debuts voice accent changer with Computex 2021',
     // image: '/images/media-small-4.png',
     image: 'https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg',
     date: 'Jun 18, 2020',

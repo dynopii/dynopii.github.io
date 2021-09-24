@@ -50,7 +50,7 @@ export const ContactForm: React.FC<Props> = () => {
             <InputField error={errors.phoneNumber} inputType='number' containerClasses={`md:mt-20`} label={'Phone Number'} id='phoneNumber' value={values.phoneNumber} onChange={handleChange} />
           </div>
           <InputField textArea error={errors.message} containerClasses={'mt-40 md:mt-20'} label={'Message'} id='message' value={values.message} onChange={handleChange} />
-          <div className='mt-40 flex justify-end'>
+          <div className='mt-40 sm:mt-20 flex justify-end'>
             <Button disabled={isSubmitting} title='submit' type='submit' />
           </div>
         </form>

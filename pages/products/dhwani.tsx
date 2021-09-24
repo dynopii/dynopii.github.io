@@ -29,7 +29,7 @@ const Dhwani: React.FC<Props> = () => {
       <Header />
       <section className='dhwani-page-bg min-h-screen'>
         <div className='mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
-          <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:py-90 md:py-80">Dhwani</h1>
+          <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">Dhwani</h1>
 
           {/* Dhwani Introduction Section */}
           <div className='flex items-center justify-center flex-col py-40'>
@@ -52,7 +52,7 @@ const Dhwani: React.FC<Props> = () => {
 
         {/* Demo Section */}
         <div className='min-h-screen flex items-center justify-center relative xl:px-30' style={{ background: `linear-gradient(180deg, #222222 0%, #000000 29.5%, #000000 75.33%, #222222 100%)` }}>
-          {/* <div className='w-5/12'>
+            {/* <div className='w-5/12'>
             <img src='/images/dhwani-demo.png' className='w-full h-full object-cover' alt='Dhwani Demo' />
           </div>
           <div className='absolute inset-0 flex items-center justify-center'>
@@ -60,7 +60,18 @@ const Dhwani: React.FC<Props> = () => {
               <PlayButton />
             </a>
           </div> */}
-          <ReactPlayer controls light='/images/dhwani-demo.png' url='/videos/dhwani-demo.mp4' playIcon={<PlayButton />} />
+          {/* <div className='player-wrapper'>
+        <ReactPlayer
+          className='react-player'
+          url='/videos/dhwani-demo.mp4'
+          width='100%'
+          height='100%'
+          playIcon={<PlayButton />}
+          controls
+          light='/images/dhwani-demo.png'
+        />
+      </div> */}
+          <ReactPlayer width='110vh' height='70vh' className='video-player' controls light='/images/dhwani-demo.png' url='/videos/dhwani-demo.mp4' playIcon={<PlayButton />} />
 
         </div>
 

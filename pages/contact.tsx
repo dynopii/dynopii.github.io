@@ -41,7 +41,7 @@ const Contact: React.FC<Props> = () => {
                 <a href='https://twitter.com/dynopii' target='_blank' rel="noreferrer"><AiOutlineTwitter size={25} color='#ffffff' /></a>
               </div>
             </div>
-            <div className='rounded-default p-40 flex-1'>
+            <div className='rounded-default p-40 sm:p-20 flex-1'>
               <ContactForm />
             </div>
           </div>

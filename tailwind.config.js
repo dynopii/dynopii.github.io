@@ -46,6 +46,8 @@ module.exports = {
 
 			sm: { max: '639px' },
 			// => @media (max-width: 639px) { ... }
+			xs: { max: '400px' },
+			// => @media (max-width: 400px) { ... }
 		},
 		extend: {
 			margin: {
@@ -63,6 +65,8 @@ module.exports = {
 				70: '70px',
 				80: '80px',
 				90: '90px',
+				140:'140px',
+				180: '180px'
 			},
 			padding: {
 				5: '5px',
@@ -79,6 +83,8 @@ module.exports = {
 				70: '70px',
 				80: '80px',
 				90: '90px',
+				140:'140px',
+				180: '180px'
 			},
 			fontSize: {
 				// [font-size, line-height]
@@ -96,6 +102,20 @@ module.exports = {
 			boxShadow: {
 				'btn-hover': '0px 4px 20px 0px #7B61FF',
 			},
+			zIndex: {
+			   '0': 0,
+			   '1': 1,
+			   '2': 2,
+			   '3': 3,
+			   '4': 4,
+			   '5': 5,
+			   '6': 6,
+			   '7': 7,
+			   '8': 8,
+			   '9': 9,
+			   '10': 10,
+			   'auto': 'auto',
+			}
 		},
 		letterSpacing: {
 			tightest: '-.075em',
@@ -111,6 +131,15 @@ module.exports = {
 			...defaultTheme.borderRadius,
 			default: '6px',
 		},
+		minHeight: {
+			auto: 'auto',
+			'0': '0',
+			'1/4': '25%',
+			'1/2': '50%',
+			'3/4': '75%',
+			'full': '100%',
+			'screen': '100vh'
+		}
 	},
 	variants: {
 		extend: {},

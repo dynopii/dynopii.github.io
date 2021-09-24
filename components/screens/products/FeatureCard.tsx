@@ -11,12 +11,12 @@ interface Props {
 export const FeatureCard: React.FC<Props> = ({ Icon, label, size = 'small' }) => {
     const large = size === 'large';
     return (
-        <div className={`bg-gray-444 flex items-center justify-center flex-col ${large ? 'h-56 w-80' : 'h-48 w-60'} rounded-default`}>
+        <div className={`bg-gray-444 flex items-center justify-center flex-col ${large ? 'h-56 max-w-80' : 'h-48 max-w-60'} rounded-default`}>
             {Icon}
             {
                 large
                     ? <h6 className='text-h6 font-semibold text-gray-e0e mt-35 text-center'>{label}</h6>
-                    : <p className='text-body-lg font-normal text-gray-e0e mt-30'>{label}</p>
+                    : <p className='text-body-lg font-normal text-gray-e0e mt-30 md:w-10/12 text-center'>{label}</p>
             }
         </div>
     );

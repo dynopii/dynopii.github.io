@@ -14,7 +14,7 @@ features: PricingFeatures[]
 
 export const PricingCard: React.FC<Props> = ({id, type, title, price, description, features}) => {
     return (
-        <div className={`mr-2 ${type === 'PREMIUM' ? '-mt-3' : ''}`}>
+        <div className={`mr-2 lg:mr-0 mb-20 max-w-sm ${type === 'PREMIUM' ? '-mt-3 lg:-mt-0' : ''}`}>
             {type === 'PREMIUM' && <div className='bg-brand py-1.5 rounded-t-default'>
                 <p className='text-body-sm text-light text-white uppercase text-center'>highly recommended</p>
                 </div>}

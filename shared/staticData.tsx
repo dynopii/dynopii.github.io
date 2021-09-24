@@ -29,7 +29,7 @@ export const features = [
   {
     id: '5',
     Icon: <CgInsights size={40} fill='#777777' color='#777777' />,
-    label: `Insights Based \n Dashboards`
+    label: `Insights Based Dashboards`
   },
   {
     id: '6',
@@ -70,3 +70,99 @@ export const featuresBig = [
     label: '15 Min Installation Time'
   },
 ];
+
+const startupFeatures = [
+  {
+      id: '1',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '2',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '3',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: false
+  },
+  {
+      id: '4',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: false
+  },
+]
+
+const premiumFeatures = [
+  {
+      id: '1',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '2',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '3',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '4',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: false
+  },
+]
+
+const enterpriseFeatures = [
+  {
+      id: '1',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '2',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '3',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+  {
+      id: '4',
+      feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+      provided: true
+  },
+]
+
+export const packs = [
+  {
+      id: '1',
+      type: 'STARTUP',
+      title: 'Startup Pack',
+      price: 25.99,
+      description: 'For the startup team who work with ',
+      features: startupFeatures
+  },
+  {
+      id: '2',
+      type: 'PREMIUM',
+      title: 'Premium Pack',
+      price: 35.99,
+      description: 'For the organisation team who work with ',
+      features: premiumFeatures,
+  },
+  {
+      id: '3',
+      type: 'ENTERPRISE',
+      title: 'Enterprise Pack',
+      price: 125.99,
+      description: 'For the enterprise team who work with ',
+      features: enterpriseFeatures
+  },
+]

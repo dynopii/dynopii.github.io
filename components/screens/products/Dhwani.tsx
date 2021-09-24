@@ -1,6 +1,5 @@
 import React from 'react';
 import { features } from '../../../shared/staticData';
-import { DhwaniLogo } from '../../SVGs';
 import { FeatureCard } from './FeatureCard';
 import Image from 'next/image'
 import DhwaniSVG from '../../../public/svgs/dhwanilogo.svg';

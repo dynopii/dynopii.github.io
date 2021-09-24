@@ -51,7 +51,7 @@ const Dhwani: React.FC<Props> = () => {
         </div>
 
         {/* Demo Section */}
-        <div className='min-h-screen flex items-center justify-center relative' style={{ background: `linear-gradient(180deg, #222222 0%, #000000 29.5%, #000000 75.33%, #222222 100%)` }}>
+        <div className='min-h-screen flex items-center justify-center relative xl:px-30' style={{ background: `linear-gradient(180deg, #222222 0%, #000000 29.5%, #000000 75.33%, #222222 100%)` }}>
           {/* <div className='w-5/12'>
             <img src='/images/dhwani-demo.png' className='w-full h-full object-cover' alt='Dhwani Demo' />
           </div>
@@ -64,7 +64,7 @@ const Dhwani: React.FC<Props> = () => {
 
         </div>
 
-        <div className='mx-auto md:px-30' style={{ maxWidth: '1200px' }}>
+        <div className='mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
           {/* Integrated with tools section */}
           <div className='py-90'>
             <h3 className='text-gray-e0e text-h3 text-center font-semibold mb-70'>Integrated with your tools</h3>
@@ -81,7 +81,7 @@ const Dhwani: React.FC<Props> = () => {
           </div>
 
           {/* Focus on Your Sales Section */}
-          <div className='min-h-screen flex items-center justify-center flex-col xl:px-30'>
+          <div className='min-h-screen flex items-center justify-center flex-col'>
             <h1 className='text-h1 font-semibold text-gray-f2f mb-70'>Focus on your sales, not accent!</h1>
             <h3 className='text-h3 font-normal text-gray-e0e'>Let our trained models ease your work. Introducing AI based solutions. See the impossible become reality.</h3>
           </div>

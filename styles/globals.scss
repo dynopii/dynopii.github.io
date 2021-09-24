@@ -48,10 +48,16 @@ body {
 
 .grid-feature-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 20px;
-	align-items: center;
-	justify-items: center;
+	// align-items: center;
+	// justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	@media screen and (max-width: 600px) {
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	}
+	@media screen and (max-width: 321px) {
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+	}
 }
 
 .blog-section-bg {

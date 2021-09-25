@@ -23,3 +23,31 @@ export const OurPartners: React.FC<Props> = () => {
     </div>
   );
 };
+
+const partners = [
+  {
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Backend Capital",
+    "name": "Backend Capital"
+  },
+  {
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Infinity Ventures",
+    "name": "Infinity Ventures"
+  },
+  {
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Siqi Chen",
+    "name": "Siqi Chen"
+  },
+  {
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Fan Zhang",
+    "name": "Fan Zhang"
+  },
+  {
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Globaltech AI Capital",
+    "name": "Globaltech AI Capital"
+  },
+]

@@ -12,7 +12,7 @@ export const Footer: React.FC<Props> = () => {
       <div className='mx-auto' style={{ maxWidth: '1200px' }}>
 
         <div className='flex items-center md:flex-col md:items-start justify-between mb-50 md:mb-20'>
-          <h6 className='font-normal text-h6 text-gray-f2f'>Copyright © 2021 Dynopii, Inc.All rights reserved.</h6>
+          <h6 className='font-normal text-h6 text-gray-f2f'>Copyright © 2021 Dynopii, Inc. All rights reserved.</h6>
           <a href='mailto:hello@dynopii.com'><h6 className='font-normal text-h6 text-gray-f2f md:mt-1'>hello@dynopii.com</h6></a>
         </div>
 

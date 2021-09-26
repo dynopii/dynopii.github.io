@@ -27,8 +27,10 @@ export const Header = () => {
 	};
 
 	return (
-		<header className={`sticky flex flex-grow items-center justify-between navbar_container ${navClass}`}>
-			<div className="content_container flex items-center justify-between" style={{ height: '66px' }}>
+		<header
+			className={`sticky flex flex-grow items-center justify-between navbar_container ${navClass} md:rounded-2xl md:top-3 top-0 md:mx-4`}
+		>
+			<div className="content_container flex items-center justify-between h-16 md:px-7 px-6">
 				<Link href="/">
 					<a className="flex items-center">
 						<DynopiiLogo />
@@ -42,26 +44,27 @@ export const Header = () => {
 					))}
 				</div>
 				<div className="mobile spacer hidden md:flex md:flex-grow"></div>
-				<button onClick={toggleMenu} className="mobile menuToggle hidden md:flex cursor-pointer">
+				<button onClick={toggleMenu} className="mobile menuToggle hidden md:flex cursor-pointer transition-all">
 					<MenuToggle />
 				</button>
 			</div>
-			{active && (
-				<div className="hidden mobile mobileMenu md:flex md:flex-col w-full" x-show="open">
-					<div className="navigation flex flex-grow justify-center items-center">
-						<div className="content w-full flex flex-col m-0 pb-3">
-							{links.map(({ href, id, label }, index) => (
-								<div
-									key={id}
-									className={index === 0 ? 'mobile_nav_link secondary' : 'mobile_nav_link secondary'}
-								>
-									<Link href={`/${href}`}>{label}</Link>
-								</div>
-							))}
-						</div>
+			<div
+				style={{ transition: 'all 3s ease-in-out' }}
+				className={`hidden md:${active && 'flex'} mobile mobileMenu md:flex-col w-full transition transform`}
+			>
+				<div className="navigation flex flex-grow justify-center items-center">
+					<div className="content w-full flex flex-col m-0 pb-3">
+						{links.map(({ href, id, label }, index) => (
+							<div
+								key={id}
+								className={index === 0 ? 'mobile_nav_link secondary' : 'mobile_nav_link secondary'}
+							>
+								<Link href={`/${href}`}>{label}</Link>
+							</div>
+						))}
 					</div>
 				</div>
-			)}
+			</div>
 		</header>
 	);
 };

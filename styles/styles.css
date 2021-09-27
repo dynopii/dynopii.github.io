@@ -105,7 +105,6 @@ body {
 
 .hero_sub_text {
 	max-width: 720px;
-	font-size: 1.6rem;
 	color: #95a2b3;
 	line-height: 1.5;
 	margin-top: 0.8em;
@@ -351,4 +350,14 @@ body {
 	color: #f4f5ff;
 	text-decoration: none;
 	flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+	.hero_title {
+	font-size: 3.4rem;
+	}
+	.hero_sub_text {
+		font-size: 1.4rem;
+		color: #95a2b3;
+	}
 }

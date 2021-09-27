@@ -76,7 +76,6 @@ const Main2 = () => {
         className="
             splash
             pt-40
-            sm:pt-24
             flex
             justify-center
             w-full
@@ -141,7 +140,7 @@ const Main2 = () => {
               </div>
             </div>
             <span className="animate">
-              <h1 className="hero_title text-white sm:text-5xl md:text-6xl">
+              <h1 className="hero_title text-h1 md:text-h3 text-white sm:text-5xl md:text-6xl">
                 Redefining the way you communicate
               </h1>
             </span>

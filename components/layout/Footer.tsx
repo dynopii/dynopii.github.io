@@ -8,7 +8,7 @@ interface Props {}
 export const Footer: React.FC<Props> = () => {
   return (
     <>
-      <footer className="mt-90 md:mt-50">
+      <footer className="mt-90 md:mt-50 m-30">
         <div className="bg-gray-100">
           <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
             <div className="p-5 w-48 ">
@@ -191,7 +191,7 @@ export const Footer: React.FC<Props> = () => {
             <div className="mt-2 text-gray-666">
               © Copyright 2020. All Rights Reserved.
             </div>
-            <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+            <div className=" mt-2 flex-row flex">
               <a
                 href="https://in.linkedin.com/company/dynopii"
                 target="_blank"

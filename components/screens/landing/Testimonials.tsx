@@ -13,10 +13,55 @@ export const Testimonials: React.FC<Props> = () => {
       </h3>
       <p className='text-body-lg font-normal text-gray-e0e mt-10 text-center'>Customer Testimonials</p>
       <div className='mt-30 grid-testimonials-container'>
-        {Array.from(Array(6).keys()).map((loader, i) => (
-          <TestimonialCard key={i} />
+        {testimonials.map((testimonial, i) => (
+          <TestimonialCard key={i} {...testimonial} />
         ))}
       </div>
     </section>
   );
 };
+
+const testimonials = [
+  {
+    id: '1',
+    testimonial:`Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name:'Rhimjhim Bhadani',
+    twitterHandle: '@rhimjhim',
+    photo:'/images/testimonial-profile-pic-demo.png'
+  },
+  {
+    id: '1',
+    testimonial:`Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name:'Rhimjhim Bhadani',
+    twitterHandle: '@rhimjhim',
+    photo:'/images/testimonial-profile-pic-demo.png'
+  },
+  {
+    id: '1',
+    testimonial:`Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name:'Rhimjhim Bhadani',
+    twitterHandle: '@rhimjhim',
+    photo:'/images/testimonial-profile-pic-demo.png'
+  },
+  {
+    id: '1',
+    testimonial:`Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name:'Rhimjhim Bhadani',
+    twitterHandle: '@rhimjhim',
+    photo:'/images/testimonial-profile-pic-demo.png'
+  },
+  {
+    id: '1',
+    testimonial:`Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name:'Rhimjhim Bhadani',
+    twitterHandle: '@rhimjhim',
+    photo:'/images/testimonial-profile-pic-demo.png'
+  },
+  {
+    id: '1',
+    testimonial:`Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name:'Rhimjhim Bhadani',
+    twitterHandle: '@rhimjhim',
+    photo:'/images/testimonial-profile-pic-demo.png'
+  },
+]

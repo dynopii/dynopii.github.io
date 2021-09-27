@@ -54,7 +54,7 @@ body {
 	z-index: 2;
 	cursor: pointer;
 	color: #9943d2;
-	transition: color 0.2s;
+	transition: all 0.2s;
 	text-decoration: none;
 }
 
@@ -194,7 +194,7 @@ body {
 	z-index: 2;
 	cursor: pointer;
 	color: #828fff;
-	transition: color 0.2s;
+	transition: all 0.2s;
 	text-decoration: none;
 }
 

@@ -101,7 +101,7 @@ const Main2 = () => {
             <div className="splash_banner_animate">
               <div className="splash_banner mb-12">
                 <Link href="/products/dhwani">
-                  <a className="banner_container">
+                  <a className="banner_container transform hover:scale-105 transition-all">
                     <div className="gradient_background"></div>
                     <div
                       className="

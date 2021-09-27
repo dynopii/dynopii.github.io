@@ -30,6 +30,9 @@ module.exports = {
 			'gray-e0e': '#E0E0E0',
 			'gray-f2f': '#F2F2F2',
 			brand: '#9943D2',
+			'social-twitter': '#1DA1F2',
+			'social-linkedin': '#0077B5',
+			'social-instagram': '#F56040',
 		},
 		screens: {
 			xxl: { max: '1535px' },
@@ -101,6 +104,7 @@ module.exports = {
 			},
 			boxShadow: {
 				'btn-hover': '0px 4px 20px 0px #7B61FF',
+				'btn-hover-white': '0px 4px 20px 0px rgba(255,255,255,0.3)'
 			},
 			zIndex: {
 			   '0': 0,

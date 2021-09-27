@@ -1,35 +1,234 @@
-import React from 'react';
-import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
-import Link from 'next/link';
-interface Props {
-
-}
+/* eslint-disable @next/next/no-html-link-for-pages */
+import React from "react";
+import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
+interface Props {}
 
 export const Footer: React.FC<Props> = () => {
   return (
-    <footer className='py-40 xl:px-30 bg-gray-333 m-30 mt-70 rounded-default'>
-      <div className='mx-auto' style={{ maxWidth: '1200px' }}>
-
-        <div className='flex items-center md:flex-col md:items-start justify-between mb-50 md:mb-20'>
-          <h6 className='font-normal text-h6 text-gray-f2f'>Copyright © 2021 Dynopii, Inc.All rights reserved.</h6>
-          <a href='mailto:hello@dynopii.com'><h6 className='font-normal text-h6 text-gray-f2f md:mt-1'>hello@dynopii.com</h6></a>
-        </div>
-
-        <div className='flex items-center justify-between md:flex-col md:items-start'>
-          <div className='flex items-center md:flex-col md:items-start'>
-            <Link href='/privacy'><a><p className='mr-30 text-gray-bdb text-body-lg'>Privacy</p></a></Link>
-            <Link href='/terms-of-use'><a><p className='mr-30 text-gray-bdb text-body-lg'>Terms of Use</p></a></Link>
-            <Link href='/sitemap'><a><p className='mr-30 text-gray-bdb text-body-lg'>Sitemap</p></a></Link>
-            <Link href='/contact'><a><p className='text-gray-bdb text-body-lg'>Contact Us</p></a></Link>
+    <>
+      <footer className="mt-90 md:mt-50">
+        <div className="bg-gray-100">
+          <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+            <div className="p-5 w-48 ">
+              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
+                Home
+              </div>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Products <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                About Us <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Pricing <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Partners{" "}
+                <span className="text-teal-600 text-xs p-1 text-brand">
+                  New
+                </span>
+              </a>
+            </div>
+            <div className="p-5 w-48 ">
+              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
+                User
+              </div>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Demo{" "}
+                <span className="text-teal-600 text-xs p-1 text-brand">
+                  New
+                </span>
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Career{" "}
+                <span className="text-teal-600 text-xs p-1 text-brand">
+                  We're hiring
+                </span>
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Surveys{" "}
+                <span className="text-teal-600 text-xs p-1 text-brand">
+                  New
+                </span>
+              </a>
+            </div>
+            <div className="p-5 w-48">
+              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
+                Resources
+              </div>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Documentation <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Tutorials <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Support{" "}
+                <span className="text-teal-600 text-xs p-1 text-brand">
+                  New
+                </span>
+              </a>
+            </div>
+            <div className="p-5 w-48 ">
+              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
+                Product
+              </div>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/products"
+              >
+                Our Products <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Dhwani <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                AI Dialer <span className="text-teal-600 text-xs p-1" />
+              </a>
+            </div>
+            <div className="p-5 w-48 ">
+              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
+                Support
+              </div>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Help Center <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Privacy Policy <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/#"
+              >
+                Conditions <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/contact"
+              >
+                Contact Us <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/contact"
+              >
+                Terms of Use <span className="text-teal-600 text-xs p-1" />
+              </a>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="/contact"
+              >
+                Sitemap <span className="text-teal-600 text-xs p-1" />
+              </a>
+            </div>
+            <div className="p-5 w-48 ">
+              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444 hover:text-gray-f2f">
+                Contact us
+              </div>
+              <p className="my-3 block text-gray-666">
+                3-Floor, 7A, Bedia Danga Masjid Bari Bye Lane, LP-150/7/8/0
+                Kolkata WB 700039 IN
+                <span className="text-teal-600 text-xs p-1" />
+              </p>
+              <a
+                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                href="mailto:hello@dynopii.com"
+              >
+                hello@dynopii.com <span className="text-teal-600 text-xs p-1" />
+              </a>
+            </div>
           </div>
-          <div className='flex items-center md:mt-20'>
-            <a className='mr-40' href='https://in.linkedin.com/company/dynopii' target='_blank' rel="noreferrer"><FaLinkedinIn size={22} color='#ffffff' /></a>
-            <a className='mr-40' href='https://www.instagram.com/dynopii' target='_blank' rel="noreferrer"><AiOutlineInstagram size={25} color='#ffffff' /></a>
-            <a href='https://twitter.com/dynopii' target='_blank' rel="noreferrer"><AiOutlineTwitter size={25} color='#ffffff' /></a>
+        </div>
+        <div className="bg-gray-100 pt-2 ">
+          <div
+            className="flex pb-5 px-3 m-auto pt-5 border-t  text-gray-333 text-sm justify-between
+      md:flex-row max-w-6xl pt-20 mb-20 items-center"
+          >
+            <div className="mt-2 text-gray-666">
+              © Copyright 2020. All Rights Reserved.
+            </div>
+            <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+              <a
+                href="https://in.linkedin.com/company/dynopii"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-all mr-30"
+              >
+                <FaLinkedinIn
+                  className="text-white transition-all hover:text-social-linkedin"
+                  size={16}
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/dynopii"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-all mr-30"
+              >
+                <AiOutlineInstagram
+                  className="text-white transition-all hover:text-social-instagram"
+                  size={18}
+                />
+              </a>
+              <a
+                href="https://twitter.com/dynopii"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-all"
+              >
+                <AiOutlineTwitter
+                  className="text-white transition-all hover:text-social-twitter"
+                  size={18}
+                />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };

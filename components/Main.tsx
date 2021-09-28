@@ -122,7 +122,7 @@ const Main2 = () => {
                           color="labelTitle"
                           className="banner_title sm:mt-3 sm:ml-0"
                         >
-                          Dhwani
+                          Upcoming Release: Dhwani
                         </span>
                       </div>
                       <span

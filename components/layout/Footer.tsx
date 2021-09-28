@@ -107,12 +107,6 @@ export const Footer: React.FC<Props> = () => {
               </div>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/products"
-              >
-                Our Products <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
                 href="/#"
               >
                 Dhwani <span className="text-teal-600 text-xs p-1" />
@@ -166,7 +160,7 @@ export const Footer: React.FC<Props> = () => {
               </a>
             </div>
             <div className="p-5 w-48 ">
-              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444 hover:text-gray-f2f">
+              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
                 Contact us
               </div>
               <p className="my-3 block text-gray-666">

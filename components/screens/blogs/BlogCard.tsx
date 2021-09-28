@@ -1,8 +1,13 @@
 import React from "react";
 import Link from "next/link";
-interface Props {}
 
-export const BlogCard: React.FC<Props> = () => {
+interface Props {
+  photo: string;
+  title: string;
+  noOfComments: string;
+}
+
+export const BlogCard: React.FC<Props> = ({ photo, title, noOfComments }) => {
   return (
     <Link href="/blogs">
       <a>
@@ -11,17 +16,9 @@ export const BlogCard: React.FC<Props> = () => {
           style={{ maxWidth: "350px" }}
         >
           <div className="overflow-hidden rounded-default">
-            <img
-              src="/images/blog-demo.png"
-              width={350}
-              height={175}
-              alt="Blog"
-            />
+            <img src={photo} width={350} height={175} alt="Blog" />
           </div>
-          <h6 className="font-medium text-h6 text-gray-f2f mt-20">
-            Announcing new, consolidated site for all technical resources:
-            docs.digitalocean.com
-          </h6>
+          <h6 className="font-medium text-h6 text-gray-f2f mt-20">{title}</h6>
           <div className="flex items-center justify-start mt-20">
             <svg
               width="24"
@@ -36,7 +33,7 @@ export const BlogCard: React.FC<Props> = () => {
               />
             </svg>
             <p className="text-body-lg font-normal text-gray-e0e ml-10">
-              343 Comments
+              {noOfComments} Comments
             </p>
           </div>
         </div>

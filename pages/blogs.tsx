@@ -19,9 +19,10 @@ const Blogs: React.FC<Props> = () => {
             Our Blogs
           </h1>
           <div className="flex xl:flex-col items-center justify-between md:justify-center">
-            {Array.from(Array(3).keys()).map((loader, i) => (
-              <BlogCard key={i} />
+            {blogs.map((blog, i) => (
+              <BlogCard key={i} {...blog} />
             ))}
+            {/* Array.from(Array(3).keys()) */}
           </div>
           <div className="flex items-center mt-40 justify-center mb-70">
             <Button title="Read more" />
@@ -34,3 +35,27 @@ const Blogs: React.FC<Props> = () => {
 };
 
 export default Blogs;
+
+const blogs = [
+  {
+    id: "1",
+    title: `Announcing new, consolidated site for all technical resources:
+    docs.digitalocean.com`,
+    noOfComments: "343",
+    photo: "/images/blog-demo.png",
+  },
+  {
+    id: "2",
+    title: `Announcing new, consolidated site for all technical resources:
+    docs.digitalocean.com`,
+    noOfComments: "343",
+    photo: "/images/blog-demo.png",
+  },
+  {
+    id: "3",
+    title: `Announcing new, consolidated site for all technical resources:
+    docs.digitalocean.com`,
+    noOfComments: "3433",
+    photo: "/images/blog-demo.png",
+  },
+];

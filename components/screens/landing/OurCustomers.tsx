@@ -1,12 +1,11 @@
 import React from "react";
-import Image from "next/image";
 
 interface Props {}
 
 export const OurCustomers: React.FC<Props> = () => {
   return (
     <div className="py-40">
-      <h3 className="text-h3 md:text-h5 font-semibold text-gray-e0e text-center my-40">
+      <h3 className="text-h3 sm:text-h4 font-semibold text-gray-e0e text-center my-40">
         Our Customers
       </h3>
       <div className="flex items-center justify-around flex-wrap">

@@ -17,13 +17,13 @@ export const Footer: React.FC<Props> = () => {
               </div>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
+                href="/products"
               >
                 Products <span className="text-teal-600 text-xs p-1" />
               </a>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
+                href="/about"
               >
                 About Us <span className="text-teal-600 text-xs p-1" />
               </a>
@@ -35,7 +35,7 @@ export const Footer: React.FC<Props> = () => {
               </a>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
+                href="/#partners"
               >
                 Partners{" "}
                 <span className="text-teal-600 text-xs p-1 text-brand">
@@ -107,7 +107,7 @@ export const Footer: React.FC<Props> = () => {
               </div>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
+                href="/products/dhwani"
               >
                 Dhwani <span className="text-teal-600 text-xs p-1" />
               </a>
@@ -148,13 +148,13 @@ export const Footer: React.FC<Props> = () => {
               </a>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/contact"
+                href="/"
               >
                 Terms of Use <span className="text-teal-600 text-xs p-1" />
               </a>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/contact"
+                href="/sitemap.xml"
               >
                 Sitemap <span className="text-teal-600 text-xs p-1" />
               </a>

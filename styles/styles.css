@@ -4,7 +4,6 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
-	/* background-color: #060606; */
 	-webkit-tap-highlight-color: transparent;
 }
 
@@ -163,6 +162,21 @@ body {
 	font-size: 14px;
 	height: 2rem;
 	padding: 0px 1rem;
+}
+
+.signup_btn {
+	color: rgb(255, 255, 255);
+	background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+	cursor: pointer;
+	border: none;
+	flex-shrink: 0;
+	font-weight: 500;
+	transition: all 0.5s ease 0s;
+	text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	height: 4rem;
+	padding: 0px 2.6rem;
 }
 
 .nav_header_base {

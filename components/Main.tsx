@@ -151,11 +151,14 @@ const Main2 = () => {
               </p>
             </span>
             <div className="spacer"></div>
-            <div className="animate flex flex-col">
+            <div className="animate flex sm:flex-col items-center justify-center">
               <a href="mailto:hello@dynopii.com">
                 <Button title="Schedule Demo"></Button>
+                {/* <button type="submit" className="signup_btn">
+                  Sign up for free →
+                </button> */}
               </a>
-              <div className="mt-30">
+              <div className="ml-30 sm:ml-0 sm:mt-30">
                 <a href="mailto:hello@dynopii.com">
                   <Button uiType="outlined" title="Contact sales"></Button>
                 </a>

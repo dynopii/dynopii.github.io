@@ -1,12 +1,12 @@
 import React from 'react';
 import { TeamCard } from './TeamCard';
 
-interface Props {}
+interface Props { }
 
 export const OurTeam: React.FC<Props> = () => {
 	return (
 		<section id="our-team" className="">
-			<div className="mx-auto md:px-30 md:pt-16 xxl:pt-48" style={{ maxWidth: '1200px' }}>
+			<div className="mx-auto md:px-30 pt-48" style={{ maxWidth: '1200px' }}>
 				<h3 className="text-h3 font-semibold text-gray-e0e mb-40 text-center">Our Team</h3>
 				<h6 className="text-h6 font-light text-gray-e0e text-center w-7/12 mx-auto md:w-full">
 					Our team has led and delivered large-scale software and design projects in multiple startups and

@@ -1,6 +1,6 @@
 import React from "react";
 
-interface Props {}
+interface Props { }
 
 export const OurPartners: React.FC<Props> = () => {
   return (
@@ -13,7 +13,7 @@ export const OurPartners: React.FC<Props> = () => {
           <div key={i} className="mt-20">
             <div className="w-48 h-48 overflow-hidden rounded-default">
               <img
-                src={partner.photo}
+                src={partner.img_src}
                 className="w-full h-fill object-cover"
                 alt={`${partner.name} photo`}
               />
@@ -28,7 +28,7 @@ export const OurPartners: React.FC<Props> = () => {
   );
 };
 
-const partners = [
+const strategicPartners = [
   {
     "img_src": "/images/team-demo-pic.png",
     "alt": "Backend Capital",
@@ -54,5 +54,5 @@ const partners = [
     "alt": "Globaltech AI Capital",
     "name": "Globaltech AI Capital"
   },
-]
+];
 

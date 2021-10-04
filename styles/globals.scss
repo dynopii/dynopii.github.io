@@ -125,13 +125,14 @@ body {
 }
 
 .dhwani-cover-bg {
-	background-image: url('/svgs/dhwaniCover.svg');
+	// background-image: url('/svgs/dhwaniCover.svg');
+	background-image: url('/svgs/dhwani-cover-overview.svg');
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: 100%;
-	// @media screen and (max-width: 600px) {
-	// 	background-size: contain;
-	// }
+	@media screen and (max-width: 600px) {
+		background-size: 200%;
+	}
 }
 
 .contact-section-bg {

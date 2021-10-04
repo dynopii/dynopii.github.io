@@ -18,5 +18,6 @@ export const colors = {
   brand: '#9943D2',
   twitter: '#1DA1F2',
   linkedin: '#0077B5',
+  instagram: '#F56040',
 };
 

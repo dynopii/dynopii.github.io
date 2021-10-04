@@ -4,7 +4,9 @@ import { Footer } from "../components/layout/Footer";
 import Head from "next/head";
 import { BlogCard } from "../components/screens/blogs/BlogCard";
 import { Button } from "../components/layout/Button";
-interface Props {}
+import { blogs } from '../shared/contents';
+
+interface Props { }
 
 const Blogs: React.FC<Props> = () => {
   return (
@@ -35,27 +37,3 @@ const Blogs: React.FC<Props> = () => {
 };
 
 export default Blogs;
-
-const blogs = [
-  {
-    id: "1",
-    title: `Announcing new, consolidated site for all technical resources:
-    docs.digitalocean.com`,
-    noOfComments: "343",
-    photo: "/images/blog-demo.png",
-  },
-  {
-    id: "2",
-    title: `Announcing new, consolidated site for all technical resources:
-    docs.digitalocean.com`,
-    noOfComments: "343",
-    photo: "/images/blog-demo.png",
-  },
-  {
-    id: "3",
-    title: `Announcing new, consolidated site for all technical resources:
-    docs.digitalocean.com`,
-    noOfComments: "3433",
-    photo: "/images/blog-demo.png",
-  },
-];

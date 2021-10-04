@@ -94,7 +94,7 @@ const Main2 = () => {
             style={{ minHeight: "83vh" }}
           >
             <div className="splash_banner_animate">
-              <div className="splash_banner mb-12">
+              {/* <div className="splash_banner mb-12">
                 <Link href="/products/dhwani">
                   <a className="banner_container transform hover:scale-105 transition-all">
                     <div className="gradient_background"></div>
@@ -133,7 +133,7 @@ const Main2 = () => {
                     </div>
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <span className="animate">
               <h1 className="hero_title text-h1 md:text-h3 text-white sm:text-5xl md:text-6xl">

@@ -1,6 +1,7 @@
 import React from "react";
+import { customers } from '../../../shared/contents';
 
-interface Props {}
+interface Props { }
 
 export const OurCustomers: React.FC<Props> = () => {
   return (
@@ -30,35 +31,3 @@ export const OurCustomers: React.FC<Props> = () => {
   );
 };
 
-const customers = [
-  {
-    id: "1",
-    photo: "/images/retool.png",
-    title: "Title",
-  },
-  {
-    id: "2",
-    photo: "/images/retool.png",
-    title: "Title",
-  },
-  {
-    id: "3",
-    photo: "/images/retool.png",
-    title: "Title",
-  },
-  {
-    id: "4",
-    photo: "/images/retool.png",
-    title: "Title",
-  },
-  {
-    id: "5",
-    photo: "/images/retool.png",
-    title: "Title",
-  },
-  {
-    id: "6",
-    photo: "/images/retool.png",
-    title: "Title",
-  },
-];

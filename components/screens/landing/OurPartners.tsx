@@ -1,4 +1,5 @@
 import React from "react";
+import { partners } from '../../../shared/contents';
 
 interface Props { }
 
@@ -9,7 +10,7 @@ export const OurPartners: React.FC<Props> = () => {
         Our Partners
       </h3>
       <div className="flex flex-wrap items-center justify-around mt-30">
-        {strategicPartners.map((partner, i) => (
+        {partners.map((partner, i) => (
           <div key={i} className="mt-20">
             <div className="w-48 h-48 overflow-hidden rounded-default">
               <img
@@ -27,32 +28,3 @@ export const OurPartners: React.FC<Props> = () => {
     </div>
   );
 };
-
-const strategicPartners = [
-  {
-    "img_src": "/images/team-demo-pic.png",
-    "alt": "Backend Capital",
-    "name": "Backend Capital"
-  },
-  {
-    "img_src": "/images/team-demo-pic.png",
-    "alt": "Infinity Ventures",
-    "name": "Infinity Ventures"
-  },
-  {
-    "img_src": "/images/team-demo-pic.png",
-    "alt": "Siqi Chen",
-    "name": "Siqi Chen"
-  },
-  {
-    "img_src": "/images/team-demo-pic.png",
-    "alt": "Fan Zhang",
-    "name": "Fan Zhang"
-  },
-  {
-    "img_src": "/images/team-demo-pic.png",
-    "alt": "Globaltech AI Capital",
-    "name": "Globaltech AI Capital"
-  },
-];
-

@@ -41,7 +41,7 @@ export const Main = () => {
           </span>
           <span className="animate">
             <p className="text-h6 text-gray-e0e font-light mt-10 mb-10">
-            Effectivate communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.
+              Effectivate communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.
             </p>
           </span>
           <div className="spacer"></div>
@@ -142,8 +142,7 @@ const Main2 = () => {
             </span>
             <span className="animate">
               <p className="hero_sub_text sm:text-2xl">
-                Create effortless & personalized customer experiences with the
-                best in class AI-powered digital and voice automation.
+                Effectivate communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.
               </p>
             </span>
             <div className="spacer"></div>

@@ -28,25 +28,31 @@ export const OurPartners: React.FC<Props> = () => {
   );
 };
 
-const strategicPartners = [
+const partners = [
   {
-    id: "1",
-    name: "Julia DeWahl",
-    photo: "/images/team-demo-pic.png",
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Backend Capital",
+    "name": "Backend Capital"
   },
   {
-    id: "2",
-    name: "Julia DeWahl",
-    photo: "/images/team-demo-pic.png",
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Infinity Ventures",
+    "name": "Infinity Ventures"
   },
   {
-    id: "3",
-    name: "Julia DeWahl",
-    photo: "/images/team-demo-pic.png",
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Siqi Chen",
+    "name": "Siqi Chen"
   },
   {
-    id: "4",
-    name: "Julia DeWahl",
-    photo: "/images/team-demo-pic.png",
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Fan Zhang",
+    "name": "Fan Zhang"
   },
-];
+  {
+    "img_src": "/images/team-demo-pic.png",
+    "alt": "Globaltech AI Capital",
+    "name": "Globaltech AI Capital"
+  },
+]
+

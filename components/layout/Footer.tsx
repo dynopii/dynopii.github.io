@@ -183,7 +183,7 @@ export const Footer: React.FC<Props> = () => {
       md:flex-row max-w-6xl pt-20 mb-20 items-center"
           >
             <div className="mt-2 text-gray-666">
-              © Copyright 2020. All Rights Reserved.
+              Copyright © 2021 Dynopii, Inc. All rights reserved.
             </div>
             <div className=" mt-2 flex-row flex">
               <a

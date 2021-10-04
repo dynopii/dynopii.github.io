@@ -41,11 +41,7 @@ export const Main = () => {
           </span>
           <span className="animate">
             <p className="text-h6 text-gray-e0e font-light mt-10 mb-10">
-              Create effortless &amp; personalized customer experiences with the
-              best in class AI-powered digital and voice automation. Our vision
-              is to make it simple for consumers to do business with you by
-              redefining how artificial intelligence and human insight enable
-              personalized, predictive and effortless customer experiences.
+            Effectivate communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.
             </p>
           </span>
           <div className="spacer"></div>

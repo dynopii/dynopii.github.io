@@ -44,14 +44,11 @@ export const Header = () => {
 					))}
 				</div>
 				<div className="mobile spacer hidden md:flex md:flex-grow"></div>
-				<button onClick={toggleMenu} className="mobile menuToggle hidden md:flex cursor-pointer transition-all">
+				<button onClick={toggleMenu} className="mobile menuToggle hidden md:flex cursor-pointer">
 					<MenuToggle />
 				</button>
 			</div>
-			<div
-				style={{ transition: 'all 3s ease-in-out' }}
-				className={`hidden md:${active && 'flex'} mobile mobileMenu md:flex-col w-full transition transform`}
-			>
+			<div className={`mobile mobileMenu md:flex-col w-full ${!active && 'collapsed'}`}>
 				<div className="navigation flex flex-grow justify-center items-center">
 					<div className="content w-full flex flex-col m-0 pb-3">
 						{links.map(({ href, id, label }, index) => (

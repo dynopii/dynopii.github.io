@@ -128,6 +128,15 @@ body {
 	flex-shrink: 0;
 }
 
+.mobileMenu {
+	transition: all 0.5s ease-in-out;
+	max-height: 20rem;
+	overflow: hidden;
+}
+
+.mobileMenu.collapsed {
+	max-height: 0rem !important;
+}
 /* jnk */
 
 html,
@@ -151,7 +160,7 @@ body {
 .signin_btn {
 	color: rgb(255, 255, 255);
 	/* background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%); */
-	background: linear-gradient(92.88deg, #895DF2 9.16%, #3F56DC 43.89%, #C729A2 64.72%);
+	background: linear-gradient(92.88deg, #895df2 9.16%, #3f56dc 43.89%, #c729a2 64.72%);
 	cursor: pointer;
 	border: none;
 	flex-shrink: 0;
@@ -278,13 +287,13 @@ body {
 }
 
 .btn--gradient {
-	background: linear-gradient(92.88deg, #3F56DC  9.16%, #895DF2 100.89%);
+	background: linear-gradient(92.88deg, #3f56dc 9.16%, #895df2 100.89%);
 }
 
 .btn_primary {
 	color: rgb(255, 255, 255);
 	/* background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%); */
-	background: linear-gradient(92.88deg, #3F56DC  9.16%, #895DF2 100.89%);
+	background: linear-gradient(92.88deg, #3f56dc 9.16%, #895df2 100.89%);
 	cursor: pointer;
 	border: none;
 	flex-shrink: 0;
@@ -368,7 +377,7 @@ body {
 
 @media screen and (max-width: 600px) {
 	.hero_title {
-	font-size: 3.4rem;
+		font-size: 3.4rem;
 	}
 	.hero_sub_text {
 		font-size: 1.4rem;

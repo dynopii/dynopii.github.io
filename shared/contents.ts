@@ -163,3 +163,132 @@ export const partners = [
     "name": "Globaltech AI Capital"
   },
 ];
+
+// In Contacts Page & Footer
+export const contactUsContents = {
+  coverTitle: 'Contact Us',
+  title: `Contact
+  <br /> Information`,
+  description: 'Fill up the form and our Team will get back to you within 24 hours.',
+  address: `3-Floor, 7A, Bedia Danga Masjid Bari Bye Lane, LP-150/7/8/0
+  Kolkata WB 700039 IN`,
+  phoneNumber: '+91 1234567890',
+  email: 'hello@dynopii.com'
+};
+
+export const aboutUsContents = {
+
+};
+
+export const footerContents = {
+  copyright: 'Copyright © 2021 Dynopii, Inc. All rights reserved.',
+  links: [
+    {
+      id: '1',
+      title: 'Home',
+      subLinks: [
+        {
+          id: '1',
+          title: 'Products',
+          href: "/products"
+        },
+        {
+          id: '2',
+          title: 'About Us',
+          href: "/about"
+        },
+        {
+          id: '3',
+          title: 'Pricing',
+          href: "/pricing"
+        },
+        {
+          id: '4',
+          title: 'Partners',
+          href: "/partners",
+          spanText: 'New'
+        },
+      ]
+    },
+    {
+      id: '2',
+      title: 'User',
+      subLinks: [
+        {
+          id: '1',
+          title: 'Demo', href: "/demo", spanText: 'New'
+        },
+        {
+          id: '2',
+          title: 'Career', href: "/career", spanText: `We're hiring`
+        },
+        {
+          id: '3',
+          title: 'Surveys', href: "/surveys", spanText: 'New'
+        },
+      ]
+    },
+    {
+      id: '3',
+      title: 'Resources',
+      subLinks: [
+        {
+          id: '1',
+          title: 'Documentation', href: "/documentation"
+        },
+        {
+          id: '2',
+          title: 'Tutorials', href: "/tutorials"
+        },
+        {
+          id: '3',
+          title: 'Support', href: "/support", spanText: 'New'
+        },
+      ]
+    },
+    {
+      id: '3',
+      title: 'Products',
+      subLinks: [
+        {
+          id: '1',
+          href: '/products/dhwani', title: 'Dhwani'
+        },
+        {
+          id: '2',
+          href: '/products/#ai-dialer', title: 'AI Dialer'
+        },
+      ]
+    },
+    {
+      id: '4',
+      title: 'Support',
+      subLinks: [
+        {
+          id: '1',
+          title: 'Help Center', href: '/help-center'
+        },
+        {
+          id: '2',
+          title: 'Privacy Policy', href: '/privacy-policy'
+        },
+        {
+          id: '3',
+          title: 'Conditions', href: '/conditions'
+        },
+        {
+          id: '4',
+          title: 'Contact Us', href: "/contact"
+        },
+        {
+          id: '5',
+          title: 'Terms of Use', href: "/terms-of-use"
+        },
+        {
+          id: '6',
+          title: 'Sitemap', href: "/sitemap.xml"
+        },
+      ]
+    },
+  ]
+};

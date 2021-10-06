@@ -2,8 +2,11 @@
 import React from "react";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import Link from "next/link";
-interface Props {}
+import { urls } from '../../shared/urls';
+import { contactUsContents, footerContents } from '../../shared/contents';
+import Link from 'next/link';
+
+interface Props { }
 
 export const Footer: React.FC<Props> = () => {
   return (
@@ -11,168 +14,56 @@ export const Footer: React.FC<Props> = () => {
       <footer className="mt-90 md:mt-50 m-30">
         <div className="bg-gray-100">
           <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
-            <div className="p-5 w-48 ">
-              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
-                Home
+            {footerContents.links.map(footerLink => (
+              <div key={footerLink.id} className="p-5 w-48 ">
+                <FooterLinkTitle title={footerLink.title} />
+                {footerLink.subLinks.map(link => (<FooterLink key={link.id} title={link.title} href={link.href} spanText={link.spanText || ''} />))}
               </div>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/products"
-              >
-                Products <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/about"
-              >
-                About Us <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Pricing <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#partners"
-              >
-                Partners{" "}
-                <span className="text-teal-600 text-xs p-1 text-brand">
-                  New
-                </span>
-              </a>
+            ))}
+            {/* <div className="p-5 w-48 ">
+              <FooterLinkTitle title='Home' />
+              <FooterLink title='Products' href="/products" />
+              <FooterLink title='About Us' href="/about" />
+              <FooterLink title='Pricing' href="/pricing" />
+              <FooterLink title='Partners' href="/partners" spanText='New' />
             </div>
             <div className="p-5 w-48 ">
-              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
-                User
-              </div>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Demo{" "}
-                <span className="text-teal-600 text-xs p-1 text-brand">
-                  New
-                </span>
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Career{" "}
-                <span className="text-teal-600 text-xs p-1 text-brand">
-                  We're hiring
-                </span>
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Surveys{" "}
-                <span className="text-teal-600 text-xs p-1 text-brand">
-                  New
-                </span>
-              </a>
+              <FooterLinkTitle title='User' />
+              <FooterLink title='Demo' href="/demo" spanText='New' />
+              <FooterLink title='Career' href="/career" spanText={`We're hiring`} />
+              <FooterLink title='Surveys' href="/surveys" spanText='New' />
             </div>
             <div className="p-5 w-48">
-              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
-                Resources
-              </div>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Documentation <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Tutorials <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Support{" "}
-                <span className="text-teal-600 text-xs p-1 text-brand">
-                  New
-                </span>
-              </a>
+              <FooterLinkTitle title='Resources' />
+              <FooterLink title='Documentation' href="/documentation" />
+              <FooterLink title='Tutorials' href="/tutorials" />
+              <FooterLink title='Support' href="/support" spanText='New' />
             </div>
             <div className="p-5 w-48 ">
-              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
-                Product
-              </div>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/products/dhwani"
-              >
-                Dhwani <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                AI Dialer <span className="text-teal-600 text-xs p-1" />
-              </a>
+              <FooterLinkTitle title='Products' />
+              <FooterLink href='/products/dhwani' title='Dhwani' />
+              <FooterLink href='/products/#ai-dialer' title='AI Dialer' />
             </div>
             <div className="p-5 w-48 ">
-              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
-                Support
-              </div>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Help Center <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Privacy Policy <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/#"
-              >
-                Conditions <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/contact"
-              >
-                Contact Us <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/"
-              >
-                Terms of Use <span className="text-teal-600 text-xs p-1" />
-              </a>
-              <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="/sitemap.xml"
-              >
-                Sitemap <span className="text-teal-600 text-xs p-1" />
-              </a>
-            </div>
+              <FooterLinkTitle title='Support' />
+              <FooterLink title='Help Center' href='/help-center' />
+              <FooterLink title='Privacy Policy' href='/privacy-policy' />
+              <FooterLink title='Conditions' href='/conditions' />
+              <FooterLink title='Contact Us' href="/contact" />
+              <FooterLink title='Terms of Use' href="/terms-of-use" />
+              <FooterLink title='Sitemap' href="/sitemap.xml" />
+            </div> */}
             <div className="p-5 w-48 ">
-              <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
-                Contact us
-              </div>
+              <FooterLinkTitle title='Contact us' />
               <p className="my-3 block text-gray-666">
-                3-Floor, 7A, Bedia Danga Masjid Bari Bye Lane, LP-150/7/8/0
-                Kolkata WB 700039 IN
+                {contactUsContents.address}
                 <span className="text-teal-600 text-xs p-1" />
               </p>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
-                href="mailto:hello@dynopii.com"
+                href={`mailto:${contactUsContents.email}`}
               >
-                hello@dynopii.com <span className="text-teal-600 text-xs p-1" />
+                {contactUsContents.email} <span className="text-teal-600 text-xs p-1" />
               </a>
             </div>
           </div>
@@ -183,11 +74,11 @@ export const Footer: React.FC<Props> = () => {
       md:flex-row max-w-6xl pt-20 mb-20 items-center"
           >
             <div className="mt-2 text-gray-666">
-              Copyright © 2021 Dynopii, Inc. All rights reserved.
+              {footerContents.copyright}
             </div>
             <div className=" mt-2 flex-row flex">
               <a
-                href="https://in.linkedin.com/company/dynopii"
+                href={urls.DYNOPII_LINKEDIN}
                 target="_blank"
                 rel="noreferrer"
                 className="transition-all mr-30"
@@ -198,7 +89,7 @@ export const Footer: React.FC<Props> = () => {
                 />
               </a>
               <a
-                href="https://www.instagram.com/dynopii"
+                href={urls.DYNOPII_INSTAGRAM}
                 target="_blank"
                 rel="noreferrer"
                 className="transition-all mr-30"
@@ -209,7 +100,7 @@ export const Footer: React.FC<Props> = () => {
                 />
               </a>
               <a
-                href="https://twitter.com/dynopii"
+                href={urls.DYNOPII_TWITTER}
                 target="_blank"
                 rel="noreferrer"
                 className="transition-all"
@@ -226,3 +117,38 @@ export const Footer: React.FC<Props> = () => {
     </>
   );
 };
+
+type FooterLinkProps = {
+  href: string,
+  title: string,
+  spanText?: string,
+  inDOM?: boolean;
+};
+
+export const FooterLink: React.FC<FooterLinkProps> = ({ href, title, spanText = '', inDOM = true }) => {
+  return (
+    <>
+      {
+        inDOM
+          ? <>
+            <Link href={href}><a className="my-3 block text-gray-666 hover:text-gray-f2f transition-all">{title} <span className="text-teal-600 text-xs p-1 text-brand">{spanText || ''}</span></a></Link>
+          </>
+          : <a
+            className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+            href={href}
+          >
+            {title} <span className="text-teal-600 text-xs p-1 text-brand">{spanText || ''}</span>
+          </a>
+      }
+    </>
+  );
+};
+
+export const FooterLinkTitle: React.FC<{ title: string; }> = ({ title }) => {
+  return (
+    <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
+      {title}
+    </div>
+  );
+};
+

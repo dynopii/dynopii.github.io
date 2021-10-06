@@ -7,6 +7,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import path from 'path';
 import CustomLink from '../components/CustomLink';
+import { Header } from '../components/Header';
+import { Button } from '../components/layout/Button';
+import { Footer } from '../components/layout/Footer';
 import { markdownFilePaths, MARKDOWN_PATH } from '../shared/mdxUtils';
 
 // Custom components/renderers to pass to MDX.
@@ -24,25 +27,28 @@ const components = {
 
 export default function MarkdownPage({ source, frontMatter }: any) {
   return (
-    <div className='resetcss bg-white'>
-      <header>
-        <nav>
-          <Link href="/">
-            <a>👈 Go back home</a>
-          </Link>
-        </nav>
-      </header>
-      <div className="post-header">
-        <h1>{frontMatter.title}</h1>
-        {frontMatter.description && (
-          <p className="description">{frontMatter.description}</p>
-        )}
-      </div>
-      <main>
-        <MDXRemote {...source} components={components} />
-      </main>
+    <>
+      <Header />
+      <div className='resetcss text-white'>
+        <header>
+          <nav className="mx-auto xl:px-30 mt-40" style={{ maxWidth: '1200px' }}>
+            <Link href="/">
+              <a>👈 Go back home</a>
+            </Link>
+          </nav>
+        </header>
+        <div className="post-header mx-auto xl:px-30" style={{ maxWidth: '1200px' }}>
+          <h1>{frontMatter.title}</h1>
+          {frontMatter.description && (
+            <p className="description">{frontMatter.description}</p>
+          )}
+        </div>
+        <main className='mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
+          <MDXRemote {...source} components={components} />
+        </main>
 
-      <style jsx>{`
+
+        <style jsx>{`
         .post-header h1 {
           margin-bottom: 0;
         }
@@ -53,9 +59,10 @@ export default function MarkdownPage({ source, frontMatter }: any) {
         .description {
           opacity: 0.6;
         }
-      `}</style>
-    </div>
-  );
+        `}</style>
+      </div>
+      <Footer />
+    </>);
 }
 
 export const getStaticProps = async ({ params }: any) => {

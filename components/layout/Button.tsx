@@ -18,7 +18,7 @@ export const Button: React.FC<Props> = ({
       <button
         type={type || "button"}
         disabled={disabled}
-        className="h-16 content-box text-gray-f2f px-11 sm:px-40 rounded-default border-gray-f2f border-2 text-white font-medium box-content capitalize text-h6 hover:shadow-btn-hover-white transition-all"
+        className="disabled:opacity-50 h-16 content-box text-gray-f2f px-11 sm:px-40 rounded-default border-gray-f2f border-2 text-white font-medium box-content capitalize text-h6 hover:shadow-btn-hover-white transition-all"
       >
         {" "}
         {title}
@@ -28,9 +28,8 @@ export const Button: React.FC<Props> = ({
     <button
       type={type || "button"}
       disabled={disabled}
-      className="h-16 text-gray-f2f font-medium px-11 sm:px-40 btn--gradient rounded-default text-button hover:shadow-btn-hover transition-all duration-300 text-h6 capitalize"
+      className="disabled:opacity-50 h-16 text-gray-f2f font-medium px-11 sm:px-40 btn--gradient rounded-default text-button hover:shadow-btn-hover transition-all duration-300 text-h6 capitalize"
     >
-      {" "}
       {title}
     </button>
   );

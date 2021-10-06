@@ -9,6 +9,7 @@ import { OurProducts } from "../components/screens/landing/OurProducts";
 import { OurSolutionsBacked } from "../components/screens/landing/OurSolutionsBacked";
 import { OurCustomers } from "../components/screens/landing/OurCustomers";
 import { Newsletter } from "../components/screens/landing/Newsletter";
+
 const Home: NextPage = () => {
   return (
     <div className="main_layout">

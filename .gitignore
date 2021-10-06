@@ -35,3 +35,7 @@ yarn-error.log*
 
 /public/robots.txt
 /public/sitemap.xml
+.env
+.env.local
+.env.development
+.env.production

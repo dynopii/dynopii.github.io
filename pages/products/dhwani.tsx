@@ -7,7 +7,7 @@ import DhwaniSVG from "../../public/svgs/dhwanilogo.svg";
 import { FeatureCard } from "../../components/screens/products/FeatureCard";
 import { featuresBig } from "../../shared/staticData";
 import { PlayButton } from "../../components/SVGs";
-import { SiGooglehangoutsmeet } from "react-icons/si";
+import { SiGooglemeet } from "react-icons/si";
 import { SiMicrosoftteams } from "react-icons/si";
 import { TiSocialSkype } from "react-icons/ti";
 import { FaSlack } from "react-icons/fa";
@@ -16,7 +16,7 @@ import { ZoomSVG } from "../../components/SVGs";
 import { Pricing } from "../../components/screens/products-dhwani/Pricing";
 import ReactPlayer from "react-player";
 
-interface Props {}
+interface Props { }
 
 const Dhwani: React.FC<Props> = () => {
   return (
@@ -82,7 +82,7 @@ const Dhwani: React.FC<Props> = () => {
               Integrated with your tools
             </h3>
             <div className="flex items-center justify-between flex-wrap max-w-xl mx-auto">
-              <SiGooglehangoutsmeet
+              <SiGooglemeet
                 fill={"#ffffff"}
                 className="w-20 h-20 xs:w-16 xs:h-16"
               />

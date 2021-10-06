@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/layout/Footer";
 import Head from "next/head";
 import { BlogCard } from "../components/screens/blogs/BlogCard";
 import { Button } from "../components/layout/Button";
-import { blogs } from '../shared/contents';
+import axios from 'axios';
+import { urls } from '../shared/urls';
+import { Ghost_Blogs_Post } from '../shared/types';
+import { Loader } from '../components/SVGs';
 
 interface Props { }
 
 const Blogs: React.FC<Props> = () => {
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+  const [blogs, setBlogs] = useState<Ghost_Blogs_Post[] | []>([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        setLoading(true);
+        const data: any = await axios({
+          url: urls.GHOST_BLOGS_API,
+          method: 'GET'
+        });
+        const blogs: Ghost_Blogs_Post[] = data.data.posts;
+        setBlogs(blogs);
+      } catch (e) {
+        setError('Something went wrong, please try again later!');
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, []);
+
   return (
     <div className="main_layout">
       <Head>
@@ -21,13 +46,22 @@ const Blogs: React.FC<Props> = () => {
             Our Blogs
           </h1>
           <div className="flex xl:flex-col items-center justify-between md:justify-center">
-            {blogs.map((blog, i) => (
-              <BlogCard key={i} {...blog} />
-            ))}
-            {/* Array.from(Array(3).keys()) */}
+            {loading
+              ? <div className='w-full flex items-center justify-center'>
+                <Loader />
+              </div>
+              : error
+                ? <div><h3 className='text-h4 text-gray-f2f font-medium'>{error}</h3></div>
+                : !blogs.length
+                  ? <div><h3 className='text-h3 text-gray-f2f font-medium'>No Blogs Available!</h3></div>
+                  : blogs.map((blog: Ghost_Blogs_Post) => (
+                    <>
+                      <BlogCard key={blog.id} {...blog} />
+                    </>
+                  ))}
           </div>
           <div className="flex items-center mt-40 justify-center mb-70">
-            <Button title="Read more" />
+            {blogs.length > 3 && <a href={urls.GHOST_BLOGS} target='_blank' rel='noreferrer'><Button title="Read more" /></a>}
           </div>
         </div>
       </section>

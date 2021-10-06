@@ -1,4 +1,5 @@
 import React from "react";
+import { colors } from '../shared/constants';
 
 interface Props {
   height?: number;
@@ -253,6 +254,16 @@ export const CrossSVG: React.FC<Props> = ({ fill, height, width }) => {
         d="M9.99983 0C4.47716 0 0 4.47722 0 9.9999C0 15.5224 4.47709 20 9.9997 20C15.5223 20 19.9999 15.5224 19.9999 9.9999C19.9999 4.47722 15.5224 0 9.99983 0ZM13.7721 13.8113C13.3728 14.2102 12.726 14.2102 12.3271 13.8113C11.0704 12.5546 9.03288 12.5546 7.77619 13.8113L7.67259 13.9149C7.27353 14.3138 6.62667 14.3138 6.22781 13.9149C5.82854 13.5155 5.82854 12.8688 6.22781 12.4695L6.3918 12.3055C7.61502 11.0823 7.61499 9.0991 6.39174 7.87592C5.99281 7.47653 5.99281 6.82986 6.39174 6.43074C6.7908 6.03167 7.43779 6.03167 7.83692 6.43074L7.94025 6.53407C9.10636 7.70018 10.997 7.70015 12.1631 6.534C12.5621 6.13507 13.2093 6.13494 13.6081 6.534C14.0073 6.9334 14.0073 7.58046 13.6081 7.97919C12.4421 9.1453 12.4421 11.0358 13.6081 12.2019L13.7722 12.366C14.1711 12.7649 14.1713 13.4121 13.7721 13.8113Z"
         fill="#FB3F3F"
       />
+    </svg>
+  );
+};
+
+export const Loader = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" style={{ margin: 'auto', display: 'block', shapeRendering: 'auto' }} width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+      <circle cx="50" cy="50" fill="none" stroke={colors.white} strokeWidth="10" r="35" strokeDasharray="164.93361431346415 56.97787143782138">
+        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+      </circle>
     </svg>
   );
 };

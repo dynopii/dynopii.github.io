@@ -15,6 +15,7 @@ import { FaDiscord } from "react-icons/fa";
 import { ZoomSVG } from "../../components/SVGs";
 import { Pricing } from "../../components/screens/products-dhwani/Pricing";
 import ReactPlayer from "react-player";
+import { dhwaniContents } from '../../shared/contents';
 
 interface Props { }
 
@@ -28,25 +29,24 @@ const Dhwani: React.FC<Props> = () => {
       <section className="dhwani-page-bg min-h-screen">
         <div className="mx-auto xl:px-30" style={{ maxWidth: "1200px" }}>
           <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">
-            Dhwani
+            {dhwaniContents.title}
           </h1>
 
           {/* Dhwani Introduction Section */}
           <div className="flex items-center justify-center flex-col py-40">
             <Image src={DhwaniSVG} alt="logo" width={203} height={203} />
-            <h2 className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center">
-              Introducing <span className="text-brand">Dhwani</span>
+            <h2 className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center" dangerouslySetInnerHTML={{ __html: dhwaniContents.introductionSection.titleHTML }}>
+
             </h2>
             <h4 className="text-h4 sm:text-h5 text-gray-f2f font-semibold w-8/12 sm:w-11/12 text-center">
-              The goal of dhwani is to simplify the pain points of a solution
-              center.
+              {dhwaniContents.introductionSection.subtitle}
             </h4>
           </div>
 
           {/* Dhwani Features Section */}
           <div className="pt-40">
             <h3 className="text-h3 sm:text-h4 text-gray-e0e font-semibold mb-50 mt-70 text-center">
-              A possibility explored like never before.
+              {dhwaniContents.featuresSection.title}
             </h3>
             <div className="grid-feature-container" style={{ gridGap: 40 }}>
               {featuresBig.map((feature) => (
@@ -79,7 +79,7 @@ const Dhwani: React.FC<Props> = () => {
           {/* Integrated with tools section */}
           <div className="py-90">
             <h3 className="text-gray-e0e text-h3 sm:text-h4 text-center font-semibold mb-70">
-              Integrated with your tools
+              {dhwaniContents.integratedWithToolsSection.title}
             </h3>
             <div className="flex items-center justify-between flex-wrap max-w-xl mx-auto">
               <SiGooglemeet
@@ -108,11 +108,10 @@ const Dhwani: React.FC<Props> = () => {
           {/* Focus on Your Sales Section */}
           <div className="min-h-screen sm:min-h-1/4 md:min-h-1/2 sm:py-50 flex justify-center flex-col">
             <h1 className="text-h1 font-semibold sm:font-medium text-gray-f2f mb-70 sm:mb-40 md:text-h3">
-              Focus on your sales, not accent!
+              {dhwaniContents.focusOnSalesSection.title}
             </h1>
             <h3 className="text-h3 font-light text-gray-e0e md:text-h4">
-              Let our trained models ease your work. Introducing AI based
-              solutions. See the impossible become reality.
+              {dhwaniContents.focusOnSalesSection.description}
             </h3>
           </div>
 

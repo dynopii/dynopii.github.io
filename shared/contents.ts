@@ -1,4 +1,37 @@
 // In Landing Page
+export const landingContents = {
+  landingTitle: 'Redefining the way you communicate',
+  landingDescription: 'Effectivate communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.',
+  landingBtnTextPrimary: 'Schedule Demo',
+  landingBtnTextSecondary: 'Contact Sales',
+  ourPartnersSection: {
+    title: 'Our Partners'
+  },
+  ourProductsSection: {
+    title: 'Our Products',
+    aiDialer: {
+      mainText: 'AI Dialer',
+      subText: 'Coming Soon'
+    }
+  },
+  ourSolutionsBackedSection: {
+    title: 'Our Solutions backed by the best in the world',
+  },
+  ourCustomersSection: {
+    title: `Our Customers`
+  },
+  testimonialsSection: {
+    titleHTML: `Don’t just take our word for it,
+    <br /> Here’s what our users says`,
+    subtitle: 'Customer Testimonials'
+  },
+  newsletter: {
+    title: 'Subscribe to our Blog',
+    description: `Get latest product updates, resources, curated content delivered
+    straight in your inbox. Be the first to learn the news about new
+    features and product updates`
+  }
+};
 export const customers = [
   {
     id: "1",
@@ -58,6 +91,51 @@ export const partners = [
     "name": "Globaltech AI Capital"
   },
 ];
+export const testimonials = [
+  {
+    id: "1",
+    testimonial: `Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name: "Rhimjhim Bhadani",
+    twitterHandle: "@rhimjhim",
+    photo: "/images/testimonial-profile-pic-demo.png",
+  },
+  {
+    id: "1",
+    testimonial: `Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name: "Rhimjhim Bhadani",
+    twitterHandle: "@rhimjhim",
+    photo: "/images/testimonial-profile-pic-demo.png",
+  },
+  {
+    id: "1",
+    testimonial: `Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name: "Rhimjhim Bhadani",
+    twitterHandle: "@rhimjhim",
+    photo: "/images/testimonial-profile-pic-demo.png",
+  },
+  {
+    id: "1",
+    testimonial: `Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name: "Rhimjhim Bhadani",
+    twitterHandle: "@rhimjhim",
+    photo: "/images/testimonial-profile-pic-demo.png",
+  },
+  {
+    id: "1",
+    testimonial: `Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name: "Rhimjhim Bhadani",
+    twitterHandle: "@rhimjhim",
+    photo: "/images/testimonial-profile-pic-demo.png",
+  },
+  {
+    id: "1",
+    testimonial: `Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
+    name: "Rhimjhim Bhadani",
+    twitterHandle: "@rhimjhim",
+    photo: "/images/testimonial-profile-pic-demo.png",
+  },
+];
+
 
 // In Contacts Page & Footer
 export const contactUsContents = {
@@ -376,3 +454,137 @@ export const blogs = [
     photo: "/images/blog-demo.png",
   },
 ];
+
+// In Products Page
+export const productsContent = {
+  title: 'Products'
+};
+export const dhwaniCard = {
+  firstSectionTitle: 'Overview',
+  firstSectionDescription: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.`,
+  secondSectionTitle: 'Features',
+};
+// For features section in dhwani card checkout file named as staticData.tsx
+
+// In dhwani page
+export const dhwaniContents = {
+  title: 'Dhwani',
+  introductionSection: {
+    titleHTML: 'Introducing <span className="text-brand">Dhwani</span>',
+    subtitle: ` The goal of dhwani is to simplify the pain points of a solution
+    center.`,
+  },
+  featuresSection: {
+    title: ' A possibility explored like never before.',
+    // For features section in dhwani card checkout file named as staticData.tsx
+  },
+  integratedWithToolsSection: {
+    title: 'Integrated with your tools',
+  },
+  focusOnSalesSection: {
+    title: 'Focus on your sales, not accent!',
+    description: `Let our trained models ease your work. Introducing AI based
+    solutions. See the impossible become reality.`,
+  },
+  pricingSection: {
+    title: 'Pricing',
+  }
+};
+
+// Pricing Section in dhwani
+const startupFeatures = [
+  {
+    id: '1',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '2',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '3',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: false
+  },
+  {
+    id: '4',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: false
+  },
+];
+
+const premiumFeatures = [
+  {
+    id: '1',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '2',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '3',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '4',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: false
+  },
+];
+
+const enterpriseFeatures = [
+  {
+    id: '1',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '2',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '3',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+  {
+    id: '4',
+    feature: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed',
+    provided: true
+  },
+];
+
+export const packs = [
+  {
+    id: '1',
+    type: 'STARTUP',
+    title: 'Startup Pack',
+    price: 25.99,
+    description: 'For the startup team who work with ',
+    features: startupFeatures
+  },
+  {
+    id: '2',
+    type: 'PREMIUM',
+    title: 'Premium Pack',
+    price: 35.99,
+    description: 'For the organisation team who work with ',
+    features: premiumFeatures,
+  },
+  {
+    id: '3',
+    type: 'ENTERPRISE',
+    title: 'Enterprise Pack',
+    price: 125.99,
+    description: 'For the enterprise team who work with ',
+    features: enterpriseFeatures
+  },
+];
+

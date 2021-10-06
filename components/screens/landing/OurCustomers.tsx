@@ -1,5 +1,5 @@
 import React from "react";
-import { customers } from '../../../shared/contents';
+import { customers, landingContents } from '../../../shared/contents';
 
 interface Props { }
 
@@ -7,7 +7,7 @@ export const OurCustomers: React.FC<Props> = () => {
   return (
     <div className="py-40">
       <h3 className="text-h3 sm:text-h4 font-semibold text-gray-e0e text-center my-40">
-        Our Customers
+        {landingContents.ourCustomersSection.title}
       </h3>
       <div className="flex items-center justify-around flex-wrap">
         {customers.map((customer, i) => (

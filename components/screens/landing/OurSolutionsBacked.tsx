@@ -2,13 +2,15 @@ import React from "react";
 import { FaAws } from "react-icons/fa";
 import { CgDigitalocean } from "react-icons/cg";
 import Image from "next/image";
-interface Props {}
+import { landingContents } from '../../../shared/contents';
+
+interface Props { }
 
 export const OurSolutionsBacked: React.FC<Props> = () => {
   return (
     <div className="py-40">
       <h3 className="text-h3 sm:text-h4 font-semibold text-gray-e0e text-center my-40">
-        Our Solutions backed by the best in the world
+        {landingContents.ourSolutionsBackedSection.title}
       </h3>
       <div className="flex items-center justify-around flex-wrap">
         <div className="w-40 h-40 bg-gray-333 flex items-center justify-center rounded-default mt-20">

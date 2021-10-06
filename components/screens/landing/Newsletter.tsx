@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Formik } from "formik";
 import * as Yup from "yup";
-import { toast } from 'react-toastify';
-import axios from 'axios';
+import { landingContents } from '../../../shared/contents';
 
 interface Props { }
 
@@ -27,12 +25,10 @@ export const Newsletter: React.FC<Props> = () => {
   return (
     <div className="bg-gray-333 newsletter-bg rounded-default py-50 flex items-center justify-center flex-col">
       <h4 className="font-semibold text-gray-f2f text-h4 text-center">
-        Subscribe to our Blog
+        {landingContents.newsletter.title}
       </h4>
       <p className="text-body-lg tracking-wider text-gray-e0e font-normal text-center w-5/12 lg:w-8/12 sm:w-10/12 mt-35">
-        Get latest product updates, resources, curated content delivered
-        straight in your inbox. Be the first to learn the news about new
-        features and product updates
+        {landingContents.newsletter.description}
       </p>
 
       {/* <Formik

@@ -8,6 +8,7 @@ import axios from 'axios';
 import { urls } from '../shared/urls';
 import { Ghost_Blogs_Post } from '../shared/types';
 import { Loader } from '../components/SVGs';
+import { blogsContent } from '../shared/contents';
 
 interface Props { }
 
@@ -43,7 +44,7 @@ const Blogs: React.FC<Props> = () => {
       <section className="blog-section-bg min-h-screen">
         <div className="mx-auto xl:px-30" style={{ maxWidth: "1200px" }}>
           <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">
-            Our Blogs
+            {blogsContent.title}
           </h1>
           <div className="flex xl:flex-col items-center justify-between md:justify-center">
             {loading

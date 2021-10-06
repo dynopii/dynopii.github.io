@@ -1,28 +1,3 @@
-// In blogs page
-export const blogs = [
-  {
-    id: "1",
-    title: `Announcing new, consolidated site for all technical resources:
-    docs.digitalocean.com`,
-    noOfComments: "343",
-    photo: "/images/blog-demo.png",
-  },
-  {
-    id: "2",
-    title: `Announcing new, consolidated site for all technical resources:
-    docs.digitalocean.com`,
-    noOfComments: "343",
-    photo: "/images/blog-demo.png",
-  },
-  {
-    id: "3",
-    title: `Announcing new, consolidated site for all technical resources:
-    docs.digitalocean.com`,
-    noOfComments: "3433",
-    photo: "/images/blog-demo.png",
-  },
-];
-
 // In Landing Page
 export const customers = [
   {
@@ -371,5 +346,33 @@ export const smallBlogs = [
     image: "https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg",
     date: "Jun 18, 2020",
     href: "https://technewsnow.com/news/india-ai-startup-dynopii-debuts-speech-accent-changer-at-computex-2021",
+  },
+];
+
+// In Blogs Page => no longer used (fetching blogs from ghost blogs api)
+export const blogsContent = {
+  title: 'Our Blogs'
+};
+export const blogs = [
+  {
+    id: "1",
+    title: `Announcing new, consolidated site for all technical resources:
+    docs.digitalocean.com`,
+    noOfComments: "343",
+    photo: "/images/blog-demo.png",
+  },
+  {
+    id: "2",
+    title: `Announcing new, consolidated site for all technical resources:
+    docs.digitalocean.com`,
+    noOfComments: "343",
+    photo: "/images/blog-demo.png",
+  },
+  {
+    id: "3",
+    title: `Announcing new, consolidated site for all technical resources:
+    docs.digitalocean.com`,
+    noOfComments: "3433",
+    photo: "/images/blog-demo.png",
   },
 ];

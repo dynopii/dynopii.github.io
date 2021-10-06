@@ -302,7 +302,26 @@ export const footerContents = {
 
 // In Media Page
 export const mediaContents = {
-
+  title: 'Media Appearance',
+  upperParagraph: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice
+  automation.`,
+  lowerParagraph: `Our vision is to make it simple for consumers to do business with you by redefining.`,
+  link: {
+    title: 'Check out all our appearances',
+    href: '#all-appreances'
+  },
+  featured: {
+    href: 'https://www.digitimes.com.tw/iot/article.asp?cat=158&cat1=20&cat2=40&id=0000612267_7MC3DU6L53H2KA8KYXFW0&cf=AF1',
+    title: 'Featured',
+    photo: "https://mms.digitimes.com/NewsImg/2021/0618/612267-2-YXFW0.jpg",
+    blogTitle: `India's new creation Dynopii solves the pain points of language tone.`,
+    description: `Dynopii is a company founded by 3 young engineers, among which Anubhav Singh, the chief executive
+    officer, studied deep learning and worked as a software innovator at Intel.`,
+    publishedAt: 'Friday, 18th June, 2021'
+  },
+  allAppearances: {
+    title: 'All Appearances'
+  }
 };
 export const smallBlogs = [
   {

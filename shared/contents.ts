@@ -23,86 +23,6 @@ export const blogs = [
   },
 ];
 
-// In Media Page
-export const smallBlogs = [
-  {
-    id: "1",
-    title: `India's new creation Dynopii solves the pain points of language tone `,
-    // image: '/images/media-small-1.png',
-    image: "https://mms.digitimes.com/NewsImg/2021/0618/612267-2-YXFW0.jpg",
-    date: "Jun 18, 2021",
-    href: "https://www.digitimes.com.tw/iot/article.asp?cat=158&cat1=20&cat2=40&id=0000612267_7MC3DU6L53H2KA8KYXFW0&cf=AF1",
-  },
-  {
-    id: "2",
-    title: "India AI startup Dynopii debuts speech accent changer at Computex 2021",
-    // image: '/images/media-small-2.png',
-    image: "https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg",
-    date: "Jun 18, 2021",
-    href: "https://www.digitimes.com/news/a20210618PD203.html",
-  },
-  {
-    id: "3",
-    title: "Dynopii, Indian AI startup unveils speech accent changer: Computex 2021",
-    // image: '/images/media-small-3.png',
-    image:
-      "https://www.ncnonline.net/wp-content/uploads/2021/06/Dynopii-Indian-AI-startup-unveils-speech-accent-changer-Computex-2021-640x360.jpeg",
-    date: "June 24, 2021",
-    href: "https://www.ncnonline.net/news-in-brief/dynopii-indian-ai-startup-unveils-speech-accent-changer-computex-2021",
-  },
-  {
-    id: "4",
-    title: "Indian AI startup Dynopii debuts voice accent changer with Computex 2021",
-    // image: '/images/media-small-4.png',
-    image: "https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg",
-    date: "Jun 18, 2020",
-    href: "https://worldakkam.com/indian-ai-startup-dynopii-debuts-voice-accent-changer-with-computex-2021/82144/",
-  },
-  {
-    id: "5",
-    title: "Startup in ASEAN - Dynopii an AI speech accent changer  ",
-    image:
-      "https://scontent.fixr3-1.fna.fbcdn.net/v/t1.6435-9/112337814_1052677161817657_2425797221960566743_n.png?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=EammsFPP6EcAX95aBwC&tn=VzZnbrfpR7g2ScRE&_nc_ht=scontent.fixr3-1.fna&oh=c676e4dc00060db0b0107bdf75fa3ed2&oe=617185FF",
-    date: "Jul 16, 2021",
-    href: "https://www.facebook.com/STARTBOARD.co/posts/startup-in-asean-dynopii-an-ai-speech-accent-changer-indiaduring-the-covid-19-on/1299265520492152/",
-  },
-  {
-    id: "6",
-    title: "Startup in ASEAN - Dynopii an AI speech accent changer ",
-    image: "https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg",
-    date: "Jun 18, 2020",
-    href: "https://technewsnow.com/news/india-ai-startup-dynopii-debuts-speech-accent-changer-at-computex-2021",
-  },
-];
-
-// In About Page
-export const StrategicPartnersData = [
-  {
-    id: '1',
-    name: 'Julia DeWahl',
-    designation: 'CEO',
-    photo: '/images/team-demo-pic.png',
-  },
-  {
-    id: '2',
-    name: 'Julia DeWahl',
-    designation: 'Angel Investor',
-    photo: '/images/team-demo-pic.png',
-  },
-  {
-    id: '3',
-    name: 'Julia DeWahl',
-    designation: 'Ex-Paypal',
-    photo: '/images/team-demo-pic.png',
-  },
-  {
-    id: '4',
-    name: 'Julia DeWahl',
-    designation: 'Ex-Amazon',
-    photo: '/images/team-demo-pic.png',
-  },
-];
-
 // In Landing Page
 export const customers = [
   {
@@ -176,10 +96,97 @@ export const contactUsContents = {
   email: 'hello@dynopii.com'
 };
 
+// In About Us Page
 export const aboutUsContents = {
-
+  title: 'The magic of sound.',
+  upperParagraph: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice
+  automation.`,
+  lowerParagraph: `Our vision is to make it simple for consumers to do business with you by redefining.`,
+  link: {
+    title: 'Read more about us',
+    href: '#our-team'
+  },
+  //Teams
+  teamsSection: {
+    title: 'Our Team',
+    description: 'Our team has led and delivered large-scale software and design projects in multiple startups and high-growth environments like Intel, and nice startups.',
+  },
+  // Strategic Partners
+  StrategicPartners: {
+    title: 'Strategic Partners'
+  }
 };
+export const aboutUsTeams = [
+  {
+    id: '1',
+    photo: '/images/team-demo-pic.png',
+    name: 'Julia DeWahl',
+    description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/dynopii',
+    linkedin: 'https://in.linkedin.com/company/dynopii',
+  },
+  {
+    id: '2',
+    photo: '/images/team-demo-pic.png',
+    name: 'Julia ',
+    description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/dynopii',
+    linkedin: 'https://in.linkedin.com/company/dynopii',
+  },
+  {
+    id: '3',
+    photo: '/images/team-demo-pic.png',
+    name: ' DeWahl',
+    description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/dynopii',
+    linkedin: 'https://in.linkedin.com/company/dynopii',
+  },
+  {
+    id: '4',
+    photo: '/images/team-demo-pic.png',
+    name: 'Julia DeWahl',
+    description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/dynopii',
+    linkedin: 'https://in.linkedin.com/company/dynopii',
+  },
+  {
+    id: '5',
+    photo: '/images/team-demo-pic.png',
+    name: 'Julia DeWahl',
+    description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/dynopii',
+    linkedin: 'https://in.linkedin.com/company/dynopii',
+  },
+];
+export const StrategicPartnersData = [
+  {
+    id: '1',
+    name: 'Julia DeWahl',
+    designation: 'CEO',
+    photo: '/images/team-demo-pic.png',
+  },
+  {
+    id: '2',
+    name: 'Julia DeWahl',
+    designation: 'Angel Investor',
+    photo: '/images/team-demo-pic.png',
+  },
+  {
+    id: '3',
+    name: 'Julia DeWahl',
+    designation: 'Ex-Paypal',
+    photo: '/images/team-demo-pic.png',
+  },
+  {
+    id: '4',
+    name: 'Julia DeWahl',
+    designation: 'Ex-Amazon',
+    photo: '/images/team-demo-pic.png',
+  },
+];
 
+
+// Footer
 export const footerContents = {
   copyright: 'Copyright © 2021 Dynopii, Inc. All rights reserved.',
   links: [
@@ -292,3 +299,58 @@ export const footerContents = {
     },
   ]
 };
+
+// In Media Page
+export const mediaContents = {
+
+};
+export const smallBlogs = [
+  {
+    id: "1",
+    title: `India's new creation Dynopii solves the pain points of language tone `,
+    // image: '/images/media-small-1.png',
+    image: "https://mms.digitimes.com/NewsImg/2021/0618/612267-2-YXFW0.jpg",
+    date: "Jun 18, 2021",
+    href: "https://www.digitimes.com.tw/iot/article.asp?cat=158&cat1=20&cat2=40&id=0000612267_7MC3DU6L53H2KA8KYXFW0&cf=AF1",
+  },
+  {
+    id: "2",
+    title: "India AI startup Dynopii debuts speech accent changer at Computex 2021",
+    // image: '/images/media-small-2.png',
+    image: "https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg",
+    date: "Jun 18, 2021",
+    href: "https://www.digitimes.com/news/a20210618PD203.html",
+  },
+  {
+    id: "3",
+    title: "Dynopii, Indian AI startup unveils speech accent changer: Computex 2021",
+    // image: '/images/media-small-3.png',
+    image:
+      "https://www.ncnonline.net/wp-content/uploads/2021/06/Dynopii-Indian-AI-startup-unveils-speech-accent-changer-Computex-2021-640x360.jpeg",
+    date: "June 24, 2021",
+    href: "https://www.ncnonline.net/news-in-brief/dynopii-indian-ai-startup-unveils-speech-accent-changer-computex-2021",
+  },
+  {
+    id: "4",
+    title: "Indian AI startup Dynopii debuts voice accent changer with Computex 2021",
+    // image: '/images/media-small-4.png',
+    image: "https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg",
+    date: "Jun 18, 2020",
+    href: "https://worldakkam.com/indian-ai-startup-dynopii-debuts-voice-accent-changer-with-computex-2021/82144/",
+  },
+  {
+    id: "5",
+    title: "Startup in ASEAN - Dynopii an AI speech accent changer  ",
+    image:
+      "https://scontent.fixr3-1.fna.fbcdn.net/v/t1.6435-9/112337814_1052677161817657_2425797221960566743_n.png?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=EammsFPP6EcAX95aBwC&tn=VzZnbrfpR7g2ScRE&_nc_ht=scontent.fixr3-1.fna&oh=c676e4dc00060db0b0107bdf75fa3ed2&oe=617185FF",
+    date: "Jul 16, 2021",
+    href: "https://www.facebook.com/STARTBOARD.co/posts/startup-in-asean-dynopii-an-ai-speech-accent-changer-indiaduring-the-covid-19-on/1299265520492152/",
+  },
+  {
+    id: "6",
+    title: "Startup in ASEAN - Dynopii an AI speech accent changer ",
+    image: "https://www.digitimes.com/newsshow/20210618PD203_files/1_b.jpg",
+    date: "Jun 18, 2020",
+    href: "https://technewsnow.com/news/india-ai-startup-dynopii-debuts-speech-accent-changer-at-computex-2021",
+  },
+];

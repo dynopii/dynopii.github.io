@@ -48,7 +48,7 @@ export default function MarkdownPage({ source, frontMatter }: any) {
         <div className="post-header mx-auto xl:px-30" style={{
           maxWidth: '1200px'
         }}>
-          <h1 className="mx-auto xl:px-30 pt-140 sm:pt-90 text-white font-semibold text-h3 mb-30">{frontMatter.title}</h1>
+          <h1 className="mx-auto pt-140 sm:pt-90 text-white font-semibold text-h3 mb-30">{frontMatter.title}</h1>
           <h6 className="text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12 sm:w-10/12 opacity-80">
             {frontMatter.description}
           </h6>

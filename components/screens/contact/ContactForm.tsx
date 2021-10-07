@@ -55,7 +55,7 @@ export const ContactForm: React.FC<Props> = () => {
         }, 100);
       }}
     >
-      {({ values, errors, handleChange, handleBlur, handleSubmit, setFieldValue, isSubmitting }) => (
+      {({ values, errors, handleChange, handleSubmit, isSubmitting }) => (
         <form onSubmit={handleSubmit}>
           <div className='flex justify-between md:flex-col items-center w-full'>
             <InputField error={errors.name} containerClasses={`mr-40 md:mr-0`} label={'Full Name'} id='name' value={values.name} onChange={handleChange} />

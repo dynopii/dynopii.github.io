@@ -23,7 +23,7 @@ export const InputField: React.FC<Props> = ({ id, value, onChange, label, contai
           <textarea className='focus:outline-none bg-gray-444 border-b border-gray-e0e text-white font-light text-body-lg' id={id} value={value} onChange={onChange} />
       }
 
-      <p className='text-gray-999 text-body-sm font-medium mt-5'>{error}</p>
+      <p className='text-gray-999 text-body-sm font-medium mt-5 transiton-all h-5'>{error}</p>
     </div>
   );
 };

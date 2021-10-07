@@ -197,15 +197,6 @@ const Main2 = () => {
                 className="jsx-3892812271"
               ></line>
 
-              {/* <rect
-								x="1036.5"
-								y="79.5"
-								width="1040"
-								height="553"
-								rx="7.5"
-								className="jsx-3892812271 border"
-							></rect> */}
-
               <rect
                 x="1054.5"
                 y="79.5"
@@ -214,14 +205,6 @@ const Main2 = () => {
                 rx="7.5"
                 className="jsx-3892812271 border"
               ></rect>
-              {/* <rect
-								x="1040.5"
-								y="83.5"
-								width="1031"
-								height="545"
-								rx="3.5"
-								className="jsx-3892812271 border"
-							></rect> */}
               <rect
                 x="1059"
                 y="83.5"

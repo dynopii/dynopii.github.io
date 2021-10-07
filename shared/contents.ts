@@ -96,22 +96,22 @@ export const testimonials = [
     id: "1",
     testimonial: `Truly enthralled by the idea of solving petty problems using the most obvious yet never thought of roadway. Eagerly waiting for more updates and products from their end...`,
     name: "Rhimjhim Bhadani",
-    twitterHandle: "@rhimjhim",
+    twitterHandle: "SDE@Amazon",
     photo: "/images/testimonial-profile-pic-demo.png",
   },
   {
     id: "2",
     testimonial: `The enterprise Dhwani solution not only increased our outbound sales but also solved a huge problem of accent change on the go and training new members. Waiting for there other solutions in the pipeline...
     `,
-    name: "Rhimjhim Bhadani",
-    twitterHandle: "@rhimjhim",
+    name: "Jack",
+    twitterHandle: "Tech support manager@VRS solutions",
     photo: "/images/testimonial-profile-pic-demo.png",
   },
   {
     id: "3",
     testimonial: `The ingenuity of the solution lies in the natural voices and the ease of use and deployment process.. the statistics of the leads conversion in positive track certainly helped us ...`,
-    name: "Rhimjhim Bhadani",
-    twitterHandle: "@rhimjhim",
+    name: "Mr. James",
+    twitterHandle: "Tech support manager@IQSolutions",
     photo: "/images/testimonial-profile-pic-demo.png",
   },
 ];
@@ -287,7 +287,7 @@ export const footerContents = {
       ]
     },
     {
-      id: '3',
+      id: '4',
       title: 'Products',
       subLinks: [
         {
@@ -301,7 +301,7 @@ export const footerContents = {
       ]
     },
     {
-      id: '4',
+      id: '5',
       title: 'Support',
       subLinks: [
         {

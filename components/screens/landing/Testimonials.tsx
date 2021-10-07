@@ -7,7 +7,7 @@ interface Props { }
 export const Testimonials: React.FC<Props> = () => {
   return (
     <section
-      className="min-h-screen mx-auto p-30"
+      className="mx-auto p-30"
       style={{ maxWidth: "1200px" }}
     >
       <h3 className="text-h3 sm:text-h4 font-semibold text-gray-e0e text-center mt-40" dangerouslySetInnerHTML={{ __html: landingContents.testimonialsSection.titleHTML }} />

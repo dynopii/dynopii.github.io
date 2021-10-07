@@ -28,38 +28,35 @@ const components = {
 export default function MarkdownPage({ source, frontMatter }: any) {
   return (
     <>
+      <Head>
+        <title>{frontMatter.title} | Dynopii | Redefining the way you communicate.</title>
+      </Head>
       <Header />
-      <div className='resetcss text-white'>
-        <header>
+      <div className='text-white' style={{
+        backgroundImage: `url(${frontMatter.coverImage})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top',
+        backgroundSize: '100%',
+      }}>
+        {/* <header>
           <nav className="mx-auto xl:px-30 mt-40" style={{ maxWidth: '1200px' }}>
             <Link href="/">
-              <a>👈 Go back home</a>
+              <a>Go back home</a>
             </Link>
           </nav>
-        </header>
-        <div className="post-header mx-auto xl:px-30" style={{ maxWidth: '1200px' }}>
-          <h1>{frontMatter.title}</h1>
-          {frontMatter.description && (
-            <p className="description">{frontMatter.description}</p>
-          )}
+        </header> */}
+        <div className="post-header mx-auto xl:px-30" style={{
+          maxWidth: '1200px'
+        }}>
+          <h1 className="mx-auto xl:px-30 pt-140 sm:pt-90 text-white font-semibold text-h3 mb-30">{frontMatter.title}</h1>
+          <h6 className="text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12 sm:w-10/12 opacity-80">
+            {frontMatter.description}
+          </h6>
         </div>
-        <main className='mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
+        <main className='resetcss mx-auto xl:px-30' style={{ maxWidth: '1200px' }}>
           <MDXRemote {...source} components={components} />
         </main>
 
-
-        <style jsx>{`
-        .post-header h1 {
-          margin-bottom: 0;
-        }
-
-        .post-header {
-          margin-bottom: 2rem;
-        }
-        .description {
-          opacity: 0.6;
-        }
-        `}</style>
       </div>
       <Footer />
     </>);

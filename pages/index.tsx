@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       <section className="mx-auto p-30" style={{ maxWidth: "1200px" }}>
         <Newsletter />
       </section>
-      <Footer />
+      <Footer route="landing" />
     </div>
   );
 };

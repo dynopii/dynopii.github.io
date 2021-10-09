@@ -1,7 +1,7 @@
 import React from "react";
-import { customers, landingContents } from '../../../shared/contents';
+import { customers, landingContents } from "../../../shared/contents";
 
-interface Props { }
+interface Props {}
 
 export const OurCustomers: React.FC<Props> = () => {
   return (
@@ -15,7 +15,7 @@ export const OurCustomers: React.FC<Props> = () => {
             className="w-40 h-40 bg-gray-333 rounded-default flex items-center justify-center mt-20"
             key={customer.id}
           >
-            <div className="w-30 h-30 flex items-center justify-center">
+            <div className="w-20 h-20 overflow-hidden rounded-default flex items-center justify-center">
               <img
                 src={customer.photo}
                 width={100}
@@ -30,4 +30,3 @@ export const OurCustomers: React.FC<Props> = () => {
     </div>
   );
 };
-

@@ -35,7 +35,7 @@ export const landingContents = {
 export const customers = [
   {
     id: "1",
-    photo: "/images/retool.png",
+    photo: "/images/vrm.jpeg",
     title: "Title",
   },
   {
@@ -66,22 +66,22 @@ export const customers = [
 ];
 export const partners = [
   {
-    "img_src": "/images/team-demo-pic.png",
+    "img_src": "/images/Backend-Capital.png",
     "alt": "Backend Capital",
     "name": "Backend Capital"
   },
   {
-    "img_src": "/images/team-demo-pic.png",
+    "img_src": "/images/infinity-ventures.jpeg",
     "alt": "Infinity Ventures",
     "name": "Infinity Ventures"
   },
   {
-    "img_src": "/images/team-demo-pic.png",
+    "img_src": "/images/siqi-chen.jpeg",
     "alt": "Siqi Chen",
     "name": "Siqi Chen"
   },
   {
-    "img_src": "/images/team-demo-pic.png",
+    "img_src": "/images/fan-zhang.jpeg",
     "alt": "Fan Zhang",
     "name": "Fan Zhang"
   },
@@ -441,7 +441,9 @@ export const productsContent = {
 };
 export const dhwaniCard = {
   firstSectionTitle: 'Overview',
-  firstSectionDescription: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.`,
+  firstSectionDescription: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.
+
+  Deliver personalised customer engagement on the channel of your customer's choice and give your team the tools to make every moment count.`,
   secondSectionTitle: 'Features',
 };
 // For features section in dhwani card checkout file named as staticData.tsx

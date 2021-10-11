@@ -6,7 +6,7 @@ import DhwaniSVG from "../public/svgs/dhwanilogo.svg";
 import { Button } from "./layout/Button";
 import Link from "next/link";
 import { colors } from "../shared/constants";
-import { contactUsContents, landingContents } from '../shared/contents';
+import { contactUsContents, landingContents } from "../shared/contents";
 
 export const Main = () => {
   return (
@@ -42,7 +42,10 @@ export const Main = () => {
           </span>
           <span className="animate">
             <p className="text-h6 text-gray-e0e font-light mt-10 mb-10">
-              Effectivate communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.
+              Effectivate communication is not easy. We help you provide unique
+              personalized communication to your customers helping them
+              understand your business better. Never before in the industry and
+              surely nowhere else.
             </p>
           </span>
           <div className="spacer"></div>
@@ -69,14 +72,10 @@ export const Main = () => {
 const Main2 = () => {
   return (
     <div className="layout_content flex flex-col flex-auto">
-      <div
-        className="splash pt-40 flex justify-center w-full relative overflow-hidden"
-      >
-        <div
-          className="splash_content_container content_container text-center flex flex-col justify-center items-center"
-        >
+      <div className="splash pt-40 flex justify-center w-full relative overflow-hidden">
+        <div className="splash_content_container content_container text-center flex flex-col justify-center">
           <div
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center"
             style={{ minHeight: "83vh" }}
           >
             <div className="splash_banner_animate">
@@ -122,26 +121,26 @@ const Main2 = () => {
               </div> */}
             </div>
             <span className="animate">
-              <h1 className="hero_title text-h1 md:text-h3 text-white sm:text-5xl md:text-6xl">
+              <h1 className="hero_title text-left text-h1 md:text-h3 text-white sm:text-5xl md:text-6xl">
                 {landingContents.landingTitle}
               </h1>
             </span>
             <span className="animate">
-              <p className="hero_sub_text sm:text-2xl">
+              <p className="text-left hero_sub_text sm:text-2xl">
                 {landingContents.landingDescription}
               </p>
             </span>
             <div className="spacer"></div>
-            <div className="animate flex sm:flex-col items-center justify-center">
+            <div className="animate flex sm:flex-col items-center">
               <a href="mailto:hello@dynopii.com">
                 <Button title={landingContents.landingBtnTextPrimary} />
-                {/* <button type="submit" className="signup_btn">
-                  Sign up for free →
-                </button> */}
               </a>
               <div className="ml-30 sm:ml-0 sm:mt-30">
                 <a href={`mailto:${contactUsContents.email}`}>
-                  <Button uiType="outlined" title={landingContents.landingBtnTextSecondary}></Button>
+                  <Button
+                    uiType="outlined"
+                    title={landingContents.landingBtnTextSecondary}
+                  ></Button>
                 </a>
               </div>
             </div>

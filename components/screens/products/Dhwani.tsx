@@ -9,7 +9,8 @@ interface Props {}
 export const Dhwani: React.FC<Props> = () => {
   return (
     <div className="bg-gray-333 rounded-default overflow-hidden">
-      <div className="dhwani-cover-bg h-96 p-30 flex items-center justify-center">
+      <div className="dhwani-cover-bg h-96 flex items-center justify-center overflow-hidden">
+        {/* <div className=" h-96 flex items-center justify-center overflow-hidden relative"> */}
         {/* <Image src={DhwaniSVG} alt="logo" width={115} height={115} />
         <h4 className="text-h4 text-gray-f2f font-normal ml-15">Dhwani</h4> */}
       </div>

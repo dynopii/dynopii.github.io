@@ -55,6 +55,9 @@ export const Footer: React.FC<Props> = ({ route }) => {
         /> */}
         {route === "landing" && (
           <div className="mx-auto my-40" style={{ maxWidth: "1200px" }}>
+            <p className="text-h6 text-center font-normal text-gray-666">
+              We are available in US, India and Taiwan.
+            </p>
             <DynopiiMap height={"100%"} width={"100%"} />
           </div>
         )}

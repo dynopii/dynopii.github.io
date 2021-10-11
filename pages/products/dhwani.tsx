@@ -15,9 +15,9 @@ import { FaDiscord } from "react-icons/fa";
 import { ZoomSVG } from "../../components/SVGs";
 import { Pricing } from "../../components/screens/products-dhwani/Pricing";
 import ReactPlayer from "react-player";
-import { dhwaniContents } from '../../shared/contents';
+import { dhwaniContents } from "../../shared/contents";
 
-interface Props { }
+interface Props {}
 
 const Dhwani: React.FC<Props> = () => {
   return (
@@ -28,16 +28,17 @@ const Dhwani: React.FC<Props> = () => {
       <Header />
       <section className="dhwani-page-bg min-h-screen">
         <div className="mx-auto xl:px-30" style={{ maxWidth: "1200px" }}>
-          <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">
+          {/* <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">
             {dhwaniContents.title}
-          </h1>
+          </h1> */}
 
           {/* Dhwani Introduction Section */}
-          <div className="flex items-center justify-center flex-col py-40">
+          <div className="flex items-center justify-center flex-col py-40 pt-140">
             <Image src={DhwaniSVG} alt="logo" width={203} height={203} />
-            <h2 className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center" dangerouslySetInnerHTML={{ __html: dhwaniContents.introductionSection.titleHTML }}>
-
-            </h2>
+            <h2
+              className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center"
+              dangerouslySetInnerHTML={{ __html: dhwaniContents.introductionSection.titleHTML }}
+            ></h2>
             <h4 className="text-h4 sm:text-h5 text-gray-f2f font-semibold w-8/12 sm:w-11/12 text-center">
               {dhwaniContents.introductionSection.subtitle}
             </h4>
@@ -82,26 +83,14 @@ const Dhwani: React.FC<Props> = () => {
               {dhwaniContents.integratedWithToolsSection.title}
             </h3>
             <div className="flex items-center justify-between flex-wrap max-w-xl mx-auto">
-              <SiGooglemeet
-                fill={"#ffffff"}
-                className="w-20 h-20 xs:w-16 xs:h-16"
-              />
-              <SiMicrosoftteams
-                fill={"#ffffff"}
-                className="w-20 h-20 xs:w-16 xs:h-16"
-              />
-              <TiSocialSkype
-                fill={"#ffffff"}
-                className="w-20 h-20 xs:w-16 xs:h-16"
-              />
+              <SiGooglemeet fill={"#ffffff"} className="w-20 h-20 xs:w-16 xs:h-16" />
+              <SiMicrosoftteams fill={"#ffffff"} className="w-20 h-20 xs:w-16 xs:h-16" />
+              <TiSocialSkype fill={"#ffffff"} className="w-20 h-20 xs:w-16 xs:h-16" />
             </div>
             <div className="flex items-center justify-between flex-wrap max-w-xl mx-auto mt-50">
               <ZoomSVG className="w-20 h-20 xs:w-16 xs:h-16" />
               <FaSlack fill={"#ffffff"} className="w-20 h-20 xs:w-16 xs:h-16" />
-              <FaDiscord
-                fill={"#ffffff"}
-                className="w-20 h-20 xs:w-16 xs:h-16"
-              />
+              <FaDiscord fill={"#ffffff"} className="w-20 h-20 xs:w-16 xs:h-16" />
             </div>
           </div>
 

@@ -10,7 +10,12 @@ interface Props {}
 export const Dhwani: React.FC<Props> = () => {
   return (
     <div className="bg-gray-333 rounded-default overflow-hidden">
-      <div className="dhwani-cover-bg h-96 flex items-center justify-center overflow-hidden relative">
+      <div
+        className="dhwani-cover-bg h-96 flex items-center justify-center overflow-hidden relative"
+        style={{
+          background: "no-repeat,linear-gradient(270deg,#9121c2,#ff5e5e)",
+        }}
+      >
         {/* <div
         className=" h-96 flex items-center justify-center overflow-hidden relative"
         //         style={{

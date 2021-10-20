@@ -45,7 +45,7 @@ const Blogs: React.FC<Props> = () => {
       </Head>
       <Header />
       <section className="blog-section-bg min-h-screen">
-        <div className="mx-auto xl:px-30" style={{ maxWidth: "1200px" }}>
+        <div className="mx-auto px-30" style={{ maxWidth: "1200px" }}>
           <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">
             {blogsContent.title}
           </h1>

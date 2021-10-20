@@ -123,8 +123,11 @@ export const contactUsContents = {
   title: `Contact
   <br /> Information`,
   description: 'Fill up the form and our Team will get back to you within 24 hours.',
-  address: `3-Floor, 7A, Bedia Danga Masjid Bari Bye Lane, LP-150/7/8/0
-  Kolkata WB 700039 IN`,
+  addressIndia: `CUBICLE NO: 103
+  132 A, S.P MUKHERJEE ROAD, West Bengal, KOLKATA -700026`,
+  addressUS: `8, THE GREEN STE A,
+  City of DOVER, DE, 
+  Count of Kent, Zip-code: 19901`,
   phoneNumber: '+91 1234567890',
   email: 'hello@dynopii.com'
 };
@@ -222,6 +225,7 @@ export const StrategicPartnersData = [
 // Footer
 export const footerContents = {
   copyright: 'Copyright © 2021 Dynopii, Inc. All rights reserved.',
+  mapTitle: 'We are available in United States, India and Taiwan.',
   links: [
     {
       id: '1',
@@ -229,23 +233,24 @@ export const footerContents = {
       subLinks: [
         {
           id: '1',
-          title: 'Products',
-          href: "/products"
-        },
-        {
-          id: '2',
           title: 'About Us',
           href: "/about"
         },
         {
+          id: '2',
+          title: 'Products',
+          href: "/products"
+        },
+        {
           id: '3',
-          title: 'Pricing',
-          href: "/pricing"
+          title: 'Blogs',
+          href: "/blogs",
+          spanText: 'New'
         },
         {
           id: '4',
-          title: 'Partners',
-          href: "/partners",
+          title: 'Media',
+          href: "/media",
           spanText: 'New'
         },
       ]
@@ -260,29 +265,7 @@ export const footerContents = {
         },
         {
           id: '2',
-          title: 'Career', href: "/career", spanText: `We're hiring`
-        },
-        {
-          id: '3',
-          title: 'Surveys', href: "/surveys", spanText: 'New'
-        },
-      ]
-    },
-    {
-      id: '3',
-      title: 'Resources',
-      subLinks: [
-        {
-          id: '1',
-          title: 'Documentation', href: "/documentation"
-        },
-        {
-          id: '2',
-          title: 'Tutorials', href: "/tutorials"
-        },
-        {
-          id: '3',
-          title: 'Support', href: "/support", spanText: 'New'
+          title: 'Career', href: "https://angel.co/company/dynopii/jobs", spanText: `We're hiring`, inDOM: false,
         },
       ]
     },
@@ -305,16 +288,8 @@ export const footerContents = {
       title: 'Support',
       subLinks: [
         {
-          id: '1',
-          title: 'Help Center', href: '/help-center'
-        },
-        {
           id: '2',
-          title: 'Privacy Policy', href: '/privacy-policy'
-        },
-        {
-          id: '3',
-          title: 'Conditions', href: '/conditions'
+          title: 'Privacy Policy', href: '/privacy'
         },
         {
           id: '4',
@@ -322,7 +297,7 @@ export const footerContents = {
         },
         {
           id: '5',
-          title: 'Terms of Use', href: "/terms-of-use"
+          title: 'Terms of Use', href: "/terms"
         },
         {
           id: '6',

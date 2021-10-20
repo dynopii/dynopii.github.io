@@ -16,25 +16,38 @@ export const Footer: React.FC<Props> = ({ route }) => {
     <>
       <footer className="mt-90 md:mt-50 m-30">
         <div className="bg-gray-100">
-          <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+          <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-between">
             {footerContents.links.map((footerLink) => (
               <div key={footerLink.id} className="p-5 w-48 ">
                 <FooterLinkTitle title={footerLink.title} />
-                {footerLink.subLinks.map((link) => (
-                  <FooterLink
-                    key={link.id}
-                    title={link.title}
-                    href={link.href}
-                    spanText={link.spanText || ""}
-                  />
-                ))}
+                {footerLink.subLinks.map(
+                  (link: {
+                    id: string;
+                    title: string;
+                    href: string;
+                    spanText?: string;
+                    inDOM?: boolean;
+                  }) => (
+                    <FooterLink
+                      key={link.id}
+                      title={link.title}
+                      href={link.href}
+                      spanText={link.spanText || ""}
+                      inDOM={link?.inDOM}
+                    />
+                  )
+                )}
               </div>
             ))}
-            <div className="p-5 w-48 ">
+            <div className="p-5 w-48 xs:w-full">
               <FooterLinkTitle title="Contact us" />
+              <FooterLinkTitle title="United States" classNames="mt-3" />
               <p className="my-3 block text-gray-666">
-                {contactUsContents.address}
-                <span className="text-teal-600 text-xs p-1" />
+                {contactUsContents.addressUS}
+              </p>
+              <FooterLinkTitle title="India" />
+              <p className="my-3 block text-gray-666">
+                {contactUsContents.addressIndia}
               </p>
               <a
                 className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
@@ -44,6 +57,7 @@ export const Footer: React.FC<Props> = ({ route }) => {
                 <span className="text-teal-600 text-xs p-1" />
               </a>
             </div>
+            <div className="p-5 w-48 hidden lg:block"></div>
           </div>
         </div>
         {/* <Image
@@ -56,7 +70,7 @@ export const Footer: React.FC<Props> = ({ route }) => {
         {route === "landing" && (
           <div className="mx-auto my-40" style={{ maxWidth: "1200px" }}>
             <p className="text-h6 text-center font-normal text-gray-666">
-              We are available in US, India and Taiwan.
+              {footerContents.mapTitle}
             </p>
             <DynopiiMap height={"100%"} width={"100%"} />
           </div>
@@ -139,7 +153,10 @@ export const FooterLink: React.FC<FooterLinkProps> = ({
         <a
           className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
           href={href}
+          target="_blank"
+          rel="noreferrer"
         >
+          {" "}
           {title}{" "}
           <span className="text-teal-600 text-xs p-1 text-brand">
             {spanText || ""}
@@ -150,10 +167,15 @@ export const FooterLink: React.FC<FooterLinkProps> = ({
   );
 };
 
-export const FooterLinkTitle: React.FC<{ title: string }> = ({ title }) => {
-  return (
-    <div className="text-xs uppercase text-gray-500 font-medium text-gray-444">
-      {title}
-    </div>
-  );
-};
+export const FooterLinkTitle: React.FC<{ title: string; classNames?: string }> =
+  ({ title, classNames }) => {
+    return (
+      <div
+        className={`text-xs uppercase text-gray-500 font-medium text-gray-444 ${
+          classNames || ""
+        }`}
+      >
+        {title}
+      </div>
+    );
+  };

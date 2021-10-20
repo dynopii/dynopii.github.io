@@ -5,9 +5,9 @@ import Head from "next/head";
 import { BsArrowRight } from "react-icons/bs";
 import { colors } from "../shared/constants";
 import Link from "next/link";
-import { mediaContents, smallBlogs } from '../shared/contents';
+import { mediaContents, smallBlogs } from "../shared/contents";
 
-interface Props { }
+interface Props {}
 
 const Media: React.FC<Props> = () => {
   return (
@@ -17,7 +17,7 @@ const Media: React.FC<Props> = () => {
       </Head>
       <Header />
       <section className="media-section-bg min-h-screen">
-        <div className="mx-auto xl:px-30 pt-140" style={{ maxWidth: "1200px" }}>
+        <div className="mx-auto px-30 pt-140" style={{ maxWidth: "1200px" }}>
           <h3 className="text-white font-semibold text-h3 mb-30">{mediaContents.title}</h3>
           <h6 className="text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12 sm:w-10/12">
             {mediaContents.upperParagraph}
@@ -36,11 +36,7 @@ const Media: React.FC<Props> = () => {
         </div>
 
         {/* Large Blog Section */}
-        <a
-          href={mediaContents.featured.href}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={mediaContents.featured.href} target="_blank" rel="noreferrer">
           <div className="mx-auto p-30 mb-10" style={{ maxWidth: "1200px", paddingTop: "200px" }}>
             <h3 className="font-light text-gray-e0e text-h3 mb-50">{mediaContents.featured.title}</h3>
             <div className="p-20 lg:p-30 bg-gray-333 hover:bg-gray-444 transition-all flex items-center rounded-default lg:flex-col">
@@ -53,12 +49,8 @@ const Media: React.FC<Props> = () => {
                 />
               </div>
               <div className="ml-20 lg:ml-0 lg:mt-20 w-5/12 lg:w-auto">
-                <h5 className="font-normal text-h5 text-white mb-15">
-                  {mediaContents.featured.blogTitle}
-                </h5>
-                <p className="font-normal text-body-lg text-gray-e0e">
-                  {mediaContents.featured.description}
-                </p>
+                <h5 className="font-normal text-h5 text-white mb-15">{mediaContents.featured.blogTitle}</h5>
+                <p className="font-normal text-body-lg text-gray-e0e">{mediaContents.featured.description}</p>
                 <p className="mt-35 font-normal text-gray-f2f text-body-sm">{mediaContents.featured.publishedAt}</p>
               </div>
             </div>
@@ -91,4 +83,3 @@ const Media: React.FC<Props> = () => {
 };
 
 export default Media;
-

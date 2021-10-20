@@ -23,7 +23,7 @@ const About: React.FC<Props> = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="mx-auto xl:px-30 flex flex-col justify-center" style={{ maxWidth: "1200px", height: "90vh" }}>
+        <div className="mx-auto px-30 flex flex-col justify-center" style={{ maxWidth: "1200px", height: "90vh" }}>
           {/* <p className="text-gray-f2f font-semibold text-h3 mb-10 uppercase">What if i told you</p>
           <p className="text-gray-f2f font-semibold text-h3 mb-40 uppercase">this page doesn't exist</p>
           <p className="text-gray-f2f font-semibold text-h3 mb-40 uppercase">Maybe you were looking for </p>

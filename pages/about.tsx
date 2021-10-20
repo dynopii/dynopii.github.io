@@ -7,9 +7,9 @@ import { colors } from "../shared/constants";
 import Link from "next/link";
 import { OurTeam } from "../components/screens/about/OurTeam";
 import { StrategicPartners } from "../components/screens/about/StrategicPartners";
-import { aboutUsContents } from '../shared/contents';
+import { aboutUsContents } from "../shared/contents";
 
-interface Props { }
+interface Props {}
 
 const About: React.FC<Props> = () => {
   return (
@@ -19,7 +19,7 @@ const About: React.FC<Props> = () => {
       </Head>
       <Header />
       <section className="about-us-section-bg min-h-screen">
-        <div className="mx-auto xl:px-30 pt-140 sm:pt-90" style={{ maxWidth: "1200px" }}>
+        <div className="mx-auto px-30 pt-140 sm:pt-90" style={{ maxWidth: "1200px" }}>
           <h3 className="text-white font-semibold text-h3 mb-30">{aboutUsContents.title}</h3>
           <h6 className="text-h6 font-normal text-gray-f2f mb-25 w-7/12 lg:w-9/12 sm:w-10/12">
             {aboutUsContents.upperParagraph}

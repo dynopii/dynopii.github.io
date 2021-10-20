@@ -11,7 +11,7 @@ export const StrategicPartners: React.FC<Props> = () => {
   return (
     <section>
       <div className="mx-auto max-w-4xl">
-        <h3 className="text-h3 font-semibold text-gray-e0e text-center pt-70 mb-70">
+        <h3 className="text-h3 font-semibold text-gray-e0e text-center pt-70">
           {aboutUsContents.StrategicPartners.title}
         </h3>
         <div className="flex items-center justify-center max-w-3xl md:max-w-xl mx-auto flex-wrap mb-70">

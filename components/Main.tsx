@@ -131,18 +131,18 @@ const Main2 = () => {
               </p>
             </span>
             <div className="spacer"></div>
-            <div className="animate flex sm:flex-col items-center">
+            <div className="animate flex sm:flex-col items-start">
               <a href="mailto:hello@dynopii.com">
-                <Button title={landingContents.landingBtnTextPrimary} />
+                <Button title={landingContents.landingBtnTextSecondary} />
               </a>
-              <div className="ml-30 sm:ml-0 sm:mt-30">
+              {/* <div className="ml-30 sm:ml-0 sm:mt-30">
                 <a href={`mailto:${contactUsContents.email}`}>
                   <Button
                     uiType="outlined"
                     title={landingContents.landingBtnTextSecondary}
                   ></Button>
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="spacer"></div>
           </div>

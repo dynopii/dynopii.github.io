@@ -59,6 +59,7 @@ const Dhwani: React.FC<Props> = () => {
 
         {/* Demo Section */}
         <div
+          id='dhwani-demo'
           className="min-h-screen flex items-center justify-center relative xl:px-30"
           style={{
             // background: `linear-gradient(180deg, #222222 0%, #000000 29.5%, #000000 75.33%, #222222 100%)`,

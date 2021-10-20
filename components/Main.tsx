@@ -235,7 +235,6 @@ const Main2 = () => {
               className="app_screenshot_one overflow-hidden rounded-default"
               alt="app-screenshot"
             />
-            {/* <img src={'/screenshot.jpeg'} className="app_screenshot_one" alt="app-screenshot" /> */}
           </div>
         </div>
       </div>

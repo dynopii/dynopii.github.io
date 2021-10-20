@@ -21,15 +21,24 @@ export const BlogCard: React.FC<Ghost_Blogs_Post> = ({
         style={{ maxWidth: "350px" }}
       >
         <div className="overflow-hidden rounded-default">
-          {/* <img src={feature_image} width={350} height={175} alt="Blog" /> */}
-          <Image
+          <img
+            src={feature_image}
+            style={{
+              objectFit: "cover",
+              overflow: "hidden",
+              height: 175,
+              width: 350,
+            }}
+            alt="Blog"
+          />
+          {/* <Image
             src={feature_image}
             width={350}
             height={175}
             objectFit="cover"
             className="rounded-default overflow-hidden"
             alt={`Blog - ${title}`}
-          />
+          /> */}
         </div>
         <h6 className="font-medium text-h6 text-gray-f2f mt-20">{title}</h6>
         <div className="flex items-center justify-start mt-20">

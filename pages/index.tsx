@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <OurPartners />
         <OurProducts />
         <OurSolutionsBacked />
-        <OurCustomers />
+        {/* <OurCustomers /> */}
       </section>
       <Testimonials />
       <section className="mx-auto p-30" style={{ maxWidth: "1200px" }}>

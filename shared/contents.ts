@@ -436,7 +436,7 @@ export const dhwaniContents = {
     // For features section in dhwani card checkout file named as staticData.tsx
   },
   integratedWithToolsSection: {
-    title: 'Integrated with your tools',
+    title: 'Integrated with your tools and many more.',
   },
   focusOnSalesSection: {
     title: 'Focus on your sales, not accent!',

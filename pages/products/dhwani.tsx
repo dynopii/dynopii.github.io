@@ -105,7 +105,7 @@ const Dhwani: React.FC<Props> = () => {
           </div>
 
           {/* Pricing */}
-          <Pricing />
+          {/* <Pricing /> */}
         </div>
       </section>
       <Footer />

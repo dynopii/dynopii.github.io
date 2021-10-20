@@ -7,6 +7,7 @@ import { Button } from "./layout/Button";
 import Link from "next/link";
 import { colors } from "../shared/constants";
 import { contactUsContents, landingContents } from "../shared/contents";
+import { PlayButton } from "./SVGs";
 
 export const Main = () => {
   return (
@@ -235,6 +236,13 @@ const Main2 = () => {
               className="app_screenshot_one overflow-hidden rounded-default"
               alt="app-screenshot"
             />
+            <div className="absolute" style={{ top: "40%" }}>
+              <Link href={"/products/dhwani/#dhwani-demo"}>
+                <a>
+                  <Button uiType="primary" title="Watch Demo" type="button" />
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -41,11 +41,11 @@ export const Footer: React.FC<Props> = ({ route }) => {
             ))}
             <div className="p-5 w-48 xs:w-full">
               <FooterLinkTitle title="Contact us" />
-              <FooterLinkTitle title="United States" classNames="mt-3" />
+              {/* <FooterLinkTitle title="United States" classNames="mt-3" /> */}
               <p className="my-3 block text-gray-666">
                 {contactUsContents.addressUS}
               </p>
-              <FooterLinkTitle title="India" />
+              {/* <FooterLinkTitle title="India" /> */}
               <p className="my-3 block text-gray-666">
                 {contactUsContents.addressIndia}
               </p>

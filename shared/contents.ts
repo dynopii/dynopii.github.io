@@ -123,9 +123,9 @@ export const contactUsContents = {
   title: `Contact
   <br /> Information`,
   description: 'Fill up the form and our Team will get back to you within 24 hours.',
-  addressIndia: `CUBICLE NO: 103
+  addressIndia: `India: CUBICLE NO: 103
   132 A, S.P MUKHERJEE ROAD, West Bengal, KOLKATA -700026`,
-  addressUS: `8, THE GREEN STE A,
+  addressUS: `United States: 8, THE GREEN STE A,
   City of DOVER, DE, 
   Count of Kent, Zip-code: 19901`,
   phoneNumber: '+91 1234567890',
@@ -261,7 +261,10 @@ export const footerContents = {
       subLinks: [
         {
           id: '1',
-          title: 'Demo', href: "/demo", spanText: 'New'
+          title: 'Demo',
+          spanText: 'New',
+          href: '/products/dhwani/#dhwani-demo',
+          inDOM: true
         },
         {
           id: '2',
@@ -415,9 +418,7 @@ export const productsContent = {
 };
 export const dhwaniCard = {
   firstSectionTitle: 'Overview',
-  firstSectionDescription: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice automation. Our vision is to make it simple for consumers to do business with you by redefining how artificial intelligence and human insight enable personalized, predictive and effortless customer experiences.
-
-  Deliver personalised customer engagement on the channel of your customer's choice and give your team the tools to make every moment count.`,
+  firstSectionDescription: `Dhwani - Real-time Voice Accent Changer. It works on calls made with any software and converts the accent of your voice to any accent of choice. The choice of accents could be based on the geographical location of the caller, clarity, or explicitly configured to whatever gets the highest NPS. It reduces barriers in communication for native and non-native speakers of any language.`,
   secondSectionTitle: 'Features',
 };
 // For features section in dhwani card checkout file named as staticData.tsx

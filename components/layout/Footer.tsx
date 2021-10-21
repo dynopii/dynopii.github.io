@@ -18,7 +18,7 @@ export const Footer: React.FC<Props> = ({ route }) => {
         <div className="bg-gray-100">
           <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-between">
             {footerContents.links.map((footerLink) => (
-              <div key={footerLink.id} className="p-5 w-48 ">
+              <div key={footerLink.id} className="p-5 w-40">
                 <FooterLinkTitle title={footerLink.title} />
                 {footerLink.subLinks.map(
                   (link: {
@@ -39,7 +39,7 @@ export const Footer: React.FC<Props> = ({ route }) => {
                 )}
               </div>
             ))}
-            <div className="p-5 w-48 xs:w-full">
+            <div className="p-5 w-96 xs:w-full">
               <FooterLinkTitle title="Contact us" />
               {/* <FooterLinkTitle title="United States" classNames="mt-3" /> */}
               <p className="my-3 block text-gray-666">
@@ -67,6 +67,8 @@ export const Footer: React.FC<Props> = ({ route }) => {
           objectFit="cover"
           alt="Dynopii in Various Countries"
         /> */}
+
+        {/* Map Section */}
         {route === "landing" && (
           <div className="mx-auto my-40" style={{ maxWidth: "1200px" }}>
             <p className="text-h6 text-center font-normal text-gray-666">
@@ -75,9 +77,10 @@ export const Footer: React.FC<Props> = ({ route }) => {
             <DynopiiMap height={"100%"} width={"100%"} />
           </div>
         )}
+
         <div className="bg-gray-100 pt-2 ">
           <div
-            className="flex pb-5 px-3 m-auto pt-5 border-t  text-gray-333 text-sm justify-between
+            className="flex pb-5 px-3 m-auto pt-5 border-t text-gray-333 text-sm justify-between
       md:flex-row max-w-6xl pt-20 mb-20 items-center"
           >
             <div className="mt-2 text-gray-666">{footerContents.copyright}</div>

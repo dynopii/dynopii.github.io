@@ -256,23 +256,6 @@ export const footerContents = {
       ]
     },
     {
-      id: '2',
-      title: 'User',
-      subLinks: [
-        {
-          id: '1',
-          title: 'Demo',
-          spanText: 'New',
-          href: '/products/dhwani/#dhwani-demo',
-          inDOM: true
-        },
-        {
-          id: '2',
-          title: 'Career', href: "https://angel.co/company/dynopii/jobs", spanText: `We're hiring`, inDOM: false,
-        },
-      ]
-    },
-    {
       id: '4',
       title: 'Products',
       subLinks: [
@@ -305,6 +288,10 @@ export const footerContents = {
         {
           id: '6',
           title: 'Sitemap', href: "/sitemap.xml"
+        },
+        {
+          id: '7',
+          title: 'Career', href: "https://angel.co/company/dynopii/jobs", spanText: `We're hiring`, inDOM: false,
         },
       ]
     },

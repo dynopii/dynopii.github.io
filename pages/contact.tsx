@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { Footer } from "../components/layout/Footer";
-import { HiPhone } from "react-icons/hi";
 import { GrMail } from "react-icons/gr";
 import { TiLocation } from "react-icons/ti";
 import { ContactItem } from "../components/screens/contact/ContactItem";
@@ -72,7 +71,7 @@ const contactLinks = [
   {
     id: "2",
     link: true,
-    href: "mailto:hello@dynopii.com",
+    href: `mailto:${contactUsContents.email}`,
     description: contactUsContents.email,
     Icon: <GrMail fill="#fff" size={20} />,
   },

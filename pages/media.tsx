@@ -37,7 +37,7 @@ const Media: React.FC<Props> = () => {
 
         {/* Large Blog Section */}
         <a href={mediaContents.featured.href} target="_blank" rel="noreferrer">
-          <div className="mx-auto p-30 mb-10" style={{ maxWidth: "1200px", paddingTop: "200px" }}>
+          <div className="mx-auto p-30 mb-10" style={{ maxWidth: "1200px", paddingTop: "260px" }}>
             <h3 className="font-light text-gray-e0e text-h3 mb-50">{mediaContents.featured.title}</h3>
             <div className="p-20 lg:p-30 bg-gray-333 hover:bg-gray-444 transition-all flex items-center rounded-default lg:flex-col">
               <div className="overflow-hidden w-7/12 lg:w-auto">

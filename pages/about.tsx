@@ -37,7 +37,7 @@ const About: React.FC<Props> = () => {
           </Link>
         </div>
         <OurTeam />
-        <StrategicPartners />
+        {/* <StrategicPartners /> */}
       </section>
       <Footer />
     </div>

@@ -7,7 +7,7 @@ interface Props {}
 export const OurTeam: React.FC<Props> = () => {
   return (
     <section id="our-team" className="">
-      <div className="mx-auto md:px-30 pt-48" style={{ maxWidth: "1200px" }}>
+      <div className="mx-auto md:px-30 pt-56" style={{ maxWidth: "1200px" }}>
         <h3 className="text-h3 font-semibold text-gray-e0e mb-40 text-center">
           {aboutUsContents.teamsSection.title}
         </h3>

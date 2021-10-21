@@ -63,11 +63,7 @@ const Blogs: React.FC<Props> = () => {
                 <h3 className="text-h3 text-gray-f2f font-medium">No Blogs Available!</h3>
               </div>
             ) : (
-              blogs.map((blog: Ghost_Blogs_Post) => (
-                <>
-                  <BlogCard key={blog.id} {...blog} />
-                </>
-              ))
+              blogs.map((blog: Ghost_Blogs_Post) => <BlogCard key={blog.id} {...blog} />)
             )}
           </div>
           <div className="flex items-center mt-40 justify-center mb-70">

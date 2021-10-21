@@ -15,7 +15,7 @@ export const landingContents = {
     }
   },
   ourSolutionsBackedSection: {
-    title: 'Our Solutions backed by the best in the world',
+    title: 'We\'re backed by the best in the world',
   },
   ourCustomersSection: {
     title: `Our Customers`
@@ -134,18 +134,18 @@ export const contactUsContents = {
 
 // In About Us Page
 export const aboutUsContents = {
-  title: 'The magic of sound.',
-  upperParagraph: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice
+  title: 'Magicians in the house.',
+  upperParagraph: `We help you create effortless & personalized customer experiences with the best in class AI-powered digital and voice
   automation.`,
-  lowerParagraph: `Our vision is to make it simple for consumers to do business with you by redefining.`,
+  lowerParagraph: `We make it simple for you to do business with never-before customer experiences.`,
   link: {
-    title: 'Read more about us',
+    title: 'Meet the team',
     href: '#our-team'
   },
   //Teams
   teamsSection: {
     title: 'Our Team',
-    description: 'Our team has led and delivered large-scale software and design projects in multiple startups and high-growth environments like Intel, and nice startups.',
+    description: 'We brought together amazing people with a passion to shake the world.',
   },
   // Strategic Partners
   StrategicPartners: {
@@ -301,9 +301,8 @@ export const footerContents = {
 // In Media Page
 export const mediaContents = {
   title: 'Media Appearance',
-  upperParagraph: `Create effortless & personalized customer experiences with the best in class AI-powered digital and voice
-  automation.`,
-  lowerParagraph: `Our vision is to make it simple for consumers to do business with you by redefining.`,
+  upperParagraph: `The beauty of building something amazing is that the world wants to talk about it.`,
+  lowerParagraph: `And we love it when they do.`,
   link: {
     title: 'Check out all our appearances',
     href: '#all-appreances'

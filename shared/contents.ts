@@ -1,7 +1,7 @@
 // In Landing Page
 export const landingContents = {
   landingTitle: 'Redefining the way you communicate',
-  landingDescription: 'Effectivate communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.',
+  landingDescription: 'Effective communication is not easy. We help you provide unique personalized communication to your customers helping them understand your business better. Never before in the industry and surely nowhere else.',
   landingBtnTextPrimary: 'Schedule Demo',
   landingBtnTextSecondary: 'Contact Sales',
   ourPartnersSection: {
@@ -21,9 +21,9 @@ export const landingContents = {
     title: `Our Customers`
   },
   testimonialsSection: {
-    titleHTML: `Don’t just take our word for it,
+    titleHTML: `Ready to jump onboard?
     <br /> Here’s what our users says`,
-    subtitle: 'Customer Testimonials'
+    subtitle: 'User Testimonials'
   },
   newsletter: {
     title: 'Subscribe to our Blog',
@@ -86,9 +86,9 @@ export const partners = [
     "name": "Fan Zhang"
   },
   {
-    "img_src": "/images/team-demo-pic.png",
-    "alt": "Globaltech AI Capital",
-    "name": "Globaltech AI Capital"
+    "img_src": "/images/logo.png",
+    "alt": "Global Hitech CFI CORP",
+    "name": "Global Hitech CFI CORP"
   },
 ];
 export const testimonials = [
@@ -155,43 +155,35 @@ export const aboutUsContents = {
 export const aboutUsTeams = [
   {
     id: '1',
-    photo: '/images/team-demo-pic.png',
-    name: 'Julia DeWahl',
-    description: 'Past: Engineering leader at Coinbase.',
-    twitter: 'https://twitter.com/dynopii',
-    linkedin: 'https://in.linkedin.com/company/dynopii',
+    photo: '/images/anubhav.jpeg',
+    name: 'Anubhav Singh',
+    // description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/xprilion',
+    linkedin: 'https://www.linkedin.com/in/xprilion/',
   },
   {
     id: '2',
-    photo: '/images/team-demo-pic.png',
-    name: 'Julia ',
-    description: 'Past: Engineering leader at Coinbase.',
-    twitter: 'https://twitter.com/dynopii',
-    linkedin: 'https://in.linkedin.com/company/dynopii',
+    photo: '/images/abhishek.jpeg',
+    name: 'Abhishek Nandy',
+    // description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/AbhishekNandy81',
+    linkedin: 'https://www.linkedin.com/in/abhishek-nandy/',
   },
   {
     id: '3',
-    photo: '/images/team-demo-pic.png',
-    name: ' DeWahl',
-    description: 'Past: Engineering leader at Coinbase.',
-    twitter: 'https://twitter.com/dynopii',
-    linkedin: 'https://in.linkedin.com/company/dynopii',
+    photo: '/images/kazi.jpeg',
+    name: 'Kazi Haque',
+    // description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/imkazi23',
+    linkedin: 'https://www.linkedin.com/in/haquekazi/',
   },
   {
     id: '4',
-    photo: '/images/team-demo-pic.png',
-    name: 'Julia DeWahl',
-    description: 'Past: Engineering leader at Coinbase.',
-    twitter: 'https://twitter.com/dynopii',
-    linkedin: 'https://in.linkedin.com/company/dynopii',
-  },
-  {
-    id: '5',
-    photo: '/images/team-demo-pic.png',
-    name: 'Julia DeWahl',
-    description: 'Past: Engineering leader at Coinbase.',
-    twitter: 'https://twitter.com/dynopii',
-    linkedin: 'https://in.linkedin.com/company/dynopii',
+    photo: '/images/prashant.jpeg',
+    name: 'Prashantkumar L. Borde',
+    // description: 'Past: Engineering leader at Coinbase.',
+    // twitter: 'https://twitter.com/dynopii',
+    linkedin: 'https://www.linkedin.com/in/prashantkumar-l-borde-ph-d-a5572235/',
   },
 ];
 export const StrategicPartnersData = [
@@ -405,7 +397,7 @@ export const productsContent = {
 };
 export const dhwaniCard = {
   firstSectionTitle: 'Overview',
-  firstSectionDescription: `Dhwani - Real-time Voice Accent Changer. It works on calls made with any software and converts the accent of your voice to any accent of choice. The choice of accents could be based on the geographical location of the caller, clarity, or explicitly configured to whatever gets the highest NPS. It reduces barriers in communication for native and non-native speakers of any language.`,
+  firstSectionDescription: `Dhwani is a voice accent changer that works in real-time on calls and converts the accent of your voice to any accent of choice. Dhwani opens the gates for your business to cater to a global audience without having to worry about voice accents. With a boosted understanding between you and your customer, you hit higher NPS and make a mark in the world.`,
   secondSectionTitle: 'Features',
 };
 // For features section in dhwani card checkout file named as staticData.tsx
@@ -415,20 +407,18 @@ export const dhwaniContents = {
   title: 'Dhwani',
   introductionSection: {
     titleHTML: 'Introducing <span className="text-brand">Dhwani</span>',
-    subtitle: ` The goal of dhwani is to simplify the pain points of a solution
-    center.`,
+    subtitle: `Focus on your sales, not accent!`,
   },
   featuresSection: {
-    title: ' A possibility explored like never before.',
+    title: 'Tons of amazing features',
     // For features section in dhwani card checkout file named as staticData.tsx
   },
   integratedWithToolsSection: {
-    title: 'Integrated with your tools and many more.',
+    title: 'Integrates with all your tools',
   },
   focusOnSalesSection: {
-    title: 'Focus on your sales, not accent!',
-    description: `Let our trained models ease your work. Introducing AI based
-    solutions. See the impossible become reality.`,
+    title: 'Let your voice be magic, and you a sales Wizard',
+    description: `With accents to appeal specifically to each of your customers all over the world, you sound like their friendly neighbourhood wizard with all the solutions. `,
   },
   pricingSection: {
     title: 'Pricing',

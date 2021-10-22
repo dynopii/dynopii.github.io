@@ -2,9 +2,9 @@ import React from "react";
 import { FaAws } from "react-icons/fa";
 import { CgDigitalocean } from "react-icons/cg";
 import Image from "next/image";
-import { landingContents } from '../../../shared/contents';
+import { landingContents } from "../../../shared/contents";
 
-interface Props { }
+interface Props {}
 
 export const OurSolutionsBacked: React.FC<Props> = () => {
   return (
@@ -20,9 +20,9 @@ export const OurSolutionsBacked: React.FC<Props> = () => {
           <CgDigitalocean size={70} fill="#ffffff" color="#ffffff" />
         </div>
         <div className="w-40 h-40 bg-gray-333 flex items-center justify-center rounded-default mt-20">
-          <div className="w-16 h-16 overflow-hidden">
+          <div className="w-30 h-30 overflow-hidden">
             <Image
-              src="/images/Backend-Capital.png"
+              src="/images/paper-space.png"
               width="100%"
               height="100%"
               className="object-cover w-full h-full"

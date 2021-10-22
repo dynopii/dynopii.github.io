@@ -9,27 +9,27 @@ export const features = [
   {
     id: "1",
     Icon: <AiFillRobot size={40} fill="#777777" />,
-    label: "Ai Agent (Real time)",
+    label: "AI generated voices",
   },
   {
     id: "2",
     Icon: <SAAS height={60} />,
-    label: "SAAS base solution",
+    label: "SAAS based solution",
   },
   {
     id: "3",
     Icon: <HiCursorClick size={60} fill="#777777" />,
-    label: "One-click installation",
+    label: "One-click install",
   },
   {
     id: "4",
     Icon: <BiCustomize size={60} fill="#777777" />,
-    label: "Customizable Dashboards",
+    label: "Easy integration",
   },
   {
     id: "5",
     Icon: <CgInsights size={60} fill="#777777" color="#777777" />,
-    label: `Insights Based Dashboards`,
+    label: `Insights based dashboard`,
   },
   {
     id: "6",
@@ -42,27 +42,27 @@ export const featuresBig = [
   {
     id: "1",
     Icon: <AiFillRobot size={80} fill="#777777" />,
-    label: "Ai Agent (Real time)",
+    label: "AI generated voices",
   },
   {
     id: "2",
     Icon: <SAAS height={80} />,
-    label: "SAAS base solution",
+    label: "SAAS based solution",
   },
   {
     id: "3",
     Icon: <HiCursorClick size={80} fill="#777777" />,
-    label: "One-click installation",
+    label: "One-click install",
   },
   {
     id: "4",
     Icon: <BiCustomize size={80} fill="#777777" />,
-    label: "Customizable Dashboards",
+    label: "Easy integration",
   },
   {
     id: "5",
     Icon: <CgInsights size={80} fill="#777777" color="#777777" />,
-    label: `Insights Based \n Dashboards`,
+    label: `Insights based \n dashboard`,
   },
   {
     id: "6",

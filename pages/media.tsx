@@ -36,26 +36,28 @@ const Media: React.FC<Props> = () => {
         </div>
 
         {/* Large Blog Section */}
-        <a href={mediaContents.featured.href} target="_blank" rel="noreferrer">
-          <div className="mx-auto p-30 mb-10" style={{ maxWidth: "1200px", paddingTop: "260px" }}>
-            <h3 className="font-light text-gray-e0e text-h3 mb-50">{mediaContents.featured.title}</h3>
-            <div className="p-20 lg:p-30 bg-gray-333 hover:bg-gray-444 transition-all flex items-center rounded-default lg:flex-col">
-              <div className="overflow-hidden w-7/12 lg:w-auto">
-                <img
-                  src={mediaContents.featured.photo}
-                  className="object-cover rounded-default"
-                  style={{ aspectRatio: "2" }}
-                  alt={mediaContents.featured.title}
-                />
-              </div>
-              <div className="ml-20 lg:ml-0 lg:mt-20 w-5/12 lg:w-auto">
-                <h5 className="font-normal text-h5 text-white mb-15">{mediaContents.featured.blogTitle}</h5>
-                <p className="font-normal text-body-lg text-gray-e0e">{mediaContents.featured.description}</p>
-                <p className="mt-35 font-normal text-gray-f2f text-body-sm">{mediaContents.featured.publishedAt}</p>
+        <div className="mx-auto" style={{ maxWidth: "1200px", paddingTop: "280px" }}>
+          <a href={mediaContents.featured.href} target="_blank" rel="noreferrer">
+            <div className="mx-auto p-30 mb-10">
+              <h3 className="font-light text-gray-e0e text-h3 mb-50">{mediaContents.featured.title}</h3>
+              <div className="p-20 lg:p-30 bg-gray-333 hover:bg-gray-444 transition-all flex items-center rounded-default lg:flex-col">
+                <div className="overflow-hidden w-7/12 lg:w-auto">
+                  <img
+                    src={mediaContents.featured.photo}
+                    className="object-cover rounded-default"
+                    style={{ aspectRatio: "2" }}
+                    alt={mediaContents.featured.title}
+                  />
+                </div>
+                <div className="ml-20 lg:ml-0 lg:mt-20 w-5/12 lg:w-auto">
+                  <h5 className="font-normal text-h5 text-white mb-15">{mediaContents.featured.blogTitle}</h5>
+                  <p className="font-normal text-body-lg text-gray-e0e">{mediaContents.featured.description}</p>
+                  <p className="mt-35 font-normal text-gray-f2f text-body-sm">{mediaContents.featured.publishedAt}</p>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
 
         {/* Small Blogs Section */}
         <div id="all-appreances" className="mx-auto p-30 pt-60 mb-70" style={{ maxWidth: "1200px" }}>

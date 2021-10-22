@@ -7,7 +7,7 @@ interface Props {}
 export const OurTeam: React.FC<Props> = () => {
   return (
     <section id="our-team" className="">
-      <div className="mx-auto md:px-30 pt-56" style={{ maxWidth: "1200px" }}>
+      <div className="mx-auto md:px-30 pt-64" style={{ maxWidth: "1200px" }}>
         <h3 className="text-h3 font-semibold text-gray-e0e mb-40 text-center">
           {aboutUsContents.teamsSection.title}
         </h3>
@@ -15,7 +15,7 @@ export const OurTeam: React.FC<Props> = () => {
           {aboutUsContents.teamsSection.description}
         </h6>
 
-        <div className="flex items-center justify-center flex-wrap mb-20 max-w-4xl md:max-w-full mx-auto">
+        <div className="flex justify-center flex-wrap mb-20 md:max-w-full mx-auto">
           {/* <div className="grid-teams-container mb-70"> */}
           {aboutUsTeams.map((team, i) => (
             <TeamCard key={team.id} {...team} />

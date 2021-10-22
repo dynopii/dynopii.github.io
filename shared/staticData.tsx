@@ -13,27 +13,27 @@ export const features = [
   },
   {
     id: "2",
-    Icon: <SAAS height={40} />,
+    Icon: <SAAS height={60} />,
     label: "SAAS base solution",
   },
   {
     id: "3",
-    Icon: <HiCursorClick size={40} fill="#777777" />,
+    Icon: <HiCursorClick size={60} fill="#777777" />,
     label: "One-click installation",
   },
   {
     id: "4",
-    Icon: <BiCustomize size={40} fill="#777777" />,
+    Icon: <BiCustomize size={60} fill="#777777" />,
     label: "Customizable Dashboards",
   },
   {
     id: "5",
-    Icon: <CgInsights size={40} fill="#777777" color="#777777" />,
+    Icon: <CgInsights size={60} fill="#777777" color="#777777" />,
     label: `Insights Based Dashboards`,
   },
   {
     id: "6",
-    Icon: <BsFillLightningFill size={40} fill="#777777" />,
+    Icon: <BsFillLightningFill size={60} fill="#777777" />,
     label: "50% cost reduction in training",
   },
 ];

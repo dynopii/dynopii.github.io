@@ -1,7 +1,7 @@
 import React from "react";
-import { landingContents, partners } from '../../../shared/contents';
+import { landingContents, partners } from "../../../shared/contents";
 
-interface Props { }
+interface Props {}
 
 export const OurPartners: React.FC<Props> = () => {
   return (
@@ -12,7 +12,7 @@ export const OurPartners: React.FC<Props> = () => {
       <div className="flex flex-wrap justify-around mt-30">
         {partners.map((partner, i) => (
           <div key={i} className="mt-20">
-            <div className="w-48 overflow-hidden rounded-default">
+            <div className="w-48 h-48 overflow-hidden rounded-default">
               <img
                 src={partner.img_src}
                 className="w-full h-fill object-cover"

@@ -22,7 +22,7 @@ export const BlogCard: React.FC<Ghost_Blogs_Post> = ({
       >
         <div className="overflow-hidden rounded-default">
           <img
-            src={prefix + feature_image}
+            src={feature_image}
             style={{
               objectFit: "cover",
               overflow: "hidden",

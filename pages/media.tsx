@@ -43,7 +43,7 @@ const Media: React.FC<Props> = () => {
               <div className="p-20 lg:p-30 bg-gray-333 hover:bg-gray-444 transition-all flex items-center rounded-default lg:flex-col">
                 <div className="overflow-hidden w-7/12 lg:w-auto">
                   <img
-                    src={prefix + mediaContents.featured.photo}
+                    src={mediaContents.featured.photo}
                     className="object-cover rounded-default"
                     style={{ aspectRatio: "2" }}
                     alt={mediaContents.featured.title}
@@ -69,7 +69,7 @@ const Media: React.FC<Props> = () => {
                   <div className="overflow-hidden rounded-default w-full h-40 md:h-auto">
                     {" "}
                     {/*w-80 h-40*/}
-                    <img className="w-full h-full object-cover" src={prefix + image} alt={`Blog - ${title}`} />
+                    <img className="w-full h-full object-cover" src={image} alt={`Blog - ${title}`} />
                   </div>
                   <h6 className="text-h6 font-normal text-white mt-30 mb-10">{title}</h6>
                   <p className="text-body-lg font-light text-gray-bdb">{date}</p>

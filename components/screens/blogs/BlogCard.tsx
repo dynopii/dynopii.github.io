@@ -2,6 +2,7 @@ import React from "react";
 import { Ghost_Blogs_Post } from "../../../shared/types";
 import { MdDateRange } from "react-icons/md";
 import { DateFormatter } from "../../../shared/utils";
+import { prefix } from "../../../shared/constants";
 
 interface Props {}
 
@@ -21,7 +22,7 @@ export const BlogCard: React.FC<Ghost_Blogs_Post> = ({
       >
         <div className="overflow-hidden rounded-default">
           <img
-            src={feature_image}
+            src={prefix + feature_image}
             style={{
               objectFit: "cover",
               overflow: "hidden",

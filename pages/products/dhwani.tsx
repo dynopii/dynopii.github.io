@@ -14,6 +14,7 @@ import { ZoomSVG } from "../../components/SVGs";
 // import { Pricing } from "../../components/screens/products-dhwani/Pricing";
 import ReactPlayer from "react-player";
 import { dhwaniContents } from "../../shared/contents";
+import { prefix } from "../../shared/constants";
 
 interface Props {}
 
@@ -32,7 +33,7 @@ const Dhwani: React.FC<Props> = () => {
 
           {/* Dhwani Introduction Section */}
           <div className="flex items-center justify-center flex-col py-40 pt-140">
-            <img src={"/svgs/dhwanilogo.svg"} alt="logo" width={203} height={203} />
+            <img src={prefix + "/svgs/dhwanilogo.svg"} alt="logo" width={203} height={203} />
             <h2
               className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center"
               dangerouslySetInnerHTML={{ __html: dhwaniContents.introductionSection.titleHTML }}

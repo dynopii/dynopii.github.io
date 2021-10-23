@@ -2,6 +2,7 @@ import React from "react";
 import { FaAws } from "react-icons/fa";
 import { CgDigitalocean } from "react-icons/cg";
 import { landingContents } from "../../../shared/contents";
+import { prefix } from "../../../shared/constants";
 
 interface Props {}
 
@@ -21,7 +22,7 @@ export const OurSolutionsBacked: React.FC<Props> = () => {
         <div className="w-40 h-40 bg-gray-333 flex items-center justify-center rounded-default mt-20">
           <div className="w-24 h-24 overflow-hidden">
             <img
-              src="/images/paper-space.png"
+              src={prefix + "/images/paper-space.png"}
               width="100%"
               height="100%"
               className="object-cover w-full h-full"
@@ -32,7 +33,7 @@ export const OurSolutionsBacked: React.FC<Props> = () => {
         <div className="w-40 h-40 bg-gray-333 flex items-center justify-center rounded-default mt-20">
           <div className="w-20 h-20 overflow-hidden">
             <img
-              src="/images/10,000-Startups.png"
+              src={prefix + "/images/10,000-Startups.png"}
               width="100%"
               height="100%"
               className="object-contain w-full h-full"

@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { colors } from "../../../shared/constants";
+import { colors, prefix } from "../../../shared/constants";
 interface Props {
   photo: string;
   name: string;
@@ -23,7 +23,7 @@ export const TeamCard: React.FC<Props> = ({
       <div className="overflow-hidden rounded-default w-40 h-40">
         <img
           // src="/images/team-demo-pic.png"
-          src={photo}
+          src={prefix + photo}
           className="object-cover w-full h-full"
           alt={name}
         />

@@ -2,6 +2,7 @@ import React from "react";
 import { features } from "../../../shared/staticData";
 import { FeatureCard } from "./FeatureCard";
 import { dhwaniCard } from "../../../shared/contents";
+import { prefix } from "../../../shared/constants";
 
 interface Props {}
 
@@ -16,7 +17,7 @@ export const Dhwani: React.FC<Props> = () => {
       >
         <img
           className="z-1"
-          src={"/svgs/dhwanilogo.svg"}
+          src={prefix + "/svgs/dhwanilogo.svg"}
           alt="logo"
           width={115}
           height={115}

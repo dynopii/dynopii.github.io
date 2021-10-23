@@ -1,4 +1,5 @@
 import React from "react";
+import { prefix } from "../../../shared/constants";
 import { customers, landingContents } from "../../../shared/contents";
 
 interface Props {}
@@ -17,7 +18,7 @@ export const OurCustomers: React.FC<Props> = () => {
           >
             <div className="w-20 h-20 overflow-hidden rounded-default flex items-center justify-center">
               <img
-                src={customer.photo}
+                src={prefix + customer.photo}
                 width={100}
                 height={100}
                 className="h-full w-full object-contain"

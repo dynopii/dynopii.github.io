@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "./layout/Button";
 import Link from "next/link";
-import { colors } from "../shared/constants";
+import { colors, prefix } from "../shared/constants";
 import { landingContents } from "../shared/contents";
 
 // export const Main = () => {
@@ -229,7 +229,7 @@ const Main2 = () => {
               ></rect>
             </svg>
             <img
-              src={"/images/dhwani-demo-img.png"}
+              src={prefix + "/images/dhwani-demo-img.png"}
               className="app_screenshot_one overflow-hidden rounded-default"
               alt="app-screenshot"
             />

@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CI: false
-      NEXT_PUBLIC_BASE_PATH: dynopii.com
+      NEXT_PUBLIC_BASE_PATH: dynopii.github.io
 
     strategy:
       matrix:

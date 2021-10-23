@@ -2,8 +2,6 @@ import React from "react";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/layout/Footer";
 import Head from "next/head";
-import Image from "next/image";
-import DhwaniSVG from "../../public/svgs/dhwanilogo.svg";
 import { FeatureCard } from "../../components/screens/products/FeatureCard";
 import { featuresBig } from "../../shared/staticData";
 import { PlayButton } from "../../components/SVGs";
@@ -13,7 +11,7 @@ import { TiSocialSkype } from "react-icons/ti";
 import { FaSlack } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { ZoomSVG } from "../../components/SVGs";
-import { Pricing } from "../../components/screens/products-dhwani/Pricing";
+// import { Pricing } from "../../components/screens/products-dhwani/Pricing";
 import ReactPlayer from "react-player";
 import { dhwaniContents } from "../../shared/contents";
 
@@ -34,7 +32,7 @@ const Dhwani: React.FC<Props> = () => {
 
           {/* Dhwani Introduction Section */}
           <div className="flex items-center justify-center flex-col py-40 pt-140">
-            <Image src={DhwaniSVG} alt="logo" width={203} height={203} />
+            <img src={"/svgs/dhwanilogo.svg"} alt="logo" width={203} height={203} />
             <h2
               className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center"
               dangerouslySetInnerHTML={{ __html: dhwaniContents.introductionSection.titleHTML }}
@@ -59,7 +57,7 @@ const Dhwani: React.FC<Props> = () => {
 
         {/* Demo Section */}
         <div
-          id='dhwani-demo'
+          id="dhwani-demo"
           className="min-h-screen flex items-center justify-center relative xl:px-30"
           style={{
             // background: `linear-gradient(180deg, #222222 0%, #000000 29.5%, #000000 75.33%, #222222 100%)`,

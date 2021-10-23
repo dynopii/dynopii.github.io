@@ -350,7 +350,7 @@ export const smallBlogs = [
     id: "5",
     title: "Startup in ASEAN - Dynopii an AI speech accent changer  ",
     image:
-      "https://scontent.fixr3-1.fna.fbcdn.net/v/t1.6435-9/112337814_1052677161817657_2425797221960566743_n.png?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=EammsFPP6EcAX95aBwC&tn=VzZnbrfpR7g2ScRE&_nc_ht=scontent.fixr3-1.fna&oh=c676e4dc00060db0b0107bdf75fa3ed2&oe=617185FF",
+      "/images/starboard.png",
     date: "Jul 16, 2021",
     href: "https://www.facebook.com/STARTBOARD.co/posts/startup-in-asean-dynopii-an-ai-speech-accent-changer-indiaduring-the-covid-19-on/1299265520492152/",
   },

@@ -1,10 +1,8 @@
 import React from "react";
 import { features } from "../../../shared/staticData";
 import { FeatureCard } from "./FeatureCard";
-import Image from "next/image";
-import DhwaniSVG from "../../../public/svgs/dhwanilogo.svg";
-import { dhwaniCard, productsContent } from "../../../shared/contents";
-import Exp from "../../animated-gradient";
+import { dhwaniCard } from "../../../shared/contents";
+
 interface Props {}
 
 export const Dhwani: React.FC<Props> = () => {
@@ -16,13 +14,20 @@ export const Dhwani: React.FC<Props> = () => {
         //   background: "no-repeat,linear-gradient(270deg,#9121c2,#ff5e5e)",
         // }}
       >
-        <Image
+        <img
+          className="z-1"
+          src={"/svgs/dhwanilogo.svg"}
+          alt="logo"
+          width={115}
+          height={115}
+        />
+        {/* <Image
           className="z-1"
           src={DhwaniSVG}
           alt="logo"
           width={115}
           height={115}
-        />
+        /> */}
         <h4 className="z-1 text-h4 text-gray-f2f font-normal ml-15">Dhwani</h4>
         {/* <div className="absolute inset-0">
           <Exp />

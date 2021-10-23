@@ -5,7 +5,6 @@ module.exports = {
     generateRobotsTxt: true,
     changefreq: 'daily',
     transform: async (config, path) => {
-        console.log(path)
         if(path === '/'){
             return {
                 loc: path, // => this will be exported as http(s)://<config.siteUrl>/<path>

@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CI: false
-      NEXT_PUBLIC_BASE_PATH: /dynopii-web-2.0
+      NEXT_PUBLIC_BASE_PATH: /
 
     strategy:
       matrix:

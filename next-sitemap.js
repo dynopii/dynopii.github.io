@@ -1,4 +1,4 @@
-const url = 'https://dynopii-web.vercel.app/'
+const url = 'https://dynopii.com/'
 
 module.exports = {
     siteUrl: url,

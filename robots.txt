@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://dynopii-web.vercel.app/
+Host: https://dynopii.com/
 
 # Sitemaps
-Sitemap: https://dynopii-web.vercel.app/sitemap.xml
+Sitemap: https://dynopii.com/sitemap.xml

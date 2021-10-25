@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/layout/Footer";
 import Head from "next/head";
 import { BsArrowRight } from "react-icons/bs";
-import { colors } from "../shared/constants";
+import { colors, prefix } from "../shared/constants";
 import Link from "next/link";
 import { mediaContents, smallBlogs } from "../shared/contents";
 

@@ -11,6 +11,8 @@ module.exports = {
 	// 	return config;
 	// },
 	images: {
-		domains: ['images.unsplash.com','blog.dynopii.com'],
+		domains: ['images.unsplash.com','blog.dynopii.com']
 	},
+	basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+	assetPrefix:  process.env.NEXT_PUBLIC_BASE_PATH
 };

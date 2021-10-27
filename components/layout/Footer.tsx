@@ -42,15 +42,15 @@ export const Footer: React.FC<Props> = ({ route }) => {
             <div className="p-5 w-96 xs:w-full">
               <FooterLinkTitle title="Contact us" />
               {/* <FooterLinkTitle title="United States" classNames="mt-3" /> */}
-              <p className="my-3 block text-gray-666">
+              <p className="my-3 block text-gray-999">
                 {contactUsContents.addressUS}
               </p>
               {/* <FooterLinkTitle title="India" /> */}
-              <p className="my-3 block text-gray-666">
+              <p className="my-3 block text-gray-999">
                 {contactUsContents.addressIndia}
               </p>
               <a
-                className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+                className="my-3 block text-gray-999 hover:text-gray-f2f transition-all"
                 href={`mailto:${contactUsContents.email}`}
               >
                 {contactUsContents.email}{" "}
@@ -71,7 +71,7 @@ export const Footer: React.FC<Props> = ({ route }) => {
         {/* Map Section */}
         {route === "landing" && (
           <div className="mx-auto my-40" style={{ maxWidth: "1200px" }}>
-            <p className="text-h6 text-center font-normal text-gray-666">
+            <p className="text-h6 text-center font-normal text-gray-999">
               {footerContents.mapTitle}
             </p>
             <DynopiiMap height={"100%"} width={"100%"} />
@@ -83,7 +83,7 @@ export const Footer: React.FC<Props> = ({ route }) => {
             className="flex pb-5 px-3 m-auto pt-5 border-t text-gray-333 text-sm justify-between
       md:flex-row max-w-6xl pt-20 mb-20 items-center"
           >
-            <div className="mt-2 text-gray-666">{footerContents.copyright}</div>
+            <div className="mt-2 text-gray-999">{footerContents.copyright}</div>
             <div className=" mt-2 flex-row flex">
               <a
                 href={urls.DYNOPII_LINKEDIN}
@@ -144,7 +144,7 @@ export const FooterLink: React.FC<FooterLinkProps> = ({
       {inDOM ? (
         <>
           <Link href={href}>
-            <a className="my-3 block text-gray-666 hover:text-gray-f2f transition-all">
+            <a className="my-3 block text-gray-999 hover:text-gray-f2f transition-all">
               {title}{" "}
               <span className="text-teal-600 text-xs p-1 text-brand">
                 {spanText || ""}
@@ -154,14 +154,14 @@ export const FooterLink: React.FC<FooterLinkProps> = ({
         </>
       ) : (
         <a
-          className="my-3 block text-gray-666 hover:text-gray-f2f transition-all"
+          className="my-3 block text-gray-999 hover:text-gray-f2f transition-all"
           href={href}
           target="_blank"
           rel="noreferrer"
         >
           {" "}
           {title}{" "}
-          <span className="text-teal-600 text-xs p-1 text-brand">
+          <span className="text-teal-999 text-xs p-1 text-brand">
             {spanText || ""}
           </span>
         </a>
@@ -174,7 +174,7 @@ export const FooterLinkTitle: React.FC<{ title: string; classNames?: string }> =
   ({ title, classNames }) => {
     return (
       <div
-        className={`text-xs uppercase text-gray-500 font-medium text-gray-444 ${
+        className={`text-xs uppercase text-gray-777 font-medium text-gray-444 ${
           classNames || ""
         }`}
       >

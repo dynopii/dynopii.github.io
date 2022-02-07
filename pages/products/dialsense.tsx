@@ -3,7 +3,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/layout/Footer";
 import Head from "next/head";
 import { FeatureCard } from "../../components/screens/products/FeatureCard";
-import { dhwaniFeaturesBig } from "../../shared/staticData";
+import { dhwaniFeaturesBig, dialsenseFeaturesBig } from "../../shared/staticData";
 import { PlayButton } from "../../components/SVGs";
 import { SiGooglemeet } from "react-icons/si";
 import { SiMicrosoftteams } from "react-icons/si";
@@ -13,43 +13,43 @@ import { FaDiscord } from "react-icons/fa";
 import { ZoomSVG } from "../../components/SVGs";
 // import { Pricing } from "../../components/screens/products-dhwani/Pricing";
 import ReactPlayer from "react-player";
-import { dhwaniContents } from "../../shared/contents";
+import { dhwaniContents, dialsenseContents } from "../../shared/contents";
 import { prefix } from "../../shared/constants";
 
 interface Props {}
 
-const Dhwani: React.FC<Props> = () => {
+const DialSensePage: React.FC<Props> = () => {
   return (
     <div className="main_layout">
       <Head>
-        <title>Dhwani | Dynopii | Redefining the way you communicate.</title>
+        <title>DialSense | Dynopii | New way to interact with consumers.</title>
       </Head>
       <Header />
       <section className="dhwani-page-bg min-h-screen">
         <div className="mx-auto xl:px-30" style={{ maxWidth: "1200px" }}>
           {/* <h1 className="text-h3 font-semibold text-white mx-auto md:text-center pt-140 mb-180 lg:mb-0 lg:py-90 md:py-80">
-            {dhwaniContents.title}
+            {dialsenseContents.title}
           </h1> */}
 
           {/* Dhwani Introduction Section */}
           <div className="flex items-center justify-center flex-col py-40 pt-140">
-            <img src={prefix + "/svgs/dhwanilogo.svg"} alt="logo" width={203} height={203} />
+            <img src={prefix + "/svgs/dialSense.svg"} alt="logo" width={203} height={203} />
             <h2
               className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center"
-              dangerouslySetInnerHTML={{ __html: dhwaniContents.introductionSection.titleHTML }}
+              dangerouslySetInnerHTML={{ __html: dialsenseContents.introductionSection.titleHTML }}
             ></h2>
             <h4 className="text-h4 sm:text-h5 text-gray-f2f font-semibold w-8/12 sm:w-11/12 text-center">
-              {dhwaniContents.introductionSection.subtitle}
+              {dialsenseContents.introductionSection.subtitle}
             </h4>
           </div>
 
           {/* Dhwani Features Section */}
           <div className="pt-40">
             <h3 className="text-h3 sm:text-h4 text-gray-e0e font-semibold mb-50 mt-70 text-center">
-              {dhwaniContents.featuresSection.title}
+              {dialsenseContents.featuresSection.title}
             </h3>
             <div className="grid-feature-container" style={{ gridGap: 40 }}>
-              {dhwaniFeaturesBig.map((feature) => (
+              {dialsenseFeaturesBig.map((feature) => (
                 <FeatureCard size="large" key={feature.id} {...feature} />
               ))}
             </div>
@@ -80,7 +80,7 @@ const Dhwani: React.FC<Props> = () => {
           {/* Integrated with tools section */}
           <div className="py-90">
             <h3 className="text-gray-e0e text-h3 sm:text-h4 text-center font-semibold mb-70">
-              {dhwaniContents.integratedWithToolsSection.title}
+              {dialsenseContents.ourCustomers.title}
             </h3>
             <div className="flex items-center justify-between flex-wrap max-w-xl mx-auto">
               <SiGooglemeet fill={"#ffffff"} className="w-20 h-20 xs:w-16 xs:h-16" />
@@ -97,10 +97,10 @@ const Dhwani: React.FC<Props> = () => {
           {/* Focus on Your Sales Section */}
           <div className="min-h-screen sm:min-h-1/4 md:min-h-1/2 sm:py-50 flex justify-center flex-col">
             <h1 className="text-h1 font-semibold sm:font-medium text-gray-f2f mb-70 sm:mb-40 md:text-h3">
-              {dhwaniContents.focusOnSalesSection.title}
+              {dialsenseContents.focusOnSalesSection.title}
             </h1>
             <h3 className="text-h3 font-light text-gray-e0e md:text-h4">
-              {dhwaniContents.focusOnSalesSection.description}
+              {dialsenseContents.focusOnSalesSection.description}
             </h3>
           </div>
 
@@ -113,4 +113,4 @@ const Dhwani: React.FC<Props> = () => {
   );
 };
 
-export default Dhwani;
+export default DialSensePage;

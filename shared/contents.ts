@@ -182,12 +182,30 @@ export const aboutUsTeams = [
   },
   {
     id: '4',
+    photo: '/images/snehangshu.jpeg',
+    name: 'Snehangshu Bhattacharya',
+    link: '/snehangshu',
+    // description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/snehangshu_',
+    linkedin: 'https://www.linkedin.com/in/snehangshu-bhattacharya-3891b5153/',
+  },
+  {
+    id: '5',
     photo: '/images/prashant.jpeg',
     name: 'Prashantkumar L. Borde',
     link: '/prashant',
     // description: 'Past: Engineering leader at Coinbase.',
     // twitter: 'https://twitter.com/dynopii',
     linkedin: 'https://www.linkedin.com/in/prashantkumar-l-borde-ph-d-a5572235/',
+  },
+  {
+    id: '6',
+    photo: '/images/rishiraj.jpeg',
+    name: 'Rishiraj Acharya',
+    link: '/rishiraj',
+    // description: 'Past: Engineering leader at Coinbase.',
+    twitter: 'https://twitter.com/RishirajAcharya',
+    linkedin: 'https://www.linkedin.com/in/rishirajacharya/',
   },
 ];
 export const StrategicPartnersData = [

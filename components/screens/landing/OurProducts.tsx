@@ -1,6 +1,7 @@
 import React from "react";
 import { landingContents } from "../../../shared/contents";
 import { Dhwani } from "../products/Dhwani";
+import { DialSense } from "../products/DialSense";
 
 interface Props {}
 
@@ -11,13 +12,8 @@ export const OurProducts: React.FC<Props> = () => {
         {landingContents.ourProductsSection.title}
       </h3>
       <Dhwani />
-      <div className="ai-dialer-preview-gradient flex items-center flex-col justify-center rounded-default mb-15 mt-70">
-        <h4 className="text-gray-f2f font-semibold text-h4">
-          {landingContents.ourProductsSection.aiDialer.mainText}
-        </h4>
-        <h4 className="text-white font-normal text-h5">
-          {landingContents.ourProductsSection.aiDialer.subText}
-        </h4>
+      <div className="mb-15 mt-70">
+        <DialSense />
       </div>
     </div>
   );

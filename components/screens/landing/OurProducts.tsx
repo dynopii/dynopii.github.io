@@ -12,9 +12,9 @@ export const OurProducts: React.FC<Props> = () => {
         {landingContents.ourProductsSection.title}
       </h3>
       <Dhwani />
-      <div className="mb-15 mt-70">
+      {/* <div className="mb-15 mt-70">
         <DialSense />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -28,14 +28,14 @@ const Products: React.FC<Props> = () => {
               </a>
             </Link>
           </div>
-          <DialSense />
+          {/* <DialSense />
           <div className="flex items-center mt-40 justify-center mb-70">
             <Link href="/products/dialsense">
               <a>
                 <Button title="View More" />
               </a>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
       <Footer />

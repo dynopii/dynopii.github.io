@@ -60,14 +60,7 @@ export const Header = () => {
         <div className="navigation flex flex-grow justify-center items-center">
           <div className="content w-full flex flex-col m-0 pb-3">
             {links.map(({ href, id, label }, index) => (
-              <div
-                key={id}
-                className={
-                  index === 0
-                    ? "mobile_nav_link secondary"
-                    : "mobile_nav_link secondary"
-                }
-              >
+              <div key={id} className={"mobile_nav_link secondary"}>
                 <Link href={`/${href}`}>{label}</Link>
               </div>
             ))}

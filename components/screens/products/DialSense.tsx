@@ -1,7 +1,7 @@
 import React from "react";
 import { dialsenseFeatures } from "../../../shared/staticData";
 import { FeatureCard } from "./FeatureCard";
-import { dhwaniCard, dialsenseCard } from "../../../shared/contents";
+import { dialsenseCard } from "../../../shared/contents";
 import { prefix } from "../../../shared/constants";
 
 interface Props {}

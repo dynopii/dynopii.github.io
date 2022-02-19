@@ -6,7 +6,6 @@ import { BsArrowRight } from "react-icons/bs";
 import { colors } from "../shared/constants";
 import Link from "next/link";
 import { OurTeam } from "../components/screens/about/OurTeam";
-import { StrategicPartners } from "../components/screens/about/StrategicPartners";
 import { aboutUsContents } from "../shared/contents";
 
 interface Props {}

@@ -1,13 +1,11 @@
 import React from "react";
-import { Header } from "../components/Header";
-import { Footer } from "../components/layout/Footer";
 import Head from "next/head";
 import { Button } from "../components/layout/Button";
 import Link from "next/link";
 
 interface Props {}
 
-const About: React.FC<Props> = () => {
+const PageNotFound: React.FC<Props> = () => {
   return (
     <div className="main_layout">
       <Head>
@@ -50,4 +48,4 @@ const About: React.FC<Props> = () => {
   );
 };
 
-export default About;
+export default PageNotFound;

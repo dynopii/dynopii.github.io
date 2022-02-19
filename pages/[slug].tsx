@@ -4,11 +4,8 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import Link from "next/link";
 import path from "path";
-import CustomLink from "../components/CustomLink";
 import { Header } from "../components/Header";
-import { Button } from "../components/layout/Button";
 import { Footer } from "../components/layout/Footer";
 import { markdownFilePaths, MARKDOWN_PATH } from "../shared/mdxUtils";
 
@@ -41,13 +38,6 @@ export default function MarkdownPage({ source, frontMatter }: any) {
           backgroundSize: "100%",
         }}
       >
-        {/* <header>
-          <nav className="mx-auto xl:px-30 mt-40" style={{ maxWidth: '1200px' }}>
-            <Link href="/">
-              <a>Go back home</a>
-            </Link>
-          </nav>
-        </header> */}
         <div
           className="post-header mx-auto p-30 mb-70"
           style={{
@@ -96,7 +86,7 @@ export const getStaticProps = async ({ params }: any) => {
 export const getStaticPaths = async () => {
   const paths = markdownFilePaths
     // Remove file extensions for page paths
-    .map((path) => path.replace(/\.mdx?$/, ""))
+    .map((pathString) => pathString.replace(/\.mdx?$/, ""))
     // Map the path into the static paths object required by Next.js
     .map((slug) => ({ params: { slug } }));
 

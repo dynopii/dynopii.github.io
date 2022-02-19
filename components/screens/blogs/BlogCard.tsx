@@ -2,7 +2,6 @@ import React from "react";
 import { Ghost_Blogs_Post } from "../../../shared/types";
 import { MdDateRange } from "react-icons/md";
 import { DateFormatter } from "../../../shared/utils";
-import { prefix } from "../../../shared/constants";
 
 interface Props {}
 

@@ -30,9 +30,6 @@ export const Dhwani: React.FC<Props> = () => {
           height={115}
         /> */}
         <h4 className="z-1 text-h4 text-gray-f2f font-normal ml-15">Dhwani</h4>
-        {/* <div className="absolute inset-0">
-          <Exp />
-        </div> */}
       </div>
 
       <div className="p-30">

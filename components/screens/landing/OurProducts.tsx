@@ -1,7 +1,6 @@
 import React from "react";
 import { landingContents } from "../../../shared/contents";
 import { Dhwani } from "../products/Dhwani";
-import { DialSense } from "../products/DialSense";
 
 interface Props {}
 

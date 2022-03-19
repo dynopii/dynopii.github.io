@@ -568,8 +568,8 @@ export const dialsenseCard = {
 export const dialsenseContents = {
   title: "Dial Sense",
   introductionSection: {
-    titleHTML: 'Introducing <span className="text-brand">Dial Sense</span>',
-    subtitle: `New way to interact with consumers`,
+    titleHTML: 'Introducing <span className="text-brand">DialSense</span>',
+    subtitle: 'Sit back, relax, grow your sales',
   },
   featuresSection: {
     title: "Tons of impressive features",
@@ -578,8 +578,8 @@ export const dialsenseContents = {
     title: "Our happy customers",
   },
   focusOnSalesSection: {
-    title: "Suspendisse ultrices ligula at est gravida",
-    description: `Cras semper est vel ante varius accumsan. Duis blandit velit nibh. Donec at sem quis nunc tristique sollicitudin quis vitae nisi. Sed tortor risus, dignissim sed leo ac, auctor congue eros. `,
+    title: "Let us make it big together",
+    description: 'Give your customers the best support experience with our AI based, 24x7 available, automated call center on cloud solution which does everything your business needs to grow',
   },
   pricingSection: {
     title: "Pricing",

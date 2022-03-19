@@ -33,7 +33,7 @@ const DialSensePage: React.FC<Props> = () => {
 
           {/* Dhwani Introduction Section */}
           <div className="flex items-center justify-center flex-col py-40 pt-140">
-            <img src={prefix + "/svgs/dialSense.svg"} alt="logo" width={203} height={203} />
+            <img src={prefix + "/svgs/dialsense.svg"} alt="logo" width={203} height={203} />
             <h2
               className="text-h2 sm:text-h3 text-white font-semibold mb-35 text-center"
               dangerouslySetInnerHTML={{ __html: dialsenseContents.introductionSection.titleHTML }}

@@ -76,7 +76,7 @@ export const dialsenseFeatures = [
   {
     id: "1",
     Icon: <MdOutlineDialerSip size={40} fill="#777777" />,
-    label: "lorem ipsum dolar",
+    label: "Predictive Dialing",
   },
   {
     id: "2",

@@ -560,7 +560,7 @@ export const packs = [
 export const dialsenseCard = {
   firstSectionTitle: "Overview",
   firstSectionDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper est vel ante varius accumsan. Duis blandit velit nibh. Donec at sem quis nunc tristique sollicitudin quis vitae nisi. Sed tortor risus, dignissim sed leo ac, auctor congue eros. Morbi tincidunt placerat lorem, non tempus ipsum rutrum ut. Aliquam varius molestie enim a condimentum. Ut venenatis pretium ex in ornare. Quisque dictum interdum auctor. Integer iaculis sodales ipsum id laoreet. Suspendisse ultrices ligula at est gravida, ac varius mi vestibulum. Praesent sagittis sed sapien vel malesuada. Nulla ex felis, condimentum id lorem eget, dictum pellentesque nisl. Morbi ac tortor libero. Cras fringilla, quam eget dictum tristique, eros nunc volutpat est, vel ornare turpis ante eu ligula. Aliquam commodo interdum lobortis. Phasellus ac arcu quam.",
+    "DialSense is the solution you've been waiting for to automate your growth using state-of-the-art AI handling all your customer interactions without any setup. Yes, you heard it right - no setup! Just login to your dashboard, teach the AI using simple clicks and let it grow your business while you sit back and relax.",
   secondSectionTitle: "Features",
 };
 

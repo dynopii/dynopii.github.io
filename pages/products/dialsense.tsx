@@ -70,8 +70,8 @@ const DialSensePage: React.FC<Props> = () => {
             height="70vh"
             className="video-player"
             controls
-            light="/images/dhwani-demo.png"
-            url="/videos/dhwani-demo.mp4"
+            light="/images/dialsense-demo.png"
+            url="/videos/dialsense-demo.mp4"
             playIcon={<PlayButton />}
           />
         </div>

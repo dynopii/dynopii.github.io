@@ -575,7 +575,7 @@ export const dialsenseContents = {
     title: "Tons of impressive features",
   },
   ourCustomers: {
-    title: "Our happy customers",
+    title: "Integrations available",
   },
   focusOnSalesSection: {
     title: "Let us make it big together",

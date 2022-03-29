@@ -75,7 +75,20 @@ const DialSensePage: React.FC<Props> = () => {
             playIcon={<PlayButton />}
           />
         </div>
-
+        <div
+          id="dhwani-demo-sound"
+          className="flex items-center justify-center relative xl:px-30"
+          style={{
+            // background: `linear-gradient(180deg, #222222 0%, #000000 29.5%, #000000 75.33%, #222222 100%)`,
+            background: `#060606`,
+          }}
+        >
+        <ReactPlayer
+            url="https://soundcloud.com/dynopii/demo-dynopii-2203240946"
+            height="150px"
+            width="110vh"
+          />
+        </div>
         <div className="mx-auto xl:px-30" style={{ maxWidth: "1200px" }}>
           {/* Integrated with tools section */}
           <div className="py-90">

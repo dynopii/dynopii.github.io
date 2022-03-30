@@ -157,7 +157,7 @@ export const aboutUsContents = {
 export const aboutUsTeams = [
   {
     id: "1",
-    photo: "/images/anubhav.jpeg",
+    photo: "/images/team/Anubhav.png",
     name: "Anubhav Singh",
     link: "/anubhav",
     // description: 'Past: Engineering leader at Coinbase.',
@@ -166,7 +166,7 @@ export const aboutUsTeams = [
   },
   {
     id: "2",
-    photo: "/images/abhishek.jpeg",
+    photo: "/images/team/Abhishek.png",
     name: "Abhishek Nandy",
     link: "/abhishek",
     // description: 'Past: Engineering leader at Coinbase.',
@@ -175,7 +175,7 @@ export const aboutUsTeams = [
   },
   {
     id: "3",
-    photo: "/images/kazi.jpeg",
+    photo: "/images/team/Kazi.png",
     name: "Kazi Haque",
     link: "/kazi",
     // description: 'Past: Engineering leader at Coinbase.',
@@ -184,7 +184,7 @@ export const aboutUsTeams = [
   },
   {
     id: '4',
-    photo: '/images/snehangshu.jpeg',
+    photo: '/images/team/Snehangshu.png',
     name: 'Snehangshu Bhattacharya',
     link: '/snehangshu',
     // description: 'Past: Engineering leader at Coinbase.',
@@ -193,7 +193,7 @@ export const aboutUsTeams = [
   },
   {
     id: '5',
-    photo: '/images/prashant.jpeg',
+    photo: '/images/team/Prashant.png',
     name: 'Prashantkumar L. Borde',
     link: '/prashant',
     // description: 'Past: Engineering leader at Coinbase.',
@@ -203,7 +203,7 @@ export const aboutUsTeams = [
   },
   {
     id: '6',
-    photo: '/images/rishiraj.jpeg',
+    photo: '/images/team/Rishiraj.png',
     name: 'Rishiraj Acharya',
     link: '/rishiraj',
     // description: 'Past: Engineering leader at Coinbase.',

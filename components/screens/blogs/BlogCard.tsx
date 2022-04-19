@@ -17,7 +17,7 @@ export const BlogCard: React.FC<Ghost_Blogs_Post> = ({
     <a href={url} target="_blank" rel="noreferrer">
       <div
         className="xl:mt-40 bg-gray-333 hover:bg-gray-444 rounded-default p-30 transition-all"
-        style={{ maxWidth: "350px" }}
+        style={{ maxWidth: "350px", minHeight: "360px" }}
       >
         <div className="overflow-hidden rounded-default">
           <img

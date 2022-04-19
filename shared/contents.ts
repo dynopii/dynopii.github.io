@@ -240,7 +240,7 @@ export const StrategicPartnersData = [
 
 // Footer
 export const footerContents = {
-  copyright: "Copyright © 2022 Dynopii, Inc. All rights reserved.",
+  copyright: `Copyright © ${new Date().getFullYear()} Dynopii, Inc. All rights reserved.`,
   mapTitle: "We are available in United States, India and Taiwan.",
   links: [
     {

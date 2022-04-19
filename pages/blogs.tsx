@@ -27,7 +27,7 @@ const Blogs: React.FC<Props> = () => {
           method: "GET",
         });
         const blogs: Ghost_Blogs_Post[] = data.data.posts;
-        const filteredBlogs = blogs.slice(0, 3);
+        const filteredBlogs = blogs.filter((blog) => blog.slug !== "testing").slice(0, 3);
         blogs?.length > 3 && setMoreThanThreeBlogs(true);
         setBlogs(filteredBlogs);
       } catch (e) {

@@ -165,15 +165,6 @@ export const aboutUsTeams = [
     linkedin: "https://www.linkedin.com/in/xprilion/",
   },
   {
-    id: "2",
-    photo: "/images/team/Abhishek.png",
-    name: "Abhishek Nandy",
-    link: "/abhishek",
-    // description: 'Past: Engineering leader at Coinbase.',
-    twitter: "https://twitter.com/AbhishekNandy81",
-    linkedin: "https://www.linkedin.com/in/abhishek-nandy/",
-  },
-  {
     id: "3",
     photo: "/images/team/Kazi.png",
     name: "Kazi Haque",
@@ -190,16 +181,6 @@ export const aboutUsTeams = [
     // description: 'Past: Engineering leader at Coinbase.',
     twitter: 'https://twitter.com/snehangshu_',
     linkedin: 'https://www.linkedin.com/in/snehangshu-bhattacharya-3891b5153/',
-  },
-  {
-    id: '5',
-    photo: '/images/team/Prashant.png',
-    name: 'Prashantkumar L. Borde',
-    link: '/prashant',
-    // description: 'Past: Engineering leader at Coinbase.',
-    // twitter: 'https://twitter.com/dynopii',
-    linkedin:
-      "https://www.linkedin.com/in/prashantkumar-l-borde-ph-d-a5572235/",
   },
   {
     id: '6',

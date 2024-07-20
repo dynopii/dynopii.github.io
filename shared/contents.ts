@@ -86,11 +86,11 @@ export const partners = [
     alt: "Fan Zhang",
     name: "Fan Zhang",
   },
-  {
-    img_src: "/images/logo.png",
-    alt: "Global Hitech CFI CORP",
-    name: "Global Hitech CFI CORP",
-  },
+  // {
+  //   img_src: "/images/logo.png",
+  //   alt: "Global Hitech CFI CORP",
+  //   name: "Global Hitech CFI CORP",
+  // },
 ];
 export const testimonials = [
   {
@@ -182,15 +182,15 @@ export const aboutUsTeams = [
     twitter: 'https://twitter.com/snehangshu_',
     linkedin: 'https://www.linkedin.com/in/snehangshu-bhattacharya-3891b5153/',
   },
-  {
-    id: '6',
-    photo: '/images/team/Rishiraj.png',
-    name: 'Rishiraj Acharya',
-    link: '/rishiraj',
-    // description: 'Past: Engineering leader at Coinbase.',
-    twitter: 'https://twitter.com/RishirajAcharya',
-    linkedin: 'https://www.linkedin.com/in/rishirajacharya/',
-  },
+  // {
+  //   id: '6',
+  //   photo: '/images/team/Rishiraj.png',
+  //   name: 'Rishiraj Acharya',
+  //   link: '/rishiraj',
+  //   // description: 'Past: Engineering leader at Coinbase.',
+  //   twitter: 'https://twitter.com/RishirajAcharya',
+  //   linkedin: 'https://www.linkedin.com/in/rishirajacharya/',
+  // },
 ];
 export const StrategicPartnersData = [
   {
